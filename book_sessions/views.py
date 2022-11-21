@@ -11,5 +11,5 @@ class BookList(generic.ListView):
     template_name = "booking.html"
 
 
-def index(request):
-    return HttpResponse("Hello world!")
+# def index(request):
+#     return HttpResponse("Hello world!")
