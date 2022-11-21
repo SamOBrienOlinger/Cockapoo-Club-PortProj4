@@ -5,9 +5,9 @@ from django.http import HttpResponseRedirect
 # Create your views here.
 
 
-class PostList(generic.ListView):
-    model = Post
-    queryset = Post.objects.filter(status=1).order_by("-created_on")
+class BookList(generic.ListView):
+    model = Book
+    queryset = Book.objects.filter(status=1).order_by("-created_on")
     template_name = "booking.html"
 
 
