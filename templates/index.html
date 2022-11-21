@@ -1,52 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="All things Cockapoo in Dublin, Ireland">
-      <meta name="keywords" content="dog, dogs, local, cockapoo, cockapoos, small-dog, hypoallergenic-dog, club, community, phtographs-of-dogs, dog-training, ireland, dublin">
-      <link rel="stylesheet" href="assets/css/style.css"> 
-      <title>Cockapoo Club Dublin Ireland</title>
-   </head>
-   <main>
-      <header>
-         <section>
-            <a id="top"></a>
-              <h1 id="logo">Cockapoo Club</h1>
-            </a>
-         </section>
-         <nav>
-            <ul class="menu">
-               <li>
-                  <a href="index.html" aria-label="Visit our Homepage" class="active">Home</a>
-               </li>
-               <li>
-                  <a href="new-cockaparents.html#jump-to-nc" aria-label="Visit our New Cockaparents page">New Cockaparents</a>
-               </li>
-               <li>
-                  <a href="keep-your-poo-healthy.html#jump-to-kyph" aria-label="Visit our Keep Your Poo Healthy page">Keep your Poo Healthy</a>
-               </li>
-               <li>
-                  <a href="furry-fun-foto-gallery.html#jump-to-fffg" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a>
-               </li>
-               <li>
-                  <a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">Join</a>
-               </li>
-               <li>
-                  <a href="login-member.html" aria-label="Login to our members area">Members</a>
-               </li>
-            </ul>
-         </nav>
-      </header>
-      <section id="hero-outer">
-         <div id="hero-image"></div>
-         <div id="cover-text">
-            <h2><a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">
-               <span id="join">Join Cockapoo Club</span>
-               </a>
-            </h2>
-         </div>
-      </section>
-      <section>
+{% extends "base.html" %}
+
+{% block content %}
+
+     <section>
          <h2 class="new-page-intro">All Things Cockapoo in Dublin, Ireland</h2>
          <div class="homepage-container">
             <div class="homepage-anchors-row">
@@ -126,32 +82,4 @@
             <a href="#top" class="join-button">Back to top</a>
          </div>
       </section>
-   </main>
-   <footer>
-      <div id="contact-us">
-         Contact us by <span class="furry-fun-fotos-join"><a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">becoming a member</a>
-         </span> 
-         -or- email: <span class="furry-fun-fotos-join"><a href="https://mail.google.com/" aria-label="email address">cockapooclubireland@gmail.com</a></span>
-      </div>
-      <ul class="social-networks">
-         <li>
-            <a href="https://facebook.com" target="_blank" rel="noopener"
-               aria-label="Visit our Facebook"><i class="fab fa-facebook"></i></a>
-         </li>
-         <li>
-            <a href="https://twitter.com" target="_blank" rel="noopener"
-               aria-label="Visit our Twitter"><i class="fab fa-twitter-square"></i></a>
-         </li>
-         <li>
-            <a href="https://youtube.com" target="_blank" rel="noopener"
-               aria-label="Visit our YouTube"><i class="fab fa-youtube-square"></i></a>
-         </li>
-         <li>
-            <a href="https://instagram.com" target="_blank" rel="noopener"
-               aria-label="Visit our Instagram"><i class="fab fa-instagram"></i></a>
-         </li>
-      </ul>
-   </footer>
-   <!-- font awesome script  -->
-   <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
-</html>
+      {%endblock%}
