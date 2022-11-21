@@ -12,5 +12,9 @@ class BookList(generic.ListView):
     template_name = "booking.html"
 
 
-# def index(request):
-#     return HttpResponse("Hello world!")
+class Book(View):
+
+    def Book(self, request, slug, *args, **kwargs):
+        Book = get_object_or_404(Book, slug=slug)
+
+        return HttpResponseRedirect(reverse('post_detail', args=[slug]))
