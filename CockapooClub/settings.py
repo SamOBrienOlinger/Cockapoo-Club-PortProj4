@@ -44,10 +44,22 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'booking',
     'home',
     'book_sessions',
-    'booking',
 ]
+
+SITE_ID = 1
+
+BOOKING_TITLE = "Book a Session"
+BOOKING_DESC = "Book a session with a dog trainer"
+BOOKING_BG = "img/booking_bg.jpg"
+
+# BOOKING_SUCCESS_REDIRECT_URL = "Success redirect url"
+# BOOKING_DISABLE_URL = "Redirect to this url if create booking is disable"
+
+BOOKING_SUCCESS_REDIRECT_URL = '/'
+BOOKING_DISABLE_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,8 +149,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'Cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
