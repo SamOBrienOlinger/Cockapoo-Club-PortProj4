@@ -6,9 +6,9 @@ from cloudinary.models import CloudinaryField
 
 # class signup:
 
-    # create username and password 
+    # create username and password
 
-    # enter/register details: 
+    # enter/register details:
         # Username
         # Password
         # User/Owner name
@@ -16,10 +16,12 @@ from cloudinary.models import CloudinaryField
         # Dog age
         # Vaccinated (Y/N)
         # user submit button
- 
 
 
 
-# class signin
+
+# class signin:
+
     # authenticate username and password to login
+
     # bring user to booking page

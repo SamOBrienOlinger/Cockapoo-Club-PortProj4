@@ -7,7 +7,7 @@ from cloudinary.models import CloudinaryField
 
 # class book a time slot for a training session:
 
-    # allow user to: 
+    # allow user to:
       # Choose time
       # Choose date
 
