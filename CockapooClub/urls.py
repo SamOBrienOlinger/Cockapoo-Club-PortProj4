@@ -16,10 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
+from home.views import say_hello
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path("booking/", include("booking.urls")),
+    path('hello/', say_hello, name='hello'),
 
     path(
     'admin/password_reset/',
