@@ -7,15 +7,15 @@ from cloudinary.models import CloudinaryField
 
 # class book a time slot for a training session:
 
-    # allow user to:
-      # Choose time
-      # Choose date
+#    allow user to:
+#    Choose time
+#    Choose date
 
-      # Submit button
-      # Edit button
-      # delete button
+#    Submit button
+#    Edit button
+#    delete button
 
 # class book(models.Model):
-    # title = models.CharField(max_length=200, unique=True)
-    # slug = models.SlugField(max_length=200, unique=True)
-    # featured_image = CloudinaryField('image', default='placeholder')
+#   title = models.CharField(max_length=200, unique=True)
+#   slug = models.SlugField(max_length=200, unique=True)
+#   featured_image = CloudinaryField('image', default='placeholder')
