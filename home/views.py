@@ -6,4 +6,4 @@ from django.http import HttpResponseRedirect
 
 
 def homepage(request):
-    return HttpResponse('homepage')
+    return HttpResponse('Homepage')

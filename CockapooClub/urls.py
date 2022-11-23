@@ -26,18 +26,17 @@ from django.urls import path, include
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    # path('home/', include(home.urls), name='homepage'),
-    # path('booking/', views.booking)
+    path('home/', include('homepage.urls'), name='Homepage'),
     path('booking/', include('booking.urls'), name='Booking'),
 
 ]
-    # path(r'^admin/', admmin.site.urls),
-    # path(r'^home/$', views.homepage),
-    # path(r'^booking/$', views.booking)
+#   path(r'^admin/', admmin.site.urls),
+#   path(r'^home/$', views.homepage),
+#   path(r'^booking/$', views.booking)
 
-    # path('admin/', admin.site.urls),
-    # path("booking/", include("booking.urls")),
-    # path('hello/', say_hello, name='hello'),
+#   path('admin/', admin.site.urls),
+#   path("booking/", include("booking.urls")),
+#   path('hello/', say_hello, name='hello'),
 
 #     path(
 #     'admin/password_reset/',
