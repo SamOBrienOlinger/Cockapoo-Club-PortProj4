@@ -17,18 +17,23 @@ Including another URLconf
 # from django.urls import path, include
 # from django.contrib.auth import views as auth_views
 # from home.views import say_hello
+# from book_sessions import views
 
 from django.contrib import admin
-from django.conf.urls import url
-from book_sessions import views
+from django.urls import path, include
+
 
 urlpatterns = [
 
-    url(r'^admin/', admmin.site.urls),
-    url(r'^home/$', views.homepage),
-    url(r'^booking/$', views.booking)
+    path('admin/', admin.site.urls),
+    # path('home/', include(home.urls), name='homepage'),
+    # path('booking/', views.booking)
+    path('booking/', include('booking.urls'), name='Booking'),
 
-
+]
+    # path(r'^admin/', admmin.site.urls),
+    # path(r'^home/$', views.homepage),
+    # path(r'^booking/$', views.booking)
 
     # path('admin/', admin.site.urls),
     # path("booking/", include("booking.urls")),
@@ -56,4 +61,3 @@ urlpatterns = [
 #     auth_views.PasswordResetCompleteView.as_view(),
 #     name='password_reset_complete',
 # ),
-]

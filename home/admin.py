@@ -1,13 +1,9 @@
 from django.contrib import admin
 # from CockapooClub.home.models import Author
-from .models import Post, Comment
-from django_summernote.admin import SummernoteModelAdmin
+# from .models import Post, Comment
+# from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
-
-
-
-
 
 
 # class AuthorAdmin(admin.ModelAdmin):
