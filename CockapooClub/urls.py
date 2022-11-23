@@ -20,11 +20,14 @@ Including another URLconf
 
 from django.contrib import admin
 from django.conf.urls import url
-
+from book_sessions import views
 
 urlpatterns = [
 
     url(r'^admin/', admmin.site.urls),
+    url(r'^home/$', views.homepage),
+    url(r'^booking/$', views.booking)
+
 
 
     # path('admin/', admin.site.urls),
