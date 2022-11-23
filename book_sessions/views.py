@@ -1,14 +1,12 @@
-# from django.shortcuts import render, get_object_or_404, reverse
-# from django.views import generic, View
-# from django.http import HttpResponseRedirect
-# from django.http import Book
-
+from django.shortcuts import render, HttpResponse, get_object_or_404, reverse
+from django.views import generic, View
 from django.http import HttpResponse
+from django import Booking
 
 # Create your views here.
 
 
-def booking(request):
+def Booking(request):
     return HttpResponse('Booking')
 
 

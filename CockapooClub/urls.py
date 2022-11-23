@@ -19,15 +19,20 @@ Including another URLconf
 # from home.views import say_hello
 # from book_sessions import views
 
-from django.contrib import admin
+# from django.contrib import admin
+# from django.urls import path, include
+
+from . import views
 from django.urls import path, include
+from booking import views
 
 
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    path('home/', include('homepage.urls'), name='Homepage'),
-    path('booking/', include('booking.urls'), name='Booking'),
+    # path('home/', include('homepage.urls'), name='Homepage'),
+    # path('booking/', include('booking.urls'), name='Booking'),
+    path('booking/', views.Booking.as_view(), name="Booking"),
 
 ]
 
