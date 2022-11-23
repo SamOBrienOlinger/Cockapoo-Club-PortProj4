@@ -30,6 +30,17 @@ urlpatterns = [
     path('booking/', include('booking.urls'), name='Booking'),
 
 ]
+
+# from django.contrib import admin
+# from django.urls import path, include
+
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path("", include("blog.urls"), name="blog-urls"),
+#     path('summernote/', include('django_summernote.urls')),
+# ]
+
+
 #   path(r'^admin/', admmin.site.urls),
 #   path(r'^home/$', views.homepage),
 #   path(r'^booking/$', views.booking)
