@@ -58,8 +58,8 @@ INSTALLED_APPS = [
 # BOOKING_SUCCESS_REDIRECT_URL = "Success redirect url"
 # BOOKING_DISABLE_URL = "Redirect to this url if create booking is disable"
 
-BOOKING_SUCCESS_REDIRECT_URL = '/'
-BOOKING_DISABLE_URL = '/'
+# BOOKING_SUCCESS_REDIRECT_URL = '/'
+# BOOKING_DISABLE_URL = '/'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
