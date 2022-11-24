@@ -6,10 +6,16 @@ from cloudinary.models import CloudinaryField
 
 
 class booking(models.Model):
-    # model = Booking
-    template_name = "booking.html"
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
+
+
+# class Meta:
+#      = [['', '']]
+
+
+def __str__(self):
+    return self.first_name
 
 # class book a time slot for a training session:
 

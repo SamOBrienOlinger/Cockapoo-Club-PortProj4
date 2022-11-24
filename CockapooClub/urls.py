@@ -29,8 +29,8 @@ from django.urls import path, include
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    # path('booking/', include('booking.urls'), name='Booking'),
-    # path('booking/', views.Booking.as_view(), name="Booking"),
+    path('booking/', include('booking.urls'), name='Booking'),
+    path('home/', include('home/'), name="Homepage"),
 ]
 
 # from django.contrib import admin
