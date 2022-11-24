@@ -30,7 +30,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('booking/', include('booking.urls'), name='Booking'),
-    path('home/', include('home/'), name="Homepage"),
+    path('home/', include('home.urls'), name="Homepage"),
 ]
 
 # from django.contrib import admin
