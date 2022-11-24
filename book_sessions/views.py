@@ -7,7 +7,7 @@ from django import Booking
 
 
 def Booking(request):
-    return HttpResponse('Booking')
+    return HttpResponse('You are on the Booking a Session Page')
 
 
 # class BookList(generic.ListView):

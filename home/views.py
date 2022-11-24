@@ -6,5 +6,5 @@
 # # Create your views here.
 
 
-# def homepage(request):
-#     return HttpResponse('Homepage')
+def homepage(request):
+    return HttpResponse('You are on the Homepage')

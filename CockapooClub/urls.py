@@ -22,18 +22,15 @@ Including another URLconf
 # from django.contrib import admin
 # from django.urls import path, include
 
-from . import views
+from django.contrib import admin
 from django.urls import path, include
-from booking import views
 
 
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    # path('home/', include('homepage.urls'), name='Homepage'),
     # path('booking/', include('booking.urls'), name='Booking'),
-    path('booking/', views.Booking.as_view(), name="Booking"),
-
+    # path('booking/', views.Booking.as_view(), name="Booking"),
 ]
 
 # from django.contrib import admin
