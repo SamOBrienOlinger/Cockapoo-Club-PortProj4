@@ -8,17 +8,3 @@ from django import booking
 
 def booking(request):
     return HttpResponse('You are on the Booking a Session Page')
-
-
-# class BookList(generic.ListView):
-#     model = Book
-#     queryset = Book.objects.filter(status=1).order_by("-created_on")
-#     template_name = "booking.html"
-
-
-# class Book(View):
-
-#     def Book(self, request, slug, *args, **kwargs):
-#         Book = get_object_or_404(Book, slug=slug)
-
-#         return HttpResponseRedirect(reverse('post_detail', args=[slug]))

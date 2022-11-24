@@ -45,16 +45,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'django_summernote',
-    # 'Booking',
-    # 'home',
-    'book_sessions',
+    'booking',
 ]
 
-SITE_ID = 1
+# SITE_ID = 1
 
-BOOKING_TITLE = "Book a Session"
-BOOKING_DESC = "Book a session with a dog trainer"
-BOOKING_BG = "img/booking_bg.jpg"
+# BOOKING_TITLE = "Book a Session"
+# BOOKING_DESC = "Book a session with a dog trainer"
+# BOOKING_BG = "img/booking_bg.jpg"
 
 # BOOKING_SUCCESS_REDIRECT_URL = "Success redirect url"
 # BOOKING_DISABLE_URL = "Redirect to this url if create booking is disable"
