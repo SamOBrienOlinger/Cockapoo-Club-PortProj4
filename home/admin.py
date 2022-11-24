@@ -1,4 +1,8 @@
 from django.contrib import admin
+from .models import homepage
+
+# admin.site.register(homepage)
+
 # from CockapooClub.home.models import Author
 # from .models import Post, Comment
 # from django_summernote.admin import SummernoteModelAdmin
