@@ -7,4 +7,4 @@ from django.http import HttpResponse
 
 
 def homepage(request):
-    return HttpResponse('You are on the Homepage')
+    return HttpResponse('Welcome to the Homepage')

@@ -30,6 +30,7 @@ urlpatterns = [
 
     path('admin/', admin.site.urls),
     path('', include('book_sessions.urls'), name='book-sessions.urls'),
+    path('home/', include('home.urls'), name='home.urls'),
 
     # path('booking/', include('booking.urls'), name='Booking'),
     # path('home/', include('home.urls'), name="Homepage"),
