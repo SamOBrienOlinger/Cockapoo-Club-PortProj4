@@ -11,29 +11,13 @@ class home(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
 
 
-# class Post(models.Model):
-#     title = models.CharField(max_length=200, unique=True)
-#     slug = models.SlugField(max_length=200, unique=True)
-#     author = models.ForeignKey(
-#         User, on_delete=models.CASCADE, related_name="blog_posts"
-#     )
-#     featured_image = CloudinaryField('image', default='placeholder')
-#     excerpt = models.TextField(blank=True)
-#     updated_on = models.DateTimeField(auto_now=True)
-#     content = models.TextField()
-#     created_on = models.DateTimeField(auto_now_add=True)
-#     status = models.IntegerField(choices=STATUS, default=0)
-#     likes = models.ManyToManyField(
-#         User, related_name='blogpost_like', blank=True)
+class PersonalDataForm(forms.Form):
+    first_name = forms.CharField(required=True, max_length=255)
+    last_name = forms.CharField(required=True, max_length=255)
+    email = forms.EmailField(required=True)
+    phone = forms.CharField(required=True, max_length=200)
+    address = forms.CharField(max_length=1000, widget=forms.Textarea())
 
-# class Comment(models.Model):
-#     post = models.ForeignKey(Post, on_delete=models.CASCADE,
-#                              related_name="comments")
-#     name = models.CharField(max_length=80)
-#     email = models.EmailField()
-#     body = models.TextField()
-#     created_on = models.DateTimeField(auto_now_add=True)
-#     approved = models.BooleanField(default=False)
 
 # class signup:
 
