@@ -7,4 +7,4 @@ from django import booking
 
 
 def booking(request):
-    return HttpResponse('You are on the Booking a Session Page')
+    return render(request, 'booking.html', {})
