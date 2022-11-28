@@ -3,6 +3,7 @@ from django.shortcuts import render
 # from django.views import generic, View
 from django.http import HttpResponse
 # from django import booking
+from .forms import BookingForm
 
 # Create your views here.
 

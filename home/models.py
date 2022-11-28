@@ -19,7 +19,7 @@ class PersonalDataForm(forms.Form):
     address = forms.CharField(max_length=1000, widget=forms.Textarea())
 
 
-# class signup:
+# class signup():
 
 # create username and password
 
