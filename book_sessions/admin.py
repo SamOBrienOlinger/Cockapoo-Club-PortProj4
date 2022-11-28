@@ -4,7 +4,7 @@ from .models import booking
 # Register your models here.
 
 
-@admin.site.register(booking)
-class booking(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+# @admin.site.register(booking)
+# class booking(models.Model):
+#     title = models.CharField(max_length=200, unique=True)
+#     slug = models.SlugField(max_length=200, unique=True)

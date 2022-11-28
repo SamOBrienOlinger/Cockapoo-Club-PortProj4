@@ -5,5 +5,5 @@ from django import forms
 class BookingForm(forms.ModelForm):
 
     class Meta:
-        model = booking()
-        fields = ('body',)
+        model = booking
+        fields = "__all__"

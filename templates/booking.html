@@ -3,11 +3,18 @@
 
 {% load crispy_forms_tags %}
     
-{% csrf_token %}
     
     <h1>You are very welcome to the Cockapoo Club booking session page</h1>
 
-    {% crispy form %}
+    <!-- {% crispy form %}
+    <button type="submit">Submit</button> -->
+
+    <form method="POST">
+        {% csrf_token %}
+      
+        {{ form|crispy }}
+        <button class="primaryAction btn btn-primary" type="submit">Submit</button>
+      </form>
 
 
 {%endblock%}
