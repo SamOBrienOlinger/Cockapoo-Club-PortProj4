@@ -29,7 +29,7 @@ from django.urls import path, include
 urlpatterns = [
 
     path('admin/', admin.site.urls),
-    path('', include('book_sessions.urls'), name='booking'),
+    path('', include('book_sessions.urls'), name='book-sessions.urls'),
 
     # path('booking/', include('booking.urls'), name='Booking'),
     # path('home/', include('home.urls'), name="Homepage"),
