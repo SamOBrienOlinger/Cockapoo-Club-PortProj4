@@ -1,5 +1,10 @@
 {% load static %}
 
+
+{% load crispy_forms_tags %}
+    {% csrf_token %}
+{% crispy form %}
+
 <!DOCTYPE html>
 <html lang="en">
    <head>

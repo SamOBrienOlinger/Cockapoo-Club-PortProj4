@@ -2,6 +2,10 @@
 
 {% block content %}
 
+{% load crispy_forms_tags %}
+    {% csrf_token %}
+{% crispy form %}
+
      <section>
          <h2 class="new-page-intro">All Things Cockapoo in Dublin, Ireland</h2>
          <div class="homepage-container">
