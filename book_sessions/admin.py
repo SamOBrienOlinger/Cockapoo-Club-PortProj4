@@ -3,6 +3,7 @@ from .models import booking, home, PersonalDataForm
 
 # Register your models here.
 
+admin.site.register(booking)
 
 # @admin.site.register(booking)
 # class booking(models.Model):
