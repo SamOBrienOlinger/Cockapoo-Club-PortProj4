@@ -14,10 +14,13 @@ def booking(request):
         return render(request, 'booking.html', {"form": booking_form})
 
     elif request.method == "POST":
-        booking_form = BookingForm(request.POST)        
+        booking_form = BookingForm(request.POST)
         if booking_form.is_valid():
             booking = booking_form.save()
             return render(request, "booking_detail.html", {"booking": booking})
         else:
             return render(request, 'booking.html', {"form": booking_form})
 
+
+def homepage(request):
+    return render(request, "home.html")

@@ -10,6 +10,19 @@ class booking(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
 
 
+class home(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+
+
+class PersonalDataForm(forms.Form):
+    first_name = forms.CharField(required=True, max_length=255)
+    last_name = forms.CharField(required=True, max_length=255)
+    email = forms.EmailField(required=True)
+    phone = forms.CharField(required=True, max_length=200)
+    address = forms.CharField(max_length=1000, widget=forms.Textarea())
+
+
 # class Meta:
 #      = [['', '']]
 
