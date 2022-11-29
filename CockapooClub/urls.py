@@ -19,9 +19,6 @@ Including another URLconf
 # from home.views import say_hello
 # from book_sessions import views
 
-# from django.contrib import admin
-# from django.urls import path, include
-
 from django.contrib import admin
 from django.urls import path, include
 
@@ -31,13 +28,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('booking/', include('book_sessions.urls'), name='booking'),
     # path('home/', include('home.urls'), name='home'),
-
-    # path('booking/', include('booking.urls'), name='Booking'),
-    # path('home/', include('home.urls'), name="Homepage"),
 ]
-
-# from django.contrib import admin
-# from django.urls import path, include
 
 # urlpatterns = [
 #     path('admin/', admin.site.urls),

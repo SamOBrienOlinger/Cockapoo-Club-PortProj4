@@ -4,6 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # from django import booking
 from .forms import BookingForm
+# from .models import Post
 
 # Create your views here.
 

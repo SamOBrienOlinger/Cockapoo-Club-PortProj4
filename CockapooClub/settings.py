@@ -49,7 +49,8 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'book_sessions',
-    'home',
+    'CockapooClub',
+    # 'home',
 ]
 
 # SITE_ID = 1
