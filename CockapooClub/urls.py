@@ -24,11 +24,10 @@ from django.urls import path, include
 
 
 urlpatterns = [
-
     path('admin/', admin.site.urls),
     path('booking/', include('book_sessions.urls'), name='booking'),
     path('summernote/', include('django_summernote.urls')),
-    # path("accounts/", include("allauth.urls")),
+    path("accounts/", include("allauth.urls")),
     # path('home/', include('home.urls'), name='home'),
 ]
 
