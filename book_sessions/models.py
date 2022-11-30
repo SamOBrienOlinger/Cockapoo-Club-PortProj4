@@ -16,12 +16,12 @@ class home(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
 
 
-class BookingForm(forms.ModelForm):
-    first_name = forms.CharField(required=True, max_length=255)
-    last_name = forms.CharField(required=True, max_length=255)
-    email = forms.EmailField(required=True)
-    phone = forms.CharField(required=True, max_length=200)
-    address = forms.CharField(max_length=1000, widget=forms.Textarea())
+# class BookingForm(forms.ModelForm):
+#     first_name = forms.CharField(required=True, max_length=255)
+#     last_name = forms.CharField(required=True, max_length=255)
+#     email = forms.EmailField(required=True)
+#     phone = forms.CharField(required=True, max_length=200)
+#     address = forms.CharField(max_length=1000, widget=forms.Textarea())
 
     # class Meta:
     #     unique_together = [['first_name', 'last_name']]
