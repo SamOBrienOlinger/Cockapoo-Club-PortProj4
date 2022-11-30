@@ -11,5 +11,5 @@ from . import views
 
 urlpatterns = [
     path('', views.booking, name='booking'),
-    path('', views.homepage, name="homepage"),
+    path('', views.homepage, name='homepage'),
 ]
