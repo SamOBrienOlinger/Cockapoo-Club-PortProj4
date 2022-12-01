@@ -31,10 +31,12 @@
                   <a href="furry-fun-foto-gallery.html#jump-to-fffg" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a>
                </li>
                <li>
-                  <a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">Join</a>
+                  <!-- <a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">Join</a> -->
+                  <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join</a>
                </li>
                <li>
-                  <a href="login-member.html" aria-label="Login to our members area">Members</a>
+                  <!-- <a href="login-member.html" aria-label="Login to our members area">Members</a> -->
+                  <a href="{% url 'account_login' %}">Login</a>
                </li>
             </ul>
          </nav>
