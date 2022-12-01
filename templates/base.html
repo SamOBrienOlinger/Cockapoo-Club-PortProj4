@@ -20,6 +20,7 @@
             <ul class="menu">
                <li>
                   <a href="index.html" aria-label="Visit our Homepage" class="active">Home</a>
+                  <!-- <a href="{% url 'home' %}" aria-label="Visit our Homepage" class="active">Home</a> -->
                </li>
                <li>
                   <a href="new-cockaparents.html#jump-to-nc" aria-label="Visit our New Cockaparents page">New Cockaparents</a>
@@ -70,7 +71,8 @@
     <!-- Footer -->
     <footer>
        <div id="contact-us">
-          Contact us by <span class="furry-fun-fotos-join"><a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">becoming a member</a>
+          <!-- Contact us by <span class="furry-fun-fotos-join"><a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">becoming a member</a> -->
+          Contact us by <span class="furry-fun-fotos-join"><a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">becoming a member</a>
           </span> 
           -or- email: <span class="furry-fun-fotos-join"><a href="https://mail.google.com/" aria-label="email address">cockapooclubireland@gmail.com</a></span>
        </div>
