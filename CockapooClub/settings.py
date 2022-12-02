@@ -56,7 +56,12 @@ INSTALLED_APPS = [
     'home',
 ]
 
-# SITE_ID = 1
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # BOOKING_TITLE = "Book a Session"
 # BOOKING_DESC = "Book a session with a dog trainer"
