@@ -6,5 +6,5 @@ from .models import homepage
 # Create your views here.
 
 
-def homepage(request):
+def index(request):
     return render(request, "index.html")
