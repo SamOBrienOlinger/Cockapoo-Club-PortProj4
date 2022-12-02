@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'book_sessions',
     'CockapooClub',
-    # 'home',
+    'home',
 ]
 
 # SITE_ID = 1
