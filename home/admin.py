@@ -1,6 +1,8 @@
-# from django.contrib import admin
-# from .models import home
+from django.contrib import admin
+from .models import index
 
+
+admin.site.register(index)
 
 # @admin.site.register(home())
 # class home(models.Model):

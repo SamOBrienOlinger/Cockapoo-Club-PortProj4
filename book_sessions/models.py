@@ -16,6 +16,11 @@ class home(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
 
 
+class booking_detail(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+
+
 # class BookingForm(forms.ModelForm):
 #     first_name = forms.CharField(required=True, max_length=255)
 #     last_name = forms.CharField(required=True, max_length=255)

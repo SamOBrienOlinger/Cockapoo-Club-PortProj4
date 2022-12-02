@@ -1,15 +1,16 @@
 from django.contrib import admin
-from .models import booking, home
+from .models import booking, home, booking_detail
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
 admin.site.register(booking)
 
-# admin.site.register(BookingForm)
-
 admin.site.register(home)
 
+admin.site.register(booking_detail)
+
+# admin.site.register(BookingForm)
 # @admin.register(booking)
 # class PostAdmin(SummernoteModelAdmin):
 #     list_display = ('title', 'slug', 'status', 'created_on')
