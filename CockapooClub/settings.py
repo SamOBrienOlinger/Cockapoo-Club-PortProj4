@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'book_sessions',
-    'CockapooClub',
+    # 'CockapooClub',
     'home',
 ]
 
