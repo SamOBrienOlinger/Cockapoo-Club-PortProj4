@@ -6,21 +6,24 @@
          <h2 class="new-page-intro">All Things Cockapoo in Dublin, Ireland</h2>
          <div class="homepage-container">
             <div class="homepage-anchors-row">
-               <a href="new-cockaparents.html#jump-to-nc" aria-label="Visit our New Cockaparents page"> 
+               <!-- <a href="new-cockaparents.html#jump-to-nc" aria-label="Visit our New Cockaparents page">  -->
+               <a href="{% url 'New-Cockaparents' %}" aria-label="Visit our New Cockaparents page">
                <span class="main-sections" id="new-cockaparents">
                New Cockaparents
                </span>
                </a>
             </div>
             <div class="homepage-anchors-row"> 
-               <a href="keep-your-poo-healthy.html#jump-to-kyph" aria-label="Visit our Keep Your Poo Healthy page">    
-               <span class="main-sections" id="keep-your-poo-healthy">
+               <!-- <a href="keep-your-poo-healthy.html#jump-to-kyph" aria-label="Visit our Keep Your Poo Healthy page">     -->
+                  <a href="{% url 'Keep-your-Poo-Healthy' %}" aria-label="Visit our Keep Your Poo Healthy page">
+                  <span class="main-sections" id="keep-your-poo-healthy">
                Keep Your Poo Healthy
                </span>
                </a>
             </div>
             <div class="homepage-anchors-column"> 
-               <a href="furry-fun-foto-gallery.html#jump-to-fffg" aria-label="Visit our Furry Fun Foto gallery page">
+               <!-- <a href="furry-fun-foto-gallery.html#jump-to-fffg" aria-label="Visit our Furry Fun Foto gallery page"> -->
+               <a href="{% url 'Furry-Fun-Foto-Gallery' %}" aria-label="Visit our Furry Fun Foto gallery page">
                <span class="main-sections" id="furry-fun">
                Furry Fun Foto Gallery
                </span>
@@ -33,7 +36,7 @@
             <h3>At Cockapoo Club we want to see you and your furry best friend thrive together</h3>
             <p>
                <!-- <span class="furry-fun-fotos-join"><a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">Join our Cockapoo community</a></span> for all the support, information and fun you will ever need  -->
-               <span class="furry-fun-fotos-join"><a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join Cockapoo Club Now</a></span> for all the support, information and fun you will ever need
+               <span class="furry-fun-fotos-join"><a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join Cockapoo Club ow</a></span> for all the support, information and fun you will ever need
             </p>
          </div>
       </section>
