@@ -11,15 +11,15 @@ def index(request):
 
 
 def newCockaparents(request):
-    return render(request, "New-Cockaparents.html")
+    return render(request, "new-cockaparents.html")
 
 
 def keepYourPooHealthy(request):
-    return render(request, "Keep-your-Poo-Healthy.html")
+    return render(request, "keep-your-poo-healthy.html")
 
 
 def furryFunFotoGallery(request):
-    return render(request, "Furry-Fun-Foto-Gallery.html")
+    return render(request, "furry-fun-foto-gallery.html")
 
 
 # def join(request):

@@ -23,4 +23,4 @@ def booking(request):
 
 
 def homepage(request):
-    return render(request, "home.html")
+    return render(request, "index.html")
