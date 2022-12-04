@@ -10,21 +10,21 @@ def index(request):
     return render(request, "index.html")
 
 
-# def index(request):
-#     return render(request, "New Cockaparents.html")
+def newCockaparents(request):
+    return render(request, "New-Cockaparents.html")
 
 
-# def index(request):
-#     return render(request, ".Keep your Poo Healthyhtml")
+def keepYourPooHealthy(request):
+    return render(request, "Keep-your-Poo-Healthy.html")
 
 
-# def index(request):
-#     return render(request, "Furry Fun Foto Gallery.html")
+def furryFunFotoGallery(request):
+    return render(request, "Furry-Fun-Foto-Gallery.html")
 
 
-# def index(request):
-#     return render(request, "Join.html")
+# def join(request):
+#     return render(request, "join-form.html")
 
 
-# def index(request):
-#     return render(request, "Login.html")
+# def login(request):
+#     return render(request, "login-members.html")
