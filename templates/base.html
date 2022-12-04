@@ -23,13 +23,16 @@
                   <a href="{% url 'index' %}" aria-label="Visit our Homepage" class="active">Home</a>
                </li>
                <li>
-                  <a href="new-cockaparents.html#jump-to-nc" aria-label="Visit our New Cockaparents page">New Cockaparents</a>
+                  <!-- <a href="new-cockaparents.html#jump-to-nc" aria-label="Visit our New Cockaparents page">New Cockaparents</a> -->
+                  <a href="{% url 'New-Cockaparents' %}" aria-label="Visit our New Cockaparents page">New Cockaparents</a>
                </li>
                <li>
-                  <a href="keep-your-poo-healthy.html#jump-to-kyph" aria-label="Visit our Keep Your Poo Healthy page">Keep your Poo Healthy</a>
+                  <!-- <a href="keep-your-poo-healthy.html#jump-to-kyph" aria-label="Visit our Keep Your Poo Healthy page">Keep your Poo Healthy</a> -->
+                  <a href="{% url 'Keep-your-Poo-Healthy' %}" aria-label="Visit our Keep Your Poo Healthy page">Keep your Poo Healthy</a>
                </li>
                <li>
-                  <a href="furry-fun-foto-gallery.html#jump-to-fffg" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a>
+                  <!-- <a href="furry-fun-foto-gallery.html#jump-to-fffg" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a> -->
+                  <a href="{% url 'Furry-Fun-Foto-Gallery' %}" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a>
                </li>
                <li>
                   <!-- <a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">Join</a> -->
@@ -45,7 +48,8 @@
       <section id="hero-outer">
          <div id="hero-image"></div>
          <div id="cover-text">
-            <h2><a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">
+            <!-- <h2><a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page"> -->
+               <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">
                <span id="join">Join Cockapoo Club</span>
                </a>
             </h2>
