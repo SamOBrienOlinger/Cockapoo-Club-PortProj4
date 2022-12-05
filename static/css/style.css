@@ -177,8 +177,9 @@ div.dropdown-menu {
 }
 
 #new-cockaparents {
-	background-image: url(../Images/new-new-cockaparents.webp);
-	background-position-x: 20%;
+	/* background-image: url(../Images/new-new-cockaparents.webp); */
+	background-image: url(new-new-cockaparents.webp);
+    background-position-x: 20%;
 	margin-left: auto;
 	margin-right: auto;
 	outline: solid;
