@@ -6,7 +6,6 @@ from .forms import BookingForm
 # from cloudinary.forms import cl_init_js_callbacks
 # from .models import Photo
 # from .forms import PhotoForm
-
 # from .models import Post
 
 # Create your views here.
