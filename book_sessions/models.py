@@ -21,6 +21,9 @@ class booking_detail(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
 
 
+# class Photo(models.Model):
+#     image = CloudinaryField('image')
+
 # class BookingForm(forms.ModelForm):
 #     first_name = forms.CharField(required=True, max_length=255)
 #     last_name = forms.CharField(required=True, max_length=255)

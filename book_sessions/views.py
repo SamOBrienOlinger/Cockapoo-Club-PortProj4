@@ -3,6 +3,10 @@ from django.shortcuts import render, HttpResponse, get_object_or_404, reverse
 from django.http import HttpResponse
 from .models import booking
 from .forms import BookingForm
+# from cloudinary.forms import cl_init_js_callbacks
+# from .models import Photo
+# from .forms import PhotoForm
+
 # from .models import Post
 
 # Create your views here.
@@ -24,3 +28,15 @@ def booking(request):
 
 def homepage(request):
     return render(request, "index.html")
+
+
+# def upload(request):
+#     context = dict( backend_form = PhotoForm())
+
+#     if request.method == 'POST':
+#         form = PhotoForm(request.POST, request.FILES)
+#     context['posted'] = form.instance
+#     if form.is_valid():
+#         form.save()
+
+#     return render(request, 'upload.html', context)

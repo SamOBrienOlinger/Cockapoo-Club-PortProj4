@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from django.contrib.staticfiles import staticfiles_patterns
+# from django.contrib.staticfiles import staticfiles_patterns
 
 
 urlpatterns = [
@@ -32,7 +32,7 @@ urlpatterns = [
 ]
 
 
-urlpatterns += staticfiles_patterns
+# urlpatterns += staticfiles_patterns
 
 
 #   path(r'^admin/', admmin.site.urls),
