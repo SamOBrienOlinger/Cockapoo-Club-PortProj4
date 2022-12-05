@@ -7,6 +7,7 @@ dj3-cloudinary-storage==0.0.6
 Django==4.1.3
 django-allauth==0.51.0
 django-booking==0.7.2
+django-cloudinary-storage==0.3.0
 django-countries==7.4.2
 django-crispy-forms==1.14.0
 django-formtools==2.4
