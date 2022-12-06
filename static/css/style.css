@@ -94,7 +94,8 @@ a:hover {
 	animation-name: hero-zoom;
 	animation-duration: 9s;
 	animation-fill-mode: forwards;
-	background: url(static/new-hero-webp.webp) center center no-repeat;
+	/* background: url(static/new-hero-webp.webp) center center no-repeat; */
+	background: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1670254219/CockapooClub/new-hero-webp_tzqsow.webp) center center no-repeat;
 	background-size: cover
 }
 
@@ -178,7 +179,8 @@ div.dropdown-menu {
 
 #new-cockaparents {
 	/* background-image: url(../Images/new-new-cockaparents.webp); */
-	background-image: url(static/new-new-cockaparents.webp);
+	/* background-image: url(static/new-new-cockaparents.webp); */
+	background-image: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1670254219/CockapooClub/new-new-cockaparents_gfig3w.webp);
     background-position-x: 20%;
 	margin-left: auto;
 	margin-right: auto;
@@ -189,7 +191,8 @@ div.dropdown-menu {
 }
 
 #keep-your-poo-healthy {
-	background-image: url(static/healthy-boy.webp);
+	/* background-image: url(static/healthy-boy.webp); */
+	background-image: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1670254218/CockapooClub/healthy-boy_qmc5pa.webp);
 	margin-left: auto;
 	margin-right: auto;
 	outline: solid;
@@ -199,7 +202,8 @@ div.dropdown-menu {
 }
 
 #furry-fun {
-	background-image: url(static/furry-fun.webp);
+	/* background-image: url(static/furry-fun.webp); */
+	background-image: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1670254218/CockapooClub/furry-fun_gsmi28.webp);
 	background-position-x: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -377,7 +381,8 @@ img {
 
 .form-section {
 	clear: left;
-	background-image: url(static/benji-couch2.webp);
+	/* background-image: url(static/benji-couch2.webp); */
+	background-image: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1670254218/CockapooClub/benji-couch2_cdjxgx.webp);
 	background-size: cover;
 	background-position: center;
 	height: auto;
