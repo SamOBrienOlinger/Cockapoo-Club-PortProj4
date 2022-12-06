@@ -94,7 +94,7 @@ a:hover {
 	animation-name: hero-zoom;
 	animation-duration: 9s;
 	animation-fill-mode: forwards;
-	background: url(../Images/new-hero-webp.webp) center center no-repeat;
+	background: url(static/new-hero-webp.webp) center center no-repeat;
 	background-size: cover
 }
 
@@ -178,7 +178,7 @@ div.dropdown-menu {
 
 #new-cockaparents {
 	/* background-image: url(../Images/new-new-cockaparents.webp); */
-	background-image: url(new-new-cockaparents.webp);
+	background-image: url(static/new-new-cockaparents.webp);
     background-position-x: 20%;
 	margin-left: auto;
 	margin-right: auto;
@@ -189,7 +189,7 @@ div.dropdown-menu {
 }
 
 #keep-your-poo-healthy {
-	background-image: url(../Images/healthy-boy.webp);
+	background-image: url(static/healthy-boy.webp);
 	margin-left: auto;
 	margin-right: auto;
 	outline: solid;
@@ -199,7 +199,7 @@ div.dropdown-menu {
 }
 
 #furry-fun {
-	background-image: url(../Images/furry-fun.webp);
+	background-image: url(static/furry-fun.webp);
 	background-position-x: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -377,7 +377,7 @@ img {
 
 .form-section {
 	clear: left;
-	background-image: url("../Images/benji-couch2.webp");
+	background-image: url(static/benji-couch2.webp);
 	background-size: cover;
 	background-position: center;
 	height: auto;
