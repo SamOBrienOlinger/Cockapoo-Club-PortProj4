@@ -22,12 +22,12 @@ def furryFunFotoGallery(request):
     return render(request, "furry-fun-foto-gallery.html")
 
 
-def join(request):
-    return render(request, "signup.html")
+# def join(request):
+#     return render(request, "signup.html")
 
 
-def login(request):
-    return render(request, "login.html")
+# def login(request):
+#     return render(request, "login.html")
 
 # def join(request):
 #     return render(request, "join-form.html")
