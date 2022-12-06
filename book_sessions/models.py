@@ -23,6 +23,9 @@ class booking_detail(models.Model):
 
 class Photo(models.Model):
     image = CloudinaryField('image')
+    name = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='images/', blank=True)
+
 
 # class BookingForm(forms.ModelForm):
 #     first_name = forms.CharField(required=True, max_length=255)
