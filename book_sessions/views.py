@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from .models import booking
 from .forms import BookingForm
 # from cloudinary.forms import cl_init_js_callbacks
-# from .models import Photo
+from .models import Photo
 # from .forms import PhotoForm
 # from .models import Post
 
