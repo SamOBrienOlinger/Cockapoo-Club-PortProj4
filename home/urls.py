@@ -6,6 +6,8 @@ urlpatterns = [
     path('furryFunFotoGallery/', views.furryFunFotoGallery, name='Furry-Fun-Foto-Gallery'),
     path('newCockaparents/', views.newCockaparents, name='New-Cockaparents'),
     path('keepYourPooHealthy/', views.keepYourPooHealthy, name='Keep-your-Poo-Healthy'),
+    path('account/signup/', views.join, name='account_signup'),
+    path('account/login/', views.login, name='account_login'),
     # path('', views.join-form, name='join-form.'),
     # path('', views.login-members, name='login-members'),
 ]
