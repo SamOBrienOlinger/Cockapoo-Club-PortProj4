@@ -52,7 +52,7 @@ INSTALLED_APPS = [
     'django_summernote',
     'crispy_forms',
     'book_sessions',
-    # 'CockapooClub',
+    'CockapooClub',
     'home',
 ]
 
@@ -139,6 +139,8 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 # Internationalization

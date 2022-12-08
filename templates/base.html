@@ -39,14 +39,20 @@
                   <!-- <a href="furry-fun-foto-gallery.html#jump-to-fffg" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a> -->
                   <a href="{% url 'Furry-Fun-Foto-Gallery' %}" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a>
                </li>
+               {% if user.is_authenticated %}
+               <li>
+                   <a href="{% url 'account_logout' %}" aria-label="Please Logout">Logout</a>
+               </li>
+               {% else %}
                <li>
                   <!-- <a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">Join</a> -->
                   <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join</a>
                </li>
                <li>
                   <!-- <a href="login-member.html" aria-label="Login to our members area">Members</a> -->
-                  <a href="{% url 'account_login' %}">Login</a>
+                  <a href="{% url 'account_login' %}" aria-label="Please Login">Login</a>
                </li>
+               {% endif %}
             </ul>
          </nav>
       </header>
