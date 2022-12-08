@@ -6,9 +6,9 @@ from django_summernote.admin import SummernoteModelAdmin
 
 admin.site.register(booking)
 
-admin.site.register(home)
+# admin.site.register(home)
 
-admin.site.register(booking_detail)
+# admin.site.register(booking_detail)
 
 # admin.site.register(BookingForm)
 # @admin.register(booking)
