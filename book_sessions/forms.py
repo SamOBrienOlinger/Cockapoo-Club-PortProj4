@@ -9,7 +9,7 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = booking
         fields = "__all__"
-
+        # fields = ['Username', 'Pword 1', 'Pword 2']
 
 # class PhotoForm(ModelForm):
 #     class Meta:
