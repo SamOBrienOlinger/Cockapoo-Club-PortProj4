@@ -22,8 +22,8 @@ def furryFunFotoGallery(request):
     return render(request, "furry-fun-foto-gallery.html")
 
 
-# def join(request):
-#     return render(request, "signup.html")
+def memberProfile(request):
+    return render(request, "member-profile.html")
 
 
 # def login(request):
