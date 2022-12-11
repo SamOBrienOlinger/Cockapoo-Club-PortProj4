@@ -5,10 +5,23 @@ from django import forms
 
 # Create your models here.
 
+# create a form for booking a training session
+
 
 class booking(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
+    # first_name = forms.CharField(required=True, max_length=255)
+    # last_name = forms.CharField(required=True, max_length=255)
+    # email = forms.EmailField(required=True)
+    # phone = forms.CharField(required=True, max_length=200)
+    # address = forms.CharField(max_length=1000, widget=forms.Textarea())
+    # date =
+    # time =
+
+
+def __str__(self):
+    return self.first_name
 
 
 class home(models.Model):
