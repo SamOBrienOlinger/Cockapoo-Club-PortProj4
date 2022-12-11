@@ -26,12 +26,19 @@ def memberProfile(request):
     return render(request, "member-profile.html")
 
 
-# def login(request):
-#     return render(request, "login.html")
+# def booking(request):
+#     if request.method == "GET":
+#         booking_form = BookingForm()
+#         return render(request, 'booking.html', {"form": booking_form})
 
-# def join(request):
-#     return render(request, "join-form.html")
+#     elif request.method == "POST":
+#         booking_form = BookingForm(request.POST)
+#         if booking_form.is_valid():
+#             booking = booking_form.save()
+#             return render(request, "booking_detail.html", {"booking": booking})
+#         else:
+#             return render(request, 'booking.html', {"form": booking_form})
 
 
-# def login(request):
-#     return render(request, "login-members.html")
+# def homepage(request):
+#     return render(request, "index.html")

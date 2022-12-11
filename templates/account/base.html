@@ -1,10 +1,48 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
   <head>
     <title>{% block head_title %}{% endblock %}</title>
     {% block extra_head %}
     {% endblock %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
   </head>
+  <header>
+    <section>
+       <a id="top"></a>
+         <h1 id="logo">Cockapoo Club</h1>
+       </a>
+    </section>
+    <nav>
+       <ul class="menu">
+          <li>
+             <a href="{% url 'index' %}" aria-label="Visit our Homepage">Home</a>
+          </li>
+          <li>
+             <a href="{% url 'New-Cockaparents' %}" aria-label="Visit our New Cockaparents page">New Cockaparents</a>
+          </li>
+          <li>
+             <a href="{% url 'Keep-your-Poo-Healthy' %}" aria-label="Visit our Keep Your Poo Healthy page">Keep your Poo Healthy</a>
+          </li>
+          <li>
+             <a href="{% url 'Furry-Fun-Foto-Gallery' %}" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a>
+          </li>
+          {% if user.is_authenticated %}
+          <li>
+              <a href="{% url 'account_logout' %}" aria-label="Please Logout">Logout</a>
+          </li>
+          {% else %}
+          <li>
+             <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join</a>
+          </li>
+          <li>
+             <a href="{% url 'account_login' %}" aria-label="Please Login">Login</a>
+          </li>
+          {% endif %}
+       </ul>
+    </nav>
+  </header>
   <body>
     {% block body %}
 
@@ -37,4 +75,32 @@
     {% block extra_body %}
     {% endblock %}
   </body>
+  <footer>
+    <div id="contact-us">
+       <!-- Contact us by <span class="furry-fun-fotos-join"><a href="join-form.html#jump-to-jcc" aria-label="Visit our Join Cockapoo Club page">becoming a member</a> -->
+       Contact us by <span class="furry-fun-fotos-join"><a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">becoming a member</a>
+       </span> 
+       -or- email: <span class="furry-fun-fotos-join"><a href="https://mail.google.com/" aria-label="email address">cockapooclubireland@gmail.com</a></span>
+    </div>
+    <ul class="social-networks">
+       <li>
+          <a href="https://facebook.com" target="_blank" rel="noopener"
+             aria-label="Visit our Facebook"><i class="fab fa-facebook"></i></a>
+       </li>
+       <li>
+          <a href="https://twitter.com" target="_blank" rel="noopener"
+             aria-label="Visit our Twitter"><i class="fab fa-twitter-square"></i></a>
+       </li>
+       <li>
+          <a href="https://youtube.com" target="_blank" rel="noopener"
+             aria-label="Visit our YouTube"><i class="fab fa-youtube-square"></i></a>
+       </li>
+       <li>
+          <a href="https://instagram.com" target="_blank" rel="noopener"
+             aria-label="Visit our Instagram"><i class="fab fa-instagram"></i></a>
+       </li>
+    </ul>
+ </footer>
+ <!-- font awesome script  -->
+ <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
 </html>
