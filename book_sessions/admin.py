@@ -4,11 +4,22 @@ from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
+
+# admin.register(booking)
+
+
+# class BookingAdmin(admin.ModelAdmin):
+#     list_display = ("user_email", "user_name", "date", "time", "approved")
+#     list_filter = ("approved", "date")
+#     ordering = ("date", "time")
+#     search_fields = ("user_email", "user_name")
+
 admin.site.register(booking)
 
-# admin.site.register(home)
 
-# admin.site.register(booking_detail)
+admin.site.register(home)
+
+admin.site.register(booking_detail)
 
 # admin.site.register(BookingForm)
 # @admin.register(booking)

@@ -2,8 +2,11 @@ from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django import forms
+# from django.conf import settings
+# from django.db import models
 
 # Create your models here.
+
 
 # create a form for booking a training session
 
@@ -16,8 +19,10 @@ class booking(models.Model):
     # email = forms.EmailField(required=True)
     # phone = forms.CharField(required=True, max_length=200)
     # address = forms.CharField(max_length=1000, widget=forms.Textarea())
-    # date =
-    # time =
+    # date = models.DateField()
+    # time = models.TimeField()
+    # user_name = models.CharField(max_length=250)
+    # user_email = models.EmailField()
 
 
 def __str__(self):
