@@ -14,13 +14,17 @@ from django import forms
 class booking(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
+    # booking_date = models.DateField(auto_now_add=False)
+    # booking_time = models.TimeField(max_length=30)
+    # email = models.EmailField(max_length=100,)
+
     # first_name = forms.CharField(required=True, max_length=255)
     # last_name = forms.CharField(required=True, max_length=255)
     # email = forms.EmailField(required=True)
     # phone = forms.CharField(required=True, max_length=200)
     # address = forms.CharField(max_length=1000, widget=forms.Textarea())
-    # date = models.DateField()
-    # time = models.TimeField()
+    # date = models.DateField(default="YYYY-MM-DD")
+    # time = models.TimeField(default="00:00")
     # user_name = models.CharField(max_length=250)
     # user_email = models.EmailField()
 
@@ -59,8 +63,8 @@ class Photo(models.Model):
 #      = [['', '']]
 
 
-def __str__(self):
-    return self.first_name
+# def __str__(self):
+#     return self.first_name
 
 # class book a time slot for a training session:
 

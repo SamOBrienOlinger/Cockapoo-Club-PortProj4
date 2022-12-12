@@ -7,6 +7,9 @@ from .forms import BookingForm
 from .models import Photo
 # from .forms import PhotoForm
 # from .models import Post
+import calendar
+from calendar import HTMLCalendar
+from datetime import datetime
 
 # Create your views here.
 

@@ -4,8 +4,8 @@ from django.forms import ModelForm
 # from .models import Photo
 
 
-class BookingForm(forms.ModelForm):
-
+# class BookingForm(forms.ModelForm):
+class BookingForm(ModelForm):
     class Meta:
         model = booking
         fields = "__all__"
