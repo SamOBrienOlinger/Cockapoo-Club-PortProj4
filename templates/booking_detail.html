@@ -6,8 +6,16 @@
     
     <h1>Success! Your booking details have been submitted</h1>
 
-    <div>Booking detail 1: {{ booking.title }}</div>
-    <div>Booking detail 2: {{ booking.slug }}</div>
+    <div>Session Type: {{ booking.session_type }}</div>
+    <div>Booking time: {{ booking.booking_date_time }}</div>
+
+    {% if booking.confirmed %}
+    <span>Booking confirmed</span>
+    {% else %}
+    <span>Booking not confirmed yet</span>
+    {% endif %}
+    <button>Reschedule</button>
+    <button>Cancel booking</button>
     <!-- <div>Booking detail 3: {{ booking.first_name }}</div>
     <div>Booking detail 4: {{ booking.last_name }}</div>
     <div>Booking detail 5: {{ booking.email }}</div>

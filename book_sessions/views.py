@@ -10,10 +10,14 @@ from .models import Photo
 import calendar
 from calendar import HTMLCalendar
 from datetime import datetime
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
+
 
 # Create your views here.
 
 
+@login_required
 def booking(request):
     if request.method == "GET":
         booking_form = BookingForm()
@@ -23,9 +27,25 @@ def booking(request):
         booking_form = BookingForm(request.POST)
         if booking_form.is_valid():
             booking = booking_form.save()
+            messages.add_message(request, messages.SUCCESS, 'Booking successful.')
             return render(request, "booking_detail.html", {"booking": booking})
         else:
             return render(request, 'booking.html', {"form": booking_form})
+
+
+@login_required
+def bookings(request):
+    pass
+
+
+@login_required
+def update_booking(request):
+    pass
+
+
+@login_required
+def delete_booking(request):
+    pass
 
 
 def homepage(request):

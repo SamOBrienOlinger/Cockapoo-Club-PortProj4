@@ -17,9 +17,39 @@
         {% csrf_token %}
       
         {{ form|crispy }}
+        
+        
+        <script>
+          $(function () {
+            $("#id_booking_date_time").datetimepicker({
+              format: 'd/m/Y H:i',
+            });
+          });
+        </script>
+
+        <!-- <script>
+          $(function () {
+            $("#datetimepicker1").datetimepicker({
+              format: 'DD/MM/YYYY HH:mm',
+            });
+          });
+        </script> -->
 
         <button class="join-button" type="submit" value="submit">Submit</button>
       </form>
+
+      <!-- <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
+        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
+        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
+          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+        </div>
+      </div> -->
+  
+      <!-- <script>
+        $(function () {
+          $("#datetimepicker1").datetimepicker();
+        });
+      </script> -->
 
 
 {%endblock%}

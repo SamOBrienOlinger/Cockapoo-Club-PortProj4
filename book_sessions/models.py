@@ -12,10 +12,22 @@ from django import forms
 
 
 class booking(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    # title = models.CharField(max_length=200, unique=True)
+    # slug = models.SlugField(max_length=200, unique=True)
+    ONE_ON_ONE = 'O'
+    GROUP = "G"
+    SESSION_CHOICES_CHOICES = [
+        (ONE_ON_ONE, 'One to One training session'),
+        (GROUP, 'Group training session'),
+    ]
+    session_type = models.CharField(
+        max_length=1,
+        choices=SESSION_CHOICES_CHOICES,
+        default=ONE_ON_ONE,
+    )
     # booking_date = models.DateField(auto_now_add=False)
-    # booking_time = models.TimeField(max_length=30)
+    booking_date_time = models.DateTimeField(auto_now=True, blank=True)
+    confirmed = models.BooleanField(default=False)
     # email = models.EmailField(max_length=100,)
 
     # first_name = forms.CharField(required=True, max_length=255)
