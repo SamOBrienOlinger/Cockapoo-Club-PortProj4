@@ -30,6 +30,9 @@ class booking(models.Model):
     confirmed = models.BooleanField(default=False)
     # email = models.EmailField(max_length=100,)
 
+    # session_type = models.DateTimeField(auto_now=True, blank=True)
+    # confirmed = models.BooleanField(default=False)
+
     # first_name = forms.CharField(required=True, max_length=255)
     # last_name = forms.CharField(required=True, max_length=255)
     # email = forms.EmailField(required=True)
