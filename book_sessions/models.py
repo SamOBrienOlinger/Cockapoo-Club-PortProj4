@@ -15,7 +15,7 @@ class booking(models.Model):
     # title = models.CharField(max_length=200, unique=True)
     # slug = models.SlugField(max_length=200, unique=True)
     ONE_ON_ONE = 'O'
-    GROUP = "G"
+    GROUP = 'G'
     SESSION_CHOICES_CHOICES = [
         (ONE_ON_ONE, 'One to One training session'),
         (GROUP, 'Group training session'),
