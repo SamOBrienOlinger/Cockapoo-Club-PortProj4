@@ -8,6 +8,7 @@ from django.contrib.admin import widgets
 # class BookingForm(forms.ModelForm):
 class BookingForm(ModelForm):
     booking_date_time = forms.DateTimeField(
+        # input_formats=['%YY-%mm-%dd %H:%M']
         input_formats=['%d/%m/%Y %H:%M'],
         # input_formats=['%d/%m/%Y'],
         # widget=forms.DateTimeInput(attrs={
