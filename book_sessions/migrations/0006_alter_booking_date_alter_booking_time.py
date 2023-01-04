@@ -13,7 +13,8 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='booking',
             name='date',
-            field=models.DateField(default='YYYY-MM-DD'),
+            field=models.DateField(default=''),
+            # field=models.DateField(default='YYYY-MM-DD'),
             # # field=models.DateField(input_formats=['%d/%m/%Y'])
             # field=models.DateField(blank=True, null=True),
         ),

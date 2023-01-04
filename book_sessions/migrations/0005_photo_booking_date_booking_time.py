@@ -21,11 +21,23 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='booking',
             name='date',
-            field=models.DateField(default=''),
+            field=models.DateField(null=True),
         ),
         migrations.AddField(
             model_name='booking',
             name='time',
-            field=models.TimeField(default=''),
+            field=models.TimeField(null=True),
         ),
     ]
+
+    #         migrations.AddField(
+    #         model_name='booking',
+    #         name='date',
+    #         field=models.DateField(default=''),
+    #     ),
+    #     migrations.AddField(
+    #         model_name='booking',
+    #         name='time',
+    #         field=models.TimeField(default=''),
+    #     ),
+    # ]
