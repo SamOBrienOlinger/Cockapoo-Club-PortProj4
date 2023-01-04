@@ -59,11 +59,11 @@
     {% endif %}
 
     <div>
-      <strong>Menu:</strong>
+      <strong>Your Options</strong>
       <ul>
         {% if user.is_authenticated %}
-        <li><a href="{% url 'account_email' %}">Change E-mail</a></li>
-        <li><a href="{% url 'account_logout' %}">Sign Out</a></li>
+        <li class = "join-button"><a href="{% url 'account_email' %}">Change E-mail</a></li>
+        <li class = "join-button"><a href="{% url 'account_logout' %}">Sign Out</a></li>
         {% else %}
         <li><a href="{% url 'account_login' %}">Sign In</a></li>
         <li><a href="{% url 'account_signup' %}">Sign Up</a></li>
