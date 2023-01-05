@@ -9,22 +9,22 @@ class Migration(migrations.Migration):
         ('book_sessions', '0005_photo_booking_date_booking_time'),
     ]
 
-    operations = [
-        migrations.AlterField(
-            model_name='booking',
-            name='date',
-            # field=models.DateField(default=''),
-            field=models.DateField(default='%d/%m/%Y %H:%M')
-            # field=models.DateTimeField(default='%Y-%m-%d %H:%M'),
-            # field=models.DateField(default='YYYY-MM-DD'),
-            # field=models.DateField(default='YYYY-MM-DD'),
-            # field=models.DateField(default='%Y-%m-%d %H:%M'),
-            # field=models.DateField(input_formats=['%d/%m/%Y'])
-            # field=models.DateField(blank=True, null=True),
-        ),
-        migrations.AlterField(
-            model_name='booking',
-            name='time',
-            field=models.TimeField(default='00:00'),
-        ),
-    ]
+    # operations = [
+    #     migrations.AlterField(
+    #         model_name='booking',
+    #         name='date',
+    #         # field=models.DateField(default=''),
+    #         field=models.DateField(default='%d/%m/%Y %H:%M')
+    #         # field=models.DateTimeField(default='%Y-%m-%d %H:%M'),
+    #         # field=models.DateField(default='YYYY-MM-DD'),
+    #         # field=models.DateField(default='YYYY-MM-DD'),
+    #         # field=models.DateField(default='%Y-%m-%d %H:%M'),
+    #         # field=models.DateField(input_formats=['%d/%m/%Y'])
+    #         # field=models.DateField(blank=True, null=True),
+    #     ),
+    #     migrations.AlterField(
+    #         model_name='booking',
+    #         name='time',
+    #         field=models.TimeField(default='00:00'),
+    #     ),
+    # ]
