@@ -42,8 +42,8 @@ class booking(models.Model):
     # user_email = models.EmailField()
 
 
-def __str__(self):
-    return self.first_name
+# def __str__(self):
+#     return self.first_name
 
 
 class home(models.Model):
