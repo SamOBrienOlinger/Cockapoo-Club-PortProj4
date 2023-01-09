@@ -45,7 +45,11 @@ def update_booking(request):
 
 @login_required
 def delete_booking(request):
-    pass
+    # pass
+    if booking_form == BookingForm(request.POST):
+        booking = booking_form.save()
+        messages.add_message(request, messages.SUCCESS, 'Booking deleted.')
+        return render(request, 'booking_detail.html')
 
 
 def homepage(request):

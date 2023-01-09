@@ -25,6 +25,7 @@ class booking(models.Model):
 
     booking_date_time = models.DateTimeField(auto_now=False, blank=True)
     confirmed = models.BooleanField(default=True)
+
     # email = models.EmailField(max_length=100,)
 
     # session_type = models.DateTimeField(auto_now=True, blank=True)
