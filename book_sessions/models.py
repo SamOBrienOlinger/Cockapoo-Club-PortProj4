@@ -23,8 +23,8 @@ class booking(models.Model):
         default=ONE_ON_ONE,
     )
 
-    booking_date_time = models.DateTimeField(auto_now=True, blank=True)
-    confirmed = models.BooleanField(default=False)
+    booking_date_time = models.DateTimeField(auto_now=False, blank=True)
+    confirmed = models.BooleanField(default=True)
     # email = models.EmailField(max_length=100,)
 
     # session_type = models.DateTimeField(auto_now=True, blank=True)
@@ -40,12 +40,12 @@ class booking(models.Model):
     # user_name = models.CharField(max_length=250)
     # user_email = models.EmailField()
 
-    class Meta:
-        unique_together = [['session_type', 'booking_date_time']]
+#     class Meta:
+#         unique_together = [['session_type', 'booking_date_time']]
 
 
-def __str__(self):
-    return self.session_type
+# def __str__(self):
+#     return self.session_type
 
 
 class home(models.Model):
