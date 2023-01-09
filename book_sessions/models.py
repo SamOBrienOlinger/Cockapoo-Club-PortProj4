@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 from django import forms
 # from django.conf import settings
-# from django.db import models
 
 # Create your models here.
 
@@ -41,9 +40,12 @@ class booking(models.Model):
     # user_name = models.CharField(max_length=250)
     # user_email = models.EmailField()
 
+    class Meta:
+        unique_together = [['session_type', 'booking_date_time']]
 
-# def __str__(self):
-#     return self.first_name
+
+def __str__(self):
+    return self.session_type
 
 
 class home(models.Model):
