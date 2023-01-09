@@ -23,10 +23,10 @@ def __str__(self):
 #     address = forms.CharField(max_length=1000, widget=forms.Textarea())
 
 
-class Photo(models.Model):
-    image = CloudinaryField('image')
-    name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to='images/', blank=True)
+# class Photo(models.Model):
+#     image = CloudinaryField('image')
+#     name = models.CharField(max_length=100)
+#     image = models.ImageField(upload_to='images/', blank=True)
 
 # class home(models.Model):
 #     title = models.CharField(max_length=200, unique=True)
