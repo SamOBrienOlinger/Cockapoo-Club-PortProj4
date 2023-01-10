@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponse
 from .models import index
+# from .forms import DogProfile
 
 # Create your views here.
 
