@@ -1,6 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from django import forms
 
 # Create your models here.
 
@@ -13,6 +14,26 @@ class index(models.Model):
 def __str__(self):
     return self.first_name
 
+
+class DogProfile(models.Model):
+    owner_name = forms.CharField(required=True, max_length=255)
+    dog_name = forms.CharField(required=True, max_length=255)
+    dog_age = forms.CharField(required=True, max_length=200)
+
+
+class Vaccinated(models.Model):
+    VACC_YES = 'Y'
+    VACC_NO = 'N'
+    VACC_CHOICES = [
+        (VACC_YES, 'Yes, my dog is vaccinated'),
+        (VACC_NO, 'No, my dog is not vaccinated'),
+    ]
+    VACC_CHOICES = models.CharField(
+        max_length=1,
+        choices=VACC_CHOICES,
+        default=VACC_NO,
+    )
+
 # class NewMember(models.Model):
 #     title = models.CharField(max_length=200, unique=True)
 #     slug = models.SlugField(max_length=200, unique=True)
@@ -21,6 +42,7 @@ def __str__(self):
 #     email = forms.EmailField(required=True)
 #     phone = forms.CharField(required=True, max_length=200)
 #     address = forms.CharField(max_length=1000, widget=forms.Textarea())
+#     email = forms.EmailField(required=True)
 
 
 # class Photo(models.Model):
@@ -28,9 +50,11 @@ def __str__(self):
 #     name = models.CharField(max_length=100)
 #     image = models.ImageField(upload_to='images/', blank=True)
 
+
 # class home(models.Model):
 #     title = models.CharField(max_length=200, unique=True)
 #     slug = models.SlugField(max_length=200, unique=True)
+
 
 # class home(models.Model):
 #     title = models.CharField(max_length=200, unique=True)
@@ -43,24 +67,3 @@ def __str__(self):
 #     email = forms.EmailField(required=True)
 #     phone = forms.CharField(required=True, max_length=200)
 #     address = forms.CharField(max_length=1000, widget=forms.Textarea())
-
-
-# class signup():
-
-# create username and password
-
-#   enter/register details:
-#     Username
-#     Password
-#     User/Owner name
-#     Dog name
-#     Dog age
-#     Vaccinated (Y/N)
-#     user submit button
-
-
-# class signin:
-
-#   authenticate username and password to login
-
-#   bring user to booking page
