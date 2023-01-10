@@ -22,9 +22,11 @@ def furryFunFotoGallery(request):
     return render(request, "furry-fun-foto-gallery.html")
 
 
-def memberProfile(request):
-    return render(request, "member-profile.html")
+# def DogProfile(request):
+#     return render(request, "account_signup.html")
 
+# def memberProfile(request):
+#     return render(request, "member-profile.html")
 
 # def booking(request):
 #     if request.method == "GET":

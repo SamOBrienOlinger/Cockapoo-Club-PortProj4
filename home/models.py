@@ -15,24 +15,11 @@ def __str__(self):
     return self.first_name
 
 
-class DogProfile(models.Model):
-    owner_name = forms.CharField(required=True, max_length=255)
-    dog_name = forms.CharField(required=True, max_length=255)
-    dog_age = forms.CharField(required=True, max_length=200)
+# class DogProfile(models.Model):
+#     owner_name = forms.CharField(required=True, max_length=255)
+#     dog_name = forms.CharField(required=True, max_length=255)
+#     dog_age = forms.CharField(required=True, max_length=200)
 
-
-class Vaccinated(models.Model):
-    VACC_YES = 'Y'
-    VACC_NO = 'N'
-    VACC_CHOICES = [
-        (VACC_YES, 'Yes, my dog is vaccinated'),
-        (VACC_NO, 'No, my dog is not vaccinated'),
-    ]
-    VACC_CHOICES = models.CharField(
-        max_length=1,
-        choices=VACC_CHOICES,
-        default=VACC_NO,
-    )
 
 # class NewMember(models.Model):
 #     title = models.CharField(max_length=200, unique=True)
