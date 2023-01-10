@@ -26,6 +26,22 @@ class booking(models.Model):
     booking_date_time = models.DateTimeField(auto_now=False, blank=True)
     confirmed = models.BooleanField(default=True)
 
+
+# class Vaccinated(models.Model):
+    VACC_YES = 'Y'
+    VACC_NO = 'N'
+    VACC_CHOICES = [
+        (VACC_YES, 'Yes, my dog is vaccinated'),
+        (VACC_NO, 'No, my dog is not vaccinated'),
+    ]
+    Vaccination_Status = models.CharField(
+        max_length=1,
+        choices=VACC_CHOICES,
+        default=VACC_NO,
+    )
+
+    # VACC_YES = models.BooleanField(default=False)
+
     # email = models.EmailField(max_length=100,)
 
     # session_type = models.DateTimeField(auto_now=True, blank=True)
