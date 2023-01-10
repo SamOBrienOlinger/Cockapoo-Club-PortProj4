@@ -40,7 +40,7 @@ class booking(models.Model):
         default=VACC_NO,
     )
 
-    VACC_YES = models.BooleanField(default=False)
+    # VACC_YES = models.BooleanField(default=False)
 
     # email = models.EmailField(max_length=100,)
 
