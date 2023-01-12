@@ -7,13 +7,17 @@
 
 {% block content %}
 
+<center>
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
       <h3>{% trans "Login" %}</h3>
 
-      <p>{% blocktrans %}Welcome to Cockapoo Club's Book a Training Session page, please login. If you
-        have not created an account yet, then first <a class="join-button" href="{{ signup_url }}">Join Cockapoo Club</a>.{% endblocktrans %}</p>
+      <p>{% blocktrans %}Welcome to Cockapoo Club!</p>
+      
+      <p>To Book a Training Session or view the Furry Fun Foto Gallery, please Login</p> 
+        
+      <p>If you have not created an account yet, then why not join Cockapoo Club for free full access?<a class="join-button" href="{{ signup_url }}">Join Cockapoo Club</a>.{% endblocktrans %}</p>
     </div>
   </div>
   <div class="row">
@@ -29,4 +33,5 @@
     </div>
   </div>
 </div>
+</center>
 {% endblock %}

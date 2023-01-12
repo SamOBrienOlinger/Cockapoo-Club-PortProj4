@@ -2,6 +2,8 @@ from django.shortcuts import render, HttpResponse, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponse
 from .models import index
+from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 # from .forms import DogProfile
 
 # Create your views here.
@@ -19,6 +21,7 @@ def keepYourPooHealthy(request):
     return render(request, "keep-your-poo-healthy.html")
 
 
+@login_required
 def furryFunFotoGallery(request):
     return render(request, "furry-fun-foto-gallery.html")
 
