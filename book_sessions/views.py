@@ -50,15 +50,3 @@ def delete_booking(request):
 
 def homepage(request):
     return render(request, "index.html")
-
-
-# def upload(request):
-#     context = dict( backend_form = PhotoForm())
-
-#     if request.method == 'POST':
-#         form = PhotoForm(request.POST, request.FILES)
-#     context['posted'] = form.instance
-#     if form.is_valid():
-#         form.save()
-
-#     return render(request, 'upload.html', context)
