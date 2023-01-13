@@ -29,8 +29,21 @@ def furryFunFotoGallery(request):
 
 # def join(request):
 #     if request.method == "GET":
-#         booking_form = BookingForm()
-#         return render(request, 'account_signup.html')
+#        A_A = B()
+#        return render(request, 'account_signup.html', {"form": A_A}))
+    #   elif request.method == "POST":
+    #     A_A = B(request.POST)
+    #     if A_A.is_valid():
+    #         DogProfile = A_A.save()
+
+    # elif request.method == "POST":
+    #     booking_form = BookingForm(request.POST)
+    #     if booking_form.is_valid():
+    #         booking = booking_form.save()
+    #         messages.add_message(request, messages.SUCCESS, 'Booking successful.')
+    #         return render(request, 'booking_detail.html', {"booking": booking})
+    #     else:
+    #         return render(request, 'booking.html', {"form": booking_form})
 
 
 # def Login(request):
