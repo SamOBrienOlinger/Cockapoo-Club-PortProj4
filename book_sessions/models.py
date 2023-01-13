@@ -37,13 +37,21 @@ class booking(models.Model):
     booking_date_time = models.DateTimeField(auto_now=False, blank=True)
     confirmed = models.BooleanField(default=True)
 
+
+class home(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+
+
+class booking_detail(models.Model):
+    title = models.CharField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200, unique=True)
+
     # vaccinated_yes = models.IntegerField(blank=True, default=0)
     # confirmed = models.BooleanField(default=True)
 
     # VACC_YES = models.BooleanField(default=False),
     # confirmed = models.BooleanField(default=False)
-
-    # email = models.EmailField(max_length=100,)
 
     # session_type = models.DateTimeField(auto_now=True, blank=True)
     # confirmed = models.BooleanField(default=False)
@@ -66,14 +74,7 @@ class booking(models.Model):
 #     return self.session_type
 
 
-class home(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
 
-
-class booking_detail(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
 
 
 # class Photo(models.Model):
@@ -100,16 +101,10 @@ class booking_detail(models.Model):
 #     return self.first_name
 
 # class book a time slot for a training session:
-
 #    allow user to:
-#    Choose time
-#    Choose date
+#        Choose time
+#        Choose date
 
-#    Submit button
-#    Edit button
-#    delete button
-
-# class book(models.Model):
-#   title = models.CharField(max_length=200, unique=True)
-#   slug = models.SlugField(max_length=200, unique=True)
-#   featured_image = CloudinaryField('image', default='placeholder')
+#    submit button
+#    reschedule/update button
+#    delete/cancel button

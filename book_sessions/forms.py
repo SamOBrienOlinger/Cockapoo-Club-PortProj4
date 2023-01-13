@@ -15,14 +15,4 @@ class BookingForm(ModelForm):
         model = booking
         # fields = "__all__"
         exclude = ["confirmed"]
-        # fields = ['Username', 'Pword 1', 'Pword 2']
 
-    # def __init__(self, *args, **kwargs):
-    #      super(BookingForm, self).__init__(*args, **kwargs)
-    #      self.fields['booking_date'].widget = widgets.AdminDateWidget()
-    #      self.fields['booking_time'].widget = widgets.AdminTimeWidget()
-        #  self.fields['mydatetime'].widget = widgets.AdminSplitDateTime()
-
-# class PhotoForm(ModelForm):
-#     class Meta:
-#         model = Photo
