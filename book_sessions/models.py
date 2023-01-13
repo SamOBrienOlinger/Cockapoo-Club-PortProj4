@@ -74,9 +74,6 @@ class booking_detail(models.Model):
 #     return self.session_type
 
 
-
-
-
 # class Photo(models.Model):
 #     image = CloudinaryField('image')
 #     name = models.CharField(max_length=100)
