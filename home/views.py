@@ -28,12 +28,15 @@ def furryFunFotoGallery(request):
 
 
 # def join(request):
-#     if request.method == 'POST':
+#     if request.method == "GET":
+#         booking_form = BookingForm()
+#         return render(request, 'account_signup.html')
 
 
 # def Login(request):
 #     if request.method == 'POST':
 
+# @login_required
 # def Logout(request):
 #     logout(request)
 #     return redirect('account_login')

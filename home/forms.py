@@ -12,5 +12,5 @@
 #  dog_age = forms.CharField(required=True, max_length=200)
 
 #     class Meta:
-#         model = forms
+#         model = DogProfile
 #         # fields = "__all__"
