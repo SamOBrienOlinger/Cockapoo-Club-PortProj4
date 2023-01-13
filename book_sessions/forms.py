@@ -15,4 +15,3 @@ class BookingForm(ModelForm):
         model = booking
         # fields = "__all__"
         exclude = ["confirmed"]
-
