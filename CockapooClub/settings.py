@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['home-cockapoo-club-pp4.herokuapp.com', 'https://book-sessions.herokuapp.com/', 'localhost', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu77.gitpod.io']
+ALLOWED_HOSTS = ['https://book-sessions.herokuapp.com/', 'localhost', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu77.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
 CSRF_TRUSTED_ORIGINS = ["https://*.gitpod.io"]
 
 # 'book-sessions.herokuapp.com',
