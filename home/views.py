@@ -37,13 +37,13 @@ def furryFunFotoGallery(request):
     #         DogProfile = A_A.save()
 
     # elif request.method == "POST":
-    #     booking_form = BookingForm(request.POST)
-    #     if booking_form.is_valid():
-    #         booking = booking_form.save()
-    #         messages.add_message(request, messages.SUCCESS, 'Booking successful.')
-    #         return render(request, 'booking_detail.html', {"booking": booking})
+    #     A_A = B(request.POST)
+    #     if B.is_valid():
+    #         DogProfile = B.save()
+    #         messages.add_message(request, messages.SUCCESS, 'You are now a member of Cockapoo Club')
+    #         return render(request, 'account_X.html', {"booking": DogProfile})
     #     else:
-    #         return render(request, 'booking.html', {"form": booking_form})
+    #         return render(request, '', {"form": A_A})
 
 
 # def Login(request):
