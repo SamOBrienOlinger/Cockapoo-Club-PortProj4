@@ -6,5 +6,5 @@ urlpatterns = [
     path('furryFunFotoGallery/', views.furryFunFotoGallery, name='Furry-Fun-Foto-Gallery'),
     path('newCockaparents/', views.newCockaparents, name='New-Cockaparents'),
     path('keepYourPooHealthy/', views.keepYourPooHealthy, name='Keep-your-Poo-Healthy'),
-    # path('account_signup/', views.DogProfile, name='dog_profile'),
+    # path('/templates/member-profile.html', views.DogProfile, name='dog-profile'),
 ]

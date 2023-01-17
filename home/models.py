@@ -20,6 +20,9 @@ def __str__(self):
 #     dog_name = forms.CharField(required=True, max_length=255)
 #     dog_age = forms.CharField(required=True, max_length=200)
 
+#     doggy_details = models.CharField(required=True, max_length=255)
+#     confirmed = models.BooleanField(default=True)
+
 
 # class NewMember(models.Model):
 #     title = models.CharField(max_length=200, unique=True)

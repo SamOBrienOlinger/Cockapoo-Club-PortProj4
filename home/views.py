@@ -27,10 +27,26 @@ def furryFunFotoGallery(request):
     return render(request, "furry-fun-foto-gallery.html")
 
 
+# @login_required
+# def  DogProfile(request):
+#     if request.method == "GET":
+#         dog_details =  DogProfile()
+#         return render(request, '/templates/member-profile.html', {"form": dog_details})
+
+#     elif request.method == "POST":
+#         dog_details = DogProfile(request.POST)
+#         if  dog_details.is_valid():
+#             DogProfile = dog_details.save()
+#             messages.add_message(request, messages.SUCCESS, 'your details have been saved')
+#             return render(request, '/templates/member-profile.html', {"your details":  DogProfile})
+#         else:
+#             return render(request, '/templates/member-profile.html', {"form": dog_details})
+
+
 # def join(request):
 #     if request.method == "GET":
 #        A_A = B()
-#        return render(request, 'account_signup.html', {"form": A_A}))
+#        return render(request, '/templates/member-profile.html', {"form": A_A}))
     #   elif request.method == "POST":
     #     A_A = B(request.POST)
     #     if A_A.is_valid():
@@ -48,6 +64,8 @@ def furryFunFotoGallery(request):
 
 # def Login(request):
 #     if request.method == 'POST':
+
+    # return render(request, '/templates/member-profile.html', context)
 
 # @login_required
 # def Logout(request):
