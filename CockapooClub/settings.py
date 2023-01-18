@@ -107,7 +107,7 @@ TEMPLATES = [
     },
 ]
 
-# WSGI_APPLICATION = 'CockapooClub.wsgi.application'
+WSGI_APPLICATION = 'CockapooClub.wsgi.application'
 
 
 # Database
