@@ -213,6 +213,16 @@ div.dropdown-menu {
 	width: 30vw
 }
 
+#training-poo {
+	background-image: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1674149505/CockapooClub/training-poo_hmj9pp.png);
+	margin-left: auto;
+	margin-right: auto;
+	outline: solid;
+	color: white;
+	outline-color: #7112ee;
+	width: 30vw
+}
+
 .clubhouse-map {
 	font-size: 2.5vmin!important;
 	letter-spacing: 2px;
