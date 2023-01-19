@@ -30,16 +30,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = ['https://book-sessions.herokuapp.com/', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu82.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
+CSRF_TRUSTED_ORIGINS = ['https://book-sessions.herokuapp.com/', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
 
-ALLOWED_HOSTS = ['localhost', 'https://book-sessions.herokuapp.com/', ]
+ALLOWED_HOSTS = ['localhost', 'book-sessions.herokuapp.com/', 'home-cockapoo-club-pp4.herokuapp.com/', ]
 
 # ALLOWED_HOSTS = ['localhost', 'https://book-sessions.herokuapp.com/', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
 
 # ALLOWED_HOSTS = ['https://book-sessions.herokuapp.com/', 'localhost', 'https://samobrienol-cockapooclu-25ocw6k586z.ws-eu82.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
-
-
-# 'book-sessions.herokuapp.com',
 
 # Application definition
 
@@ -113,15 +110,15 @@ WSGI_APPLICATION = 'CockapooClub.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 DATABASES = {
-   'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+   'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 # DATABASES = {
