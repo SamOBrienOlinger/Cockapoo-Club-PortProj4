@@ -30,13 +30,14 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-CSRF_TRUSTED_ORIGINS = ['https://book-sessions.herokuapp.com/', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
+CSRF_TRUSTED_ORIGINS = ['https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
 
-ALLOWED_HOSTS = ['localhost', 'book-sessions.herokuapp.com/', 'home-cockapoo-club-pp4.herokuapp.com/', ]
+ALLOWED_HOSTS = ['localhost', 'home-cockapoo-club-pp4.herokuapp.com', ]
 
-# ALLOWED_HOSTS = ['localhost', 'https://book-sessions.herokuapp.com/', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
+# CSRF_TRUSTED_ORIGINS = ['https://book-sessions.herokuapp.com/', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
 
-# ALLOWED_HOSTS = ['https://book-sessions.herokuapp.com/', 'localhost', 'https://samobrienol-cockapooclu-25ocw6k586z.ws-eu82.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
+# ALLOWED_HOSTS = ['localhost', 'book-sessions.herokuapp.com', 'home-cockapoo-club-pp4.herokuapp.com', ]
+
 
 # Application definition
 
