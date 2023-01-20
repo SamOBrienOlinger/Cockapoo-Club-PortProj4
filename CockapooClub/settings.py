@@ -186,15 +186,15 @@ USE_TZ = True
 
 # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': 'dzhbg6go0',
-#     'API_KEY': '133846732432361',
-#     'API_SECRET': '-lSKTqZAR6zW5Y5992HXkkl1i4c'
-# }
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dzhbg6go0',
+    'API_KEY': '133846732432361',
+    'API_SECRET': '-lSKTqZAR6zW5Y5992HXkkl1i4c'
+}
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
