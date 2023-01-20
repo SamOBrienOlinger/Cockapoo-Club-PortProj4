@@ -214,13 +214,14 @@ div.dropdown-menu {
 }
 
 #training-poo {
-	background-image: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1674149505/CockapooClub/training-poo_hmj9pp.png);
+	background-image: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1674212343/CockapooClub/training-poo-pic_q9biyd.webp);
 	margin-left: auto;
 	margin-right: auto;
 	outline: solid;
 	color: white;
 	outline-color: #7112ee;
-	width: 30vw
+	width: 30vw;
+	text-decoration: none;
 }
 
 .clubhouse-map {
@@ -262,7 +263,6 @@ div.dropdown-menu {
 	padding: 2vh 0;
 	background-color: white;
 	font-size: 3vmin;
-	line-height: 2.5rem
 }
 
 div#free-supports p {
