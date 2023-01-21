@@ -183,10 +183,6 @@ USE_TZ = True
 # MEDIA_URL = '/media/'
 # DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
-# # Default primary key field type
-# # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
-
-# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': 'dzhbg6go0',
