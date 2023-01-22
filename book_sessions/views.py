@@ -65,18 +65,6 @@ def update_booking(request, id):
             return render(request, 'booking.html', {"form": booking_form})
 
 
-
-# @login_required
-# # def update_booking(request):
-# #     pass
-
-# class update_booking(updateBooking):
-#     model = booking(request)
-#     template = 'booking_detail.html'
-#     fields = '__all__'
-
-
-
 @login_required
 def delete_booking(request, id):
     existing_booking = get_object_or_404(models.booking, id=id)
