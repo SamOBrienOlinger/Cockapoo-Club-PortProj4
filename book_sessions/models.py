@@ -35,7 +35,8 @@ class booking(models.Model):
     # )
 
     booking_date_time = models.DateTimeField(auto_now=False, blank=True)
-    confirmed = models.BooleanField(default=True)
+    # confirmed = models.BooleanField(default=False)
+    confirmed = models.BooleanField(default=False)
 
 
 class home(models.Model):
