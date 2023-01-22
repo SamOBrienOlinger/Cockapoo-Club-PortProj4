@@ -16,4 +16,4 @@ LOGGING = {
 }
 
 logging.config.dictConfig(LOGGING)
-logging.info('Hello')
+logging.info('Welcome to Cockapoo Club')
