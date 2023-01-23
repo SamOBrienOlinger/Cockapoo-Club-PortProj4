@@ -50,14 +50,15 @@ Cockapoo Club now offers Users a Create, Read, Update and Delete functionality.
 
 ## **[Contents](#contents)**
 
-1. **[Features](#features)**
-2. **[Deployment](#deployment)**
-3. **[Features Left to Implement](#features-left-to-implement)**
-4. **[Testing](#testing)**
-5. **[Unfixed Bugs](#unfixed-bugs)**
-6. **[Technologies and Tools](#technologies-and-tools)**
-7. **[Credits](#credits)**
-8. **[Acknowledgements](#acknowledgements)** 
+- **[Features](#features)**
+- **[Agile Development and User Stories](#agile-development-and-user-stories)**
+- **[Deployment](#deployment)**
+- **[Features Left to Implement](#features-left-to-implement)**
+- **[Testing](#testing)**
+- **[Unfixed Bugs](#unfixed-bugs)**
+- **[Technologies and Tools](#technologies-and-tools)**
+- **[Credits](#credits)**
+- **[Acknowledgements](#acknowledgements)** 
 
 ## **[Features](#features)**
 
@@ -178,6 +179,37 @@ Every page also has a navigation bar, backt o top button and footer:
    - The icons for the footer were taken from [Font Awesome](https://fontawesome.com/) and styled to match the color scheme across all pages. 
 
 
+## **[Agile Development and User Stories](#agile-development-and-user-stories)**
+
+Initial planning and ideas for new and improved features and funcitonalities for the site, themes, epics, User Stories and tasks were drafted using a Microsoft Word document and Blank Board free to use wireframe tool. 
+These were subsequently re-drafted in more detail and inputted into a kanban board within a new Project in my Github Profile. 
+
+- ### Draft wireframe
+
+![Wireframe](media/README.md-images/README.md-wireframe.png)
+
+
+- ### User Story 1
+
+![User Story 1](media/README.md-images/README.md-User-story-1-MSWord.png)
+
+- ### User Story 2
+
+![User Story 2](media/README.md-images/README.md-User-story-2-MSWord.png)
+
+
+- ### User Story 3
+
+![User Story 3](media/README.md-images/README.md-User-story-3-MSWord.png)
+
+
+### **Agile project**
+
+- As the project developed some details of the User stories were reviewed and revised. Changes were made to ensure the delivery of a Miminum Viable Product. For example, User Story 3 above became a fourth card that had to be moved to the Backlog column of the kanban board, and in a later iteration was moved into the To Do column. [Click Here](https://github.com/users/SamOBrienOlinger/projects/1) to visit this Github page
+
+![Agile Project kanban](media/README.md-images/README.md-agile-kanban.png) 
+
+
 
 ## **[Deployment](#deployment)**
 
@@ -217,6 +249,45 @@ To work on the project locally:
 Alternatively, once you have found the project repository in Github, you can click on the Code button and in the dropdown menu, click on the Download Zip button. 
 
   ![Cloning the project](assets/README.md-images/README.md-cloning-local-deployment.png)
+
+### Heroku Deployment
+
+Cockapoo Club is deployed to Heroku, using an ElephantSQL Postgres database.
+To duplicate deployment to Heroku, follow these steps:
+
+- Fork or clone this repository in GitHub.
+- You will need a Cloudinary account to host user images and static files.
+- Login to Cloudinary.
+- Select the 'dashboard' option.
+- Copy the value of the 'API Environment variable' from the part starting `cloudinary://` to the end. You may need to select the eye icon to view the full environment variable. Paste this value somewhere for safe keeping as you will need it shortly (but destroy after deployment).
+- Log in to Heroku.
+- Select 'Create new app' from the 'New' menu at the top right.
+- Enter a name for the app and select the appropriate region.
+- Select 'Create app'.
+- Select 'Settings' from the menu at the top.
+- Login to ElephantSQL.
+- Click 'Create new instance' on the dashboard.
+- Name the 'plan' and select the 'Tiny Turtle (free)' plan.
+- Select 'select region'.
+- Choose the nearest data centre to your location.
+- Click 'Review'.
+- Go to the ElephantSQL dashboard and click on the 'database instance name' for this project.
+- Copy the ElephantSQL database URL to your clipboard (this starts with `postgres://`).
+- Return to the Heroku dashboard.
+- Select the 'settings' tab.
+- Locate the 'reveal config vars' link and select.
+- Enter the following config var names and values:
+    - `CLOUDINARY_URL`: *your cloudinary URL as obtained above*
+    - `DATABASE_URL`: *your ElephantSQL postgres database URL as obtained above*
+    - `PORT`: `8000`
+    - `SECRET_KEY`: *your secret key*
+- Select the 'Deploy' tab at the top.
+- Select 'GitHub' and confirm you wish to deploy using GitHub. You may be asked to enter your GitHub password.
+- Find the 'Connect to GitHub' section and use the search box to locate your repo.
+- Select 'Connect' when found.
+- Optionally choose the main branch under 'Automatic Deploys' and select 'Enable Automatic Deploys' if you wish your deployed site to be automatically redeployed every time you push changes to GitHub.
+- Find the 'Manual Deploy' section, choose 'main' as the branch to deploy and select 'Deploy Branch'.
+- Your site will shortly be deployed and you will be given a link to the deployed site when the process is complete.
 
 
 ## **[Features Left to Implement](#features-left-to-implement)**
