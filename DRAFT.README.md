@@ -1,18 +1,16 @@
 # **Cockapoo Club**, Dublin Ireland
 
-For my Portfolio 1 Project submitted as part of the Code Institute's Diploma in full-stack software development course, I created a fictional website for dog owners called 'Cockapoo Club'.
+**[Cockapoo Club, Dublin Ireland](https://home-cockapoo-club-pp4.herokuapp.com)** was developed and submmitted as my fourth Profile Portfolio Project as part of the Code Institute's Diploma in full-stack software development course. 
 
-![Website on multiple screens](assets/README.md-images/README.md-screens.png)
+This project introduces a new range of features and funcionalities that offer Users a valuable expansion on my first Profile Portfolio Project, which centred on a fictional webiste for an online community of dog owners called 'Cockapoo Club'. The progress made in this iteration of the original concept includes the addition of a programming language, framework, CRUD functionality, as well as other features evolving out of new ideas for delivering signifcant improvements and a fuller experience for Users. 
 
-<!-- - **[Click Here](https://home-cockapoo-club-pp4.herokuapp.com/)** to see the deployed website. 
+![Website on multiple screens](media/README.md-images/README.md-multiple-screens.png)
 
-- To view the repository on Github **[Click Here](https://github.com/SamOBrienOlinger/Cockapoo-Club-PortProj4)**. -->
+- **[Click Here](https://home-cockapoo-club-pp4.herokuapp.com/)** to see the deployed website. 
+
+- To view the repository on Github **[Click Here](https://github.com/SamOBrienOlinger/Cockapoo-Club-PortProj4)**.
 
 - This website was designed for Desktop users first and is responsive for users of smaller devices.  
-
-
-
-
 
 
 ## **Summary**
@@ -33,6 +31,20 @@ Perhaps most importantly, what makes this website stand out from other websites 
 * will find Cockapoo Club gives them a unique opportunity to join their own community and to network with other Cockapoo owners face-to-face.
 
 * will enjoy sharing photographs of their pets and training their dogs together in person. 
+
+
+
+### **CRUD functionality**
+
+Cockapoo Club now offers Users a Create, Read, Update and Delete functionality.
+
+- *Create* - new (un-authenticated) users can now register with or 'Join' Cockapoo Club to create a user account, and memebers (authenticated users) can view the [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/) and [book dog training sessions](https://home-cockapoo-club-pp4.herokuapp.com/booking/).
+
+- *Read* - authenticated users can read the dog training sessions they booked.
+
+- *Update* - authenticated users can update their bookings by saving any changes to their preferred time and date to the database.
+
+- *Delete* - authenticated users can delete their bookings.
     
 
 
@@ -521,20 +533,17 @@ As a starting point I began with the HTML and CSS structure used in Code Institu
 
   - [Stack Overflow](https://stackoverflow.com/) was a great resource with many helpful articles and posts which were useful for resolving issues with anchor tags, responsive design and minor bugs regarding font-sizing and text-alignment.
 
-   - My mentor, Sandeep Aggarwal, as well as a number of Code Institute Tutors and students were very supportive via slack and the Student Support Chat. The following tutors and students helped guide me and to tease out a range of issues I faced developing the project: 
+   - My mentor, [Sandeep Aggarwal](https://code-institute-room.slack.com/team/UHEGTP519), as well as a number of Code Institute Tutors and students were very supportive via slack and the Student Support Chat. The following tutors and students helped guide me and to tease out a range of issues I faced developing the project: 
      
-      - [DavidK_5P](https://code-institute-room.slack.com/team/U02R7JKTQ6S)
-      - [David Bowers_5p_lead](https://code-institute-room.slack.com/team/U01S8AW4PT9)
-      - [Eventyret_mentor](https://code-institute-room.slack.com/team/U4MVA9YQP)
-      - [Ionut Ciobanu_lead](https://code-institute-room.slack.com/team/U02SVRD7G5V)
-      - [Franciska_ci](https://code-institute-room.slack.com/team/U035UL8Q71P)
-      - [rachel_rock_5P_lead](https://code-institute-room.slack.com/team/U02NK361YN9) 
-      - [Sean](https://code-institute-room.slack.com/team/U023BDTRM9C)
-      - [Ger](https://code-institute-room.slack.com/team/U030LJXSLQH)
+
+      - [Gaff](https://code-institute-room.slack.com/team/UU5GAMEJV)
+      - [Tony-Albanese](https://code-institute-room.slack.com/archives/D04L1BCQ2UC/p1674319883425119)
       - [Ed-ci](https://code-institute-room.slack.com/team/U02FJ8V7NA2)
       - [Jo_ci](https://code-institute-room.slack.com/team/U01MQ6TQUPQ)
-      - [Christine_ci](https://code-institute-room.slack.com/team/U034J45RX2M)
-      - [Rebecca](https://code-institute-room.slack.com/team/U02NKD296N5)
-      - [DaveHorrocks_5P](https://code-institute-room.slack.com/team/U01R68NPPE2)
+      - [Rebecca_ci](https://code-institute-room.slack.com/team/U02NKD296N5)
+      - [alan_ci](https://code-institute-room.slack.com/team/U01FHTDF0RE)
+      - [roman-rakic]](https://code-institute-room.slack.com/team/U0399DYN9AM)
+     
+
 
 **[Click Here](#contents)** to return to Contents
