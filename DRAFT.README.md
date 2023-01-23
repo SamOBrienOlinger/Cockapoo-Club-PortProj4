@@ -213,45 +213,6 @@ These were subsequently re-drafted in more detail and inputted into a kanban boa
 
 ## **[Deployment](#deployment)**
 
-- The site was deployed to GitHub pages using the following steps:
-
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Main Branch
-  - Once the Main Branch has been selected, click on the save button. The page will be automatically refreshed, a link proved, and a detailed ribbon displayed to indicate the successful deployment. 
-
-  - The live link can be found [Here](https://samobrienolinger.github.io/Cockapoo-Club/index.html)
-
- ### **Deploy locally and contribute to the Project** 
-  
- 
-Once you have a GitHub account and installed the Gitpod Chrome Extension follow the steps below:
-
-1.	Log in to your Gitpod account.
-2.	Open the project repository in a new tab.
-3.	Click on the green "Gitpod" button to the top right of the project.
-4.	This will automatically create a new Gitpod workspace for you to work on. You can type in any name of your choosing.
-
-To clone this project:
-
-1.	Log into Github
-2.	Navigate to the Project repository
-3.	Click the green Gitpod button in the top right corner of the repository
-4.	This will create a new Gitpod workspace
-
-To work on the project locally:
-
-1.	Click on the Code button
-2.	In the drop-down menu that appears, copy the URL
-3.	In your local IDE, open a new terminal
-4.	Type git clone and paste the URL you copied in Step 2
-5.	Press Enter
-
-Alternatively, once you have found the project repository in Github, you can click on the Code button and in the dropdown menu, click on the Download Zip button. 
-
-  ![Cloning the project](assets/README.md-images/README.md-cloning-local-deployment.png)
-
-### Heroku Deployment
-
 Cockapoo Club is deployed to Heroku, using an ElephantSQL Postgres database.
 To duplicate deployment to Heroku, follow these steps:
 
@@ -288,6 +249,35 @@ To duplicate deployment to Heroku, follow these steps:
 - Optionally choose the main branch under 'Automatic Deploys' and select 'Enable Automatic Deploys' if you wish your deployed site to be automatically redeployed every time you push changes to GitHub.
 - Find the 'Manual Deploy' section, choose 'main' as the branch to deploy and select 'Deploy Branch'.
 - Your site will shortly be deployed and you will be given a link to the deployed site when the process is complete.
+
+<!-- Heroku
+Navigate to your Heroku dashboard
+Click "New" and select "Create new app".
+New heroku
+Input a meaningful name for your app and choose the region best suited to your location.
+Create new app
+Select "Settings" from the tabs.
+Settings tab
+Click "Reveal Config Vars".
+Config vars button
+Input all key-value pairs as necessary from the .env file. Ensure DEBUG and DEVELOPMENT are not included. Config vars
+Click "Add buildpack".
+Add buildpack
+Add "python" from the list or search if necessary, remember to click save.
+Select buildpacks
+Select "Deploy" from the tabs.
+Settings tab
+Select "GitHub - Connect to GitHub" from deployment methods.
+Select GitHub
+Click "Connect to GitHub" in the created section.
+Connect to GitHub
+Search for the GitHub repository by name.
+Click to connect to the relevant repo.
+Either click Enable Automatic Deploys for automatic deploys or Deploy  Branch to deploy manually. Manually deployed branches will need re-deploying each time the repo is updated.
+Heroku deploy branch
+Click View to view the deployed site.
+Heroku view
+The live site can also be accessed from your repo in GitHub from the environments section of the repo. -->
 
 
 ## **[Features Left to Implement](#features-left-to-implement)**
@@ -474,6 +464,11 @@ The above users’ experience reflects how the website was built using a desktop
      
 - [Convertio](https://convertio.co/) was used to convert images from .jfif and .jpeg to .png for improving the lighthouse scores for each page.
 - [nssport.com](https://nsspot.herokuapp.com/imagetowebp/) was used to convert images from .png to .webp for improving the lighthouse scores for each page.
+- Django
+- Heroku
+- Cloudinary
+- Postgres - later changed to elephant
+- Elephant
 - Gitpod
 - Github
 - Gitbash
@@ -484,8 +479,9 @@ The above users’ experience reflects how the website was built using a desktop
 - Languages used: 
      - HTML
      - CSS
+     - Python
 
-     ![Languages](assets/README.md-images/README.md-languages-used.png)
+     ![Languages](media/README.md-images/README.md-languages.png)
 
 ## **[Credits](#credits)**
 
@@ -613,7 +609,7 @@ As a starting point I began with the HTML and CSS structure used in Code Institu
       - [Jo_ci](https://code-institute-room.slack.com/team/U01MQ6TQUPQ)
       - [Rebecca_ci](https://code-institute-room.slack.com/team/U02NKD296N5)
       - [alan_ci](https://code-institute-room.slack.com/team/U01FHTDF0RE)
-      - [roman-rakic]](https://code-institute-room.slack.com/team/U0399DYN9AM)
+      - [roman-rakic](https://code-institute-room.slack.com/team/U0399DYN9AM)
      
 
 
