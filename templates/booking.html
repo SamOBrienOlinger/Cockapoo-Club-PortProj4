@@ -27,12 +27,6 @@
           });
         </script>
 
-        <!-- <script>
-          $(function () {
-            $("#div_id_booking_date_time").session_type
-            });
-        </script> -->
-
     <button class="join-button" type="submit" value="submit">Submit</button>
   </form>
 
@@ -43,23 +37,21 @@
     <button><a href="/booking/{{booking.id}}">Reschedule</a></button>
     <button><a href="/booking/delete/{{booking.id}}">Cancel</a></button>
 </div>
+
 {% endfor %}
 
-
-      <!-- <div class="input-group date" id="datetimepicker1" data-target-input="nearest">
-        <input type="text" class="form-control datetimepicker-input" data-target="#datetimepicker1"/>
-        <div class="input-group-append" data-target="#datetimepicker1" data-toggle="datetimepicker">
-          <div class="input-group-text"><i class="fa fa-calendar"></i></div>
-        </div>
-      </div> -->
-  
-      <!-- <script>
-        $(function () {
-          $("#datetimepicker1").datetimepicker();
-        });
-      </script> -->
-
+<!-- <script type="text/javascript">
+  (function() {
+    var message = "{% trans 'Do you really want to cancel your dog training session?' %}";
+    var actions = document.getElementsByName('action_remove');
+    if (actions.length) {
+      actions[0].addEventListener("click", function(e) {
+        if (! confirm(message)) {
+          e.preventDefault();
+        }
+      });
+    }
+  })();
+  </script> -->
 
 {%endblock%}
-
-<!-- <button class="primaryAction btn btn-primary", type="submit" value="submit">Submit</button> -->
