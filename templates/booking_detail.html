@@ -18,6 +18,6 @@
     <span>Booking not confirmed yet</span>
     {% endif %}
     <button class="join-button" type="submit" value="submit"><a href="{% url 'booking' %}">Reschedule</a></button>
-    <button class="join-button" type="submit" value="submit"><a href="{% url 'index' %}">Cancel booking</a></button>
+    <button onclick="return confirm('Are you sure you want to cancel your dog traing session?')" class="join-button" type="submit" value="submit"><a href="{% url 'index' %}">Cancel booking</a></button>
     
 {%endblock%}

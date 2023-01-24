@@ -35,23 +35,9 @@
     <div>{{booking.session_type}}</div>
     <div>{{booking.booking_date_time}}</div>
     <button><a href="/booking/{{booking.id}}">Reschedule</a></button>
-    <button><a href="/booking/delete/{{booking.id}}">Cancel</a></button>
+    <button onclick="return confirm('Are you sure you want to cancel your dog training session?')"><a href="/booking/delete/{{booking.id}}">Cancel</a></button>
 </div>
 
 {% endfor %}
-
-<!-- <script type="text/javascript">
-  (function() {
-    var message = "{% trans 'Do you really want to cancel your dog training session?' %}";
-    var actions = document.getElementsByName('action_remove');
-    if (actions.length) {
-      actions[0].addEventListener("click", function(e) {
-        if (! confirm(message)) {
-          e.preventDefault();
-        }
-      });
-    }
-  })();
-  </script> -->
 
 {%endblock%}
