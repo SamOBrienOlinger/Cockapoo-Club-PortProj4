@@ -10,7 +10,7 @@ from django import forms
 # create a form for booking a training session
 
 
-class booking(models.Model):
+class Booking(models.Model):
     ONE_ON_ONE = 'O'
     GROUP = 'G'
     SESSION_CHOICES_CHOICES = [
@@ -30,12 +30,12 @@ class booking(models.Model):
     confirmed = models.BooleanField(default=False)
 
 
-class home(models.Model):
+class Home(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
 
 
-class booking_detail(models.Model):
+class Booking_detail(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
 

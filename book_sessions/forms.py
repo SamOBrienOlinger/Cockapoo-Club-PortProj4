@@ -1,4 +1,4 @@
-from .models import booking
+from .models import Booking
 from django import forms
 from django.forms import ModelForm
 # from .models import Photo
@@ -12,6 +12,6 @@ class BookingForm(ModelForm):
     )
 
     class Meta:
-        model = booking
+        model = Booking
         # fields = "__all__"
         exclude = ["confirmed", "user"]

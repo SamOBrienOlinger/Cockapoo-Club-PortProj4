@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import booking, home, booking_detail
+from .models import Booking, Home, Booking_detail
 from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
@@ -14,12 +14,12 @@ from django_summernote.admin import SummernoteModelAdmin
 #     ordering = ("date", "time")
 #     search_fields = ("user_email", "user_name")
 
-admin.site.register(booking)
+admin.site.register(Booking)
 
 
-admin.site.register(home)
+admin.site.register(Home)
 
-admin.site.register(booking_detail)
+admin.site.register(Booking_detail)
 
 # admin.site.register(BookingForm)
 # @admin.register(booking)
