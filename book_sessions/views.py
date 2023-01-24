@@ -17,6 +17,9 @@ from django.contrib import messages
 
 # Create your views here.
 
+# existing_booking = get_object_or_404(models.booking, id=id)
+# existing_bookings = get_object_or_404(models.booking, id=id)
+
 
 @login_required
 def booking(request):
@@ -24,7 +27,7 @@ def booking(request):
         booking_form = BookingForm()
         existing_bookings = []
         existing_bookings = models.booking.objects.filter(
-            confirmed=True
+            confirmed=True, user=request.user
         ).all()
         print(existing_bookings)
         return render(request, 'booking.html', context={"form": booking_form, "existing_bookings": existing_bookings})
@@ -66,12 +69,22 @@ def bookings(request):
     pass
 
 
+# existing_booking = get_object_or_404(models.booking, id=id)
+#     if existing_booking.user != request.user:
+#         messages.error(request, 'this is not your booking')
+# return redirect("home")
+
+
 @login_required
 def update_booking(request, id):
+    existing_booking = get_object_or_404(models.booking, id=id)
+    if existing_booking.user != request.user:
+        messages.error(request, 'this is not your booking')
+        return redirect("home")
+
     if request.method == "GET":
-        existing_booking = get_object_or_404(models.booking, id=id)
-        print(existing_booking)
-        booking_form = BookingForm(instance=existing_booking)
+        print(existing_bookings)
+        booking_form = BookingForm(instance=existing_bookings)
         print(booking_form)
         return render(request, 'booking.html', context={"form": booking_form})
 
@@ -90,7 +103,10 @@ def update_booking(request, id):
 @login_required
 def delete_booking(request, id):
     existing_booking = get_object_or_404(models.booking, id=id)
-    existing_booking.delete()
+    if existing_booking.user != request.user:
+        messages.error(request, 'this is not your booking')
+    return redirect("home")
+    existing_bookings.delete()
 
     return redirect("/booking")
 

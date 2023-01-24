@@ -14,4 +14,4 @@ class BookingForm(ModelForm):
     class Meta:
         model = booking
         # fields = "__all__"
-        exclude = ["confirmed"]
+        exclude = ["confirmed", "user"]
