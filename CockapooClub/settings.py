@@ -28,8 +28,10 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
 
+DEBUG = 'DEV' in os.environ
+
+# DEBUG = False
 # os.environ['DEVELOPMENT'] = 1
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]

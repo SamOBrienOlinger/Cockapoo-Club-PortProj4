@@ -32,11 +32,33 @@ def booking(request):
     elif request.method == "POST":
         booking_form = BookingForm(request.POST)
         if booking_form.is_valid():
-            booking = booking_form.save()
+            booking = booking_form.save(commit=False)
+            booking.user = request.user
+            booking.save()
             messages.add_message(request, messages.SUCCESS, 'Booking successful.')
             return render(request, 'booking_detail.html', {"booking": booking})
         else:
             return render(request, 'booking.html', {"form": booking_form})
+
+# @login_required
+# def booking(request):
+#     if request.method == "GET":
+#         booking_form = BookingForm()
+#         existing_bookings = []
+#         existing_bookings = models.booking.objects.filter(
+#             confirmed=True
+#         ).all()
+#         print(existing_bookings)
+#         return render(request, 'booking.html', context={"form": booking_form, "existing_bookings": existing_bookings})
+
+#     elif request.method == "POST":
+#         booking_form = BookingForm(request.POST)
+#         if booking_form.is_valid():
+#             booking = booking_form.save()
+#             messages.add_message(request, messages.SUCCESS, 'Booking successful.')
+#             return render(request, 'booking_detail.html', {"booking": booking})
+#         else:
+#             return render(request, 'booking.html', {"form": booking_form})
 
 
 @login_required
