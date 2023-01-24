@@ -68,7 +68,8 @@ The website consists of five pages:
 * [New Cockaparents](#new-cockaparents)
 * [Keep Your Poo Healthy](#keep-your-poo-healthy)
 * [Furry Fun Foto Gallery](#furry-fun-foto-gallery)
-* [Join](#join)
+* [Registration](#registration)
+* [Booking a Dog Training Session](#booking-a-dog-training-session)
 
 Every page also has a navigation bar, backt o top button and footer:
 * [Navigation bar](#navbar)
@@ -144,7 +145,7 @@ Every page also has a navigation bar, backt o top button and footer:
 
 ### **[Furry Fun Foto Gallery](#furry-fun-foto-gallery)**
 
-  ![Furry Fun Foto Gallery](assets/README.md-images/Option-3-FFFGjpg.jpg)
+  ![Furry Fun Foto Gallery]()
 
   - The [Furry Fun Foto Gallery](https://samobrienolinger.github.io/Cockapoo-Club/furry-fun-foto-gallery.html#jump-to-fffg) section is intended for users to peruse and upload images of their pets.
 
@@ -154,13 +155,28 @@ Every page also has a navigation bar, backt o top button and footer:
 
   - Making the gallery responsive was challenging given the very different sizes of the photographs chosen. However, [Create Responsive Image Gallery Using HTML and CSS](https://www.youtube.com/watch?v=Trw_9lisYVY), a YouTube tutorial produced by [Tech2 etc](https://tech2etc.com/) was very helpful. The code for this gallery is based on the explanation found in this video.   
 
-### **[Join](#join)**
+### **[Registration](#registration)**
 
-   ![Join page image](assets/README.md-images/Join-CC-image.jpg)
+  **Sign up feature**
 
-  - An important feature of the website that provides value for users is the opportunity to become a member of Cockapoo Club. The [Join](https://samobrienolinger.github.io/Cockapoo-Club/join-form.html#jump-to-jcc) page encourages users to submit some basic details via the short survey to automatically receive free membership. Users are also entered into a new member's prize draw. This feature was inspired by the Code Institute's Coders Coffeehouse example.    
+   ![Join page image](media/README.md-images/README.md-join-page.png)
+
+  - An important feature of the website that provides value for users is the opportunity to become a member of Cockapoo Club. The join or signup page provides Users with a form to register a new account so they can view the exclusive content on the Furry Fun Foto Gallery page and to book a dog training session.    
 
   - This builds on the concept outlined in the above section regarding the clubhouse and training centre as well as the Furry Fun Foto Gallery.  A physical space where Cockapoo owners and their pets can meet in person. The opportunity to meet and benefit membership in-person makes this website and concept different to most other purely online communities that can easily be found on social media platforms yet do not involve members meeting face-to-face with their pets for mutual benefit and free peer-support.   
+
+**Sign in feature**
+
+![Login page](media/README.md-images/README.md-login-page.png)
+
+- Once a User has registered an account they can also avail of the functionality that allows them to book a dog training session and view the Furry Fun Foto Gallery page. 
+
+
+### **[Booking a Dog Training Session](#booking-a-dog-training-session)**
+
+  ![Booking]()
+
+By importing Django's booking model, the framework allows Users to interact with the feature to book a dog training session on a one-to-one basis, or to train as part of a group of owners and dogs.  
 
 ### **[Back to top button](#back-to-top-button)**
 
