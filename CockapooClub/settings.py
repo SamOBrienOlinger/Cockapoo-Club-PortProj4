@@ -36,11 +36,6 @@ CSRF_TRUSTED_ORIGINS = ['https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu8
 
 ALLOWED_HOSTS = ['localhost', 'home-cockapoo-club-pp4.herokuapp.com', ]
 
-# CSRF_TRUSTED_ORIGINS = ['https://book-sessions.herokuapp.com/', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
-
-# ALLOWED_HOSTS = ['localhost', 'book-sessions.herokuapp.com', 'home-cockapoo-club-pp4.herokuapp.com', ]
-
-
 # Application definition
 
 INSTALLED_APPS = [
