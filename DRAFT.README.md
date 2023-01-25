@@ -1,10 +1,11 @@
 # **Cockapoo Club**, Dublin Ireland
+![Website on multiple screens](media/README.md-images/README.md-multiple-screens.png)
 
 **[Cockapoo Club, Dublin Ireland](https://home-cockapoo-club-pp4.herokuapp.com)** was developed and submmitted as my fourth Profile Portfolio Project as part of the Code Institute's Diploma in full-stack software development course. 
 
-This project introduces a new range of features and funcionalities that offer Users a valuable expansion on my first Profile Portfolio Project, which centred on a fictional webiste for an online community of dog owners called 'Cockapoo Club'. The progress made in this iteration of the original concept includes the addition of a programming language, framework, CRUD functionality, as well as other features evolving out of new ideas for delivering signifcant improvements and a fuller experience for Users. 
+This project introduces a new range of features and funcionalities that offer Users a valuable expansion on my first Profile Portfolio Project, which centred on a fictional webiste for an online community of dog owners called 'Cockapoo Club'. The progress made in this iteration of the original concept includes the addition of Django, CRUD functionality, as well as other new features that evolved out of ideas for delivering signifcant improvements and a fuller experience for Users of this website. 
 
-![Website on multiple screens](media/README.md-images/README.md-multiple-screens.png)
+
 
 - **[Click Here](https://home-cockapoo-club-pp4.herokuapp.com/)** to see the deployed website. 
 
@@ -24,27 +25,29 @@ The site targets users in Dublin, Ireland who:
 
 * may be thinking about getting a new Cockapoo dog and require more information to make their decision. 
 
-Perhaps most importantly, what makes this website stand out from other websites that provide useful information about this dog breed and becoming a new owner; is how it targets users who: 
+What makes this website stand out from other websites that provide useful information about this dog breed and becoming a new owner; is how it targets users who: 
 
-* may already be Cockapoo owners and are interested in connecting with and learning from other Cockapoo owners. 
+ * may already be Cockapoo owners and are interested in connecting with and learning from other Cockapoo owners. 
 
 * will find Cockapoo Club gives them a unique opportunity to join their own community and to network with other Cockapoo owners face-to-face.
 
-* will enjoy sharing photographs of their pets and training their dogs together in person. 
+* will enjoy sharing photographs of their pets online.  
 
+Perhaps most importantly, the new feature added with CRUD functioanlity allows users who need support with training their dog to book a free training session in a group setting or choosing the option of a more intesive 0ne-to-one session.
 
+![booking a training session](media/README.md-images/README.md-booking-image.png)
 
 ### **CRUD functionality**
 
-Cockapoo Club now offers Users a Create, Read, Update and Delete functionality.
+Cockapoo Club now offers an Admin and Users a Create, Read, Update and Delete functionality:
 
 - *Create* - new (un-authenticated) users can now register with or 'Join' Cockapoo Club to create a user account, and memebers (authenticated users) can view the [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/) and [book dog training sessions](https://home-cockapoo-club-pp4.herokuapp.com/booking/).
 
-- *Read* - authenticated users can read the dog training sessions they booked.
+- *Read* - authenticated users can view all of the dog training sessions they have booked.
 
-- *Update* - authenticated users can update their bookings by saving any changes to their preferred time and date to the database.
+- *Update* - authenticated users can reschedule any of their bookings by changing a booking to their new preferred time and date.
 
-- *Delete* - authenticated users can delete their bookings.
+- *Delete* - authenticated users can cancel any of their bookings.
     
 
 
@@ -62,92 +65,83 @@ Cockapoo Club now offers Users a Create, Read, Update and Delete functionality.
 
 ## **[Features](#features)**
 
-The website consists of five pages:
+Themain front-end webpages are:
 
 * [Homepage](#homepage)
 * [New Cockaparents](#new-cockaparents)
 * [Keep Your Poo Healthy](#keep-your-poo-healthy)
 * [Furry Fun Foto Gallery](#furry-fun-foto-gallery)
-* [Registration](#registration)
+* [Registration](#registration) (sign in / sign up)
 * [Booking a Dog Training Session](#booking-a-dog-training-session)
 
-Every page also has a navigation bar, backt o top button and footer:
-* [Navigation bar](#navbar)
-* [Back to top button](#back-to-top-button)
-* [Footer](#footer)
 
 ### **[Homepage](#homepage)** 
 
+#### **Content on Homepage**
   - The landing page immediately engages the user with a large [hero image](#hero-image) that zooms forward. The image is of a friendly happy Cockapoo running towards you with excitement. The zoom forward feature aims to remind the user of this real-life situation, in order to illicit a positive emotional response from the user from the very start of their experience on the website.  
 
     #### **[Hero image](#hero-image)**
 
-    ![hero image](assets/README.md-images/README.md-original-hero-image.jpg)
-      - The hero image and also has cover text of JOIN COKCAPOO CLUB with an immediate call to action which brings the user to the Join page in order to encourage the user to sign up and become a member of this unique community. This was inspired by Code Institute's [Love Running Project](https://code-institute-org.github.io/love-running-2.0/index.html) image and the module where we learn to "square a circle". 
-  
-        !["cover text with internal link to Join page"](assets/README.md-images/README.md-Join-Cockapoo-Club-Cover-Text.jpg)  
+    ![hero image](media/README.md-images/README.md-hero-image-pp4.png)
 
-        The CSS code that was particularly useful for this can be found on lines 94 to 112 [Here](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/blob/main/03-creating-the-hero-image/03-hero-image-cover-text/assets/css/style.css). For more details in this README.md file, please click on [Code](#code). However, I changed many of the fixed units of measurement to dynamic units; changed the font-size; made the color consistent with the color scheme across the rest of this project; and had to explore and test a lot of positions of this feature on multiple screen sizes to ensure responsiveness. 
+  - The hero image and also has cover text of JOIN COKCAPOO CLUB with an immediate call to action which brings the user to the Join page in order to encourage the user to sign up and become a member of this unique community. This was inspired by Code Institute's [Love Running Project](https://code-institute-org.github.io/love-running-2.0/index.html) image and the module where we learn to "square a circle". 
+ 
+      ![join sqircle](media/README.md-images/README.md-join-square-circle.png)
+
+      The CSS code that was particularly useful for this can be found on lines 94 to 112 [Here](https://github.com/Code-Institute-Solutions/love-running-2.0-sourcecode/blob/main/03-creating-the-hero-image/03-hero-image-cover-text/assets/css/style.css). For more details in this README.md file, please click on [Code](#code). However, I changed many of the fixed units of measurement to dynamic units; changed the font-size; made the color consistent with the color scheme across the rest of this project; and had to explore and test a lot of positions of this feature on multiple screen sizes to ensure responsiveness. 
 
 
-      - To avoid the 'illusion of completeness' there are images visible above the fold area:
-
-      !["homepage and visible images above the fold area"](assets/README.md-images/README.md-above-the-fold.jpg)
 
   #### **[Navigation bar](#navbar)**
 
    - Featured on all five pages, the full responsive navigation bar includes links to the Logo, Home page and all other pages. The navigation bar is identical in each page to allow for easy navigation.
 
-   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. Each page has a feature that tells the user which page they are on via the specific page the user is on having the corresponding navigation bar option background highlighted: 
+   - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. Each page has a feature that tells the user which page they are on via the specific page the user is on having the corresponding navigation bar option highlighted with an underline: 
 
-  !["nav bar"](assets/README.md-images/nav-bar-highlighted.jpg) 
+  !["nav bar"](media/README.md-images/README.md-nav-bar.png) 
 
       
-
-  #### **Content on Homepage**
 
   - The main element is divided into three sections with different purposes and value for the user, depending on what kind of information they are looking for. 
   
    - Free-to-use background images were used for each of the three main options that bring the user to a new page within the website: 
   
-     - [New Cockaparents](https://samobrienolinger.github.io/Cockapoo-Club/new-cockaparents.html#jump-to-nc)
+     - [New Cockaparents](https://home-cockapoo-club-pp4.herokuapp.com/newCockaparents/)
    
-      - [Keep Your Poo Healthy](https://samobrienolinger.github.io/Cockapoo-Club/keep-your-poo-healthy.html#jump-to-kyph) 
+      - [Keep Your Poo Healthy](https://home-cockapoo-club-pp4.herokuapp.com/keepYourPooHealthy/) 
     
-       - [Furry Fun Foto Gallery](https://samobrienolinger.github.io/Cockapoo-Club/furry-fun-foto-gallery.html#jump-to-fffg)   
+       - [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/) (User is required to join / login to view this webpage)
 
-   - After these main pieces of content, there is an area with a map and information about the clubhouse and training centre, as well as another call to action to join Cockapoo Club with two hyperlinked pieces of text to give users even more opportunities to visit the [Join](#join-page) page and submit their contact details. A chance to win a prize is also available on the Join page and aims to further encourage new members to join.
+       - [Book a Training Session](https://home-cockapoo-club-pp4.herokuapp.com/booking/) (User is required to join / login to view this webpage)
+
+   - After these main pieces of content, there is an area with a map and information about the clubhouse and training centre, as well as another call to action to join Cockapoo Club with hyperlinked text to give users even more opportunities to register to join. 
    
    - Below is an image of the embedded map regarding the clubhouse and training centre for users to locate Cockapoo Club's premises.  
    
-   - Also seen below is a list of free supports to members to encourage users to join Cockapoo Club, visit the centre and socialise with others in this special community. As mentioned, this aspect of the project makes it stand out from other websites that may provide similar information about Cockapoos and other pets. The value of this content to the user is the list it provides of the main benefits to becoming a new member and participating in the community in person at the fictional clubhouse and training centre. Having researched the main prirorites for target users, a number of important supports and services were added to the homepage. Getting advice and guidance from professional dog trainers, attending 1-to-1 and group training sessions, and finding local vetted dogsitters are all considered highly valuable by the intended users of this website. These are also costly, so having these as free to members is intended to attract new members and support current members of Cockapoo Club. 
-
-   - Opening times for the clubhouse and training centre are also available to the user. 
-
-       ![clubhouse map](assets/README.md-images/README.md-map-supports-opening-hours.png)
-
+  ![clubhouse map](media/README.md-images/README.md-map.png)
+  
   ### **[New Cockaparents](#new-cockaparents)**
 
-  ![New Cockaparents"](assets/README.md-images/README.md-Option-1-NC.jpg) 
+  ![New Cockaparents"](media/README.md-images/README.md-new-cockapoo-parents.png) 
 
-  - For people who will become cockapoo owners for the first time the [New Cockaparents](https://samobrienolinger.github.io/Cockapoo-Club/new-cockaparents.html#jump-to-nc) page provides the user with a starting point for learning more about becoming a new owner of a Cockapoo, with evidence-based information linking to credible sources on other websites which help new owners plan and adjust to their new member of the family. 
+  - For people who will become cockapoo owners for the first time the [New Cockaparents](https://home-cockapoo-club-pp4.herokuapp.com/newCockaparents/) page provides the user with a starting point for learning more about becoming a new owner of a Cockapoo, with evidence-based information linking to credible sources on other websites which help new owners plan and adjust to their new member of the family. 
 
   - To ensure a positive user experience, all internal links to this page bring the user to a specific point lower down the page when they land with a familiar image and heading consistent with the option they chose on the homepage that matches their expectations. This feature is applied across the entire website.  
 
 
 ### **[Keep Your Poo Healthy](#keep-your-poo-healthy)**
 
-  ![Keep Your Poo Healthy](assets/README.md-images/Option-2-KYPH.jpg)
+  ![Keep Your Poo Healthy](media/README.md-images/README.md-keep-your-poo-healthy.png)
 
-  - For people who want to learn more about maintaining their pet's wellbeing, there is the section called 'Keep your Poo healthy'. [Keep Your Poo Healthy](https://samobrienolinger.github.io/Cockapoo-Club/keep-your-poo-healthy.html#jump-to-kyph) provides the user with a starting point for finding out more information about taking good care of a Cockapoo, with evidence-based information linking to credible sources on other websites to help owners take care of the health needs of their pet.
+  - For people who want to learn more about maintaining their pet's wellbeing, there is the section called 'Keep your Poo healthy'. [Keep Your Poo Healthy](https://home-cockapoo-club-pp4.herokuapp.com/keepYourPooHealthy/) provides the user with a starting point for finding out more information about taking good care of a Cockapoo, with evidence-based information linking to credible sources on other websites to help owners take care of the health needs of their pet.
 
   - Similar to the New Cockaparents page, the same features were applied regarding internal links and landing on this new page that guarantee consistency while meeting the user's need for familiarity and expectations of engaging with new content. 
 
 ### **[Furry Fun Foto Gallery](#furry-fun-foto-gallery)**
 
-  ![Furry Fun Foto Gallery]()
+  ![Furry Fun Foto Gallery](media/README.md-images/README.md-gallery.png)
 
-  - The [Furry Fun Foto Gallery](https://samobrienolinger.github.io/Cockapoo-Club/furry-fun-foto-gallery.html#jump-to-fffg) section is intended for users to peruse and upload images of their pets.
+  - The [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/) section is intended for users to peruse and upload images of their pets.
 
   - After researching other websites and social media that provide dog owners with relevant valuable information, it was clear that dog owners enjoy being part of a community with this same shared interest in their pets. Joining a unique online collective is a priority for many users who love to see images of other people's pets and want to share images and information about their own pet and personal experiences.
 
@@ -158,41 +152,26 @@ Every page also has a navigation bar, backt o top button and footer:
 ### **[Registration](#registration)**
 
   **Sign up feature**
+  - An important feature of the website that provides value for users is the opportunity to become a member of Cockapoo Club. [The join or signup page](https://home-cockapoo-club-pp4.herokuapp.com/accounts/signup/) provides Users with a form to register a new account so they can view the exclusive content on the Furry Fun Foto Gallery page and to book a dog training session.    
+
+  - This builds on the concept outlined in the above section regarding the clubhouse and training centre as well as the Furry Fun Foto Gallery.  A physical space where Cockapoo owners and their pets can meet in person. The opportunity to meet and benefit membership in-person makes this website and concept different to most other purely online communities that can easily be found on social media platforms yet do not involve members meeting face-to-face with their pets for mutual benefit and free peer-support.
 
    ![Join page image](media/README.md-images/README.md-join-page.png)
 
-  - An important feature of the website that provides value for users is the opportunity to become a member of Cockapoo Club. The join or signup page provides Users with a form to register a new account so they can view the exclusive content on the Furry Fun Foto Gallery page and to book a dog training session.    
-
-  - This builds on the concept outlined in the above section regarding the clubhouse and training centre as well as the Furry Fun Foto Gallery.  A physical space where Cockapoo owners and their pets can meet in person. The opportunity to meet and benefit membership in-person makes this website and concept different to most other purely online communities that can easily be found on social media platforms yet do not involve members meeting face-to-face with their pets for mutual benefit and free peer-support.   
-
 **Sign in feature**
 
-![Login page](media/README.md-images/README.md-login-page.png)
-
 - Once a User has registered an account they can also avail of the functionality that allows them to book a dog training session and view the Furry Fun Foto Gallery page. 
+
+![Login page](media/README.md-images/README.md-login-page.png)
 
 
 ### **[Booking a Dog Training Session](#booking-a-dog-training-session)**
 
-  ![Booking]()
+  ![Booking](media/README.md-images/README.md-booking-image.png)
 
-By importing Django's booking model, the framework allows Users to interact with the feature to book a dog training session on a one-to-one basis, or to train as part of a group of owners and dogs.  
+By importing Django's booking model, the framework allows autehticated Users to use a drop down calendar feature for scheduling a dog training session on a one-to-one basis, or to train as part of a group of owners and dogs. 
 
-### **[Back to top button](#back-to-top-button)**
-
-  - When the user clicks on an option to open a new page, they are brought lower down the screen of the new page. this feature aims to enhance their experience and meet their expectations of arriving on the new page they chose. In order to allow the user to navigate across the website more easily a 'Back to top' button was introduced. This button brings the user to the same navigation bar and hero image they are already familiar with using from the homepage. This is consistent across the website.   
-
-    ![Back-to-top-button](assets/README.md-images/README.md-Back-to-top-button.jpg)
-
-### **[Footer](#footer)** 
-
-  ![Footer](assets/README.md-images/README.md-footer.jpg) 
-
-  - The footer section includes links to the relevant social media sites which would connect users with social media for Cockapoo Club. The links open to a new tab to allow easy navigation for the user. The initial code for the social media icons for the footer was based on those found in the Code Institute's [Love Running Project](https://code-institute-org.github.io/love-running-2.0/index.html) and then altered to match and be consistent with the color scheme of this project.    
-
-  - The footer is valuable to the user as it encourages them to stay connected with their community and fellow Cockapoo Club members via social media.
-
-   - The icons for the footer were taken from [Font Awesome](https://fontawesome.com/) and styled to match the color scheme across all pages. 
+![booking page](media/README.md-images/README.md-booking-drop-down-calendar.png)
 
 
 ## **[Agile Development and User Stories](#agile-development-and-user-stories)**
@@ -419,35 +398,7 @@ The live site can also be accessed from your repo in GitHub from the environment
     - all external links bring the user to the appropriate websites
     - the sign up to Cockapoo Club form can be prepared and submitted correctly: 
 
-      ![sign up form](assets/README.md-images/README.md-sign-up-form-valid.png) 
-
-      ## **[Users experience](#users-experience)**
-
-      Given how diverse in digital literacy levels, familiarity with using online resources, age range and social backgrounds of the target audience, I felt I needed to ensure that anyone would be able to navigate and enjoy the website. Also, eliciting a positive emotional response from users was central to the success of the website and to achievng the aim of creating and developing the fictional community of Cockapoo owners in Dublin, Ireland.
-
-    -	**User 1 on iPhone 12**
-
-        “Good job on the site Sam. It looks very polished and the usability was good I thought. I viewed this on my phone but the only things that caught my eye were cosmetic...The different text size on some pages just kinda caught my eye for that reason”
-
-    -	**User 2 on desktop**
-
-        “I liked the layout of this site. It was easy to navigate and clear information. I looked at it from a mobile device and the layout worked well. It was easy to get back to home page and other sections from the menu on top and it was good to see confirmation of details submitted in the form. One small thing it would be good if the social media links either went to the social media pages of cockapoo club. Or maybe were a share this page. But overall, a very good user experience.”
-
-
-    -	**User 3 on Samsung Galaxy 7**
-
-        “1. The font is too large. Resize it. Home page menu is perfect size. 
-        And 2. Format page so words don't appear on lines by themselves, e.g. in "new cockapoos" section "channelled" and "puppy" are on their own line”
-
-    - **User 4 on desktop**
-
-        "I really enjoyed using the site! Thanks Sam. Now I really want to get a Cockapoo, they're really cute and seem like so much fun"
-
-    - **User 5 on desktop** 
-
-      "Very easy to navigate. Looks great and fun!"
-
-The above users’ experience reflects how the website was built using a desktop first approach and how I wanted to make sure users of all ages and visual abilities would be able to read the text. 
+      ![sign up form](assets/README.md-images/README.md-sign-up-form-valid.png)  
 
 
 ## **[Unfixed Bugs](#unfixed-bugs)**
@@ -612,14 +563,12 @@ As a starting point I began with the HTML and CSS structure used in Code Institu
 
    - The [README template](https://github.com/Code-Institute-Solutions/readme-template) provided by Code Institute was very helpful as a model for developing this README file.  
 
-   - [w3schools](https://www.w3schools.com/) provided valuable assistance with a range of areas such as images, displaying elements, and responsive design.
-
-  - [Stack Overflow](https://stackoverflow.com/) was a great resource with many helpful articles and posts which were useful for resolving issues with anchor tags, responsive design and minor bugs regarding font-sizing and text-alignment.
-
-   - My mentor, [Sandeep Aggarwal](https://code-institute-room.slack.com/team/UHEGTP519), as well as a number of Code Institute Tutors and students were very supportive via slack and the Student Support Chat. The following tutors and students helped guide me and to tease out a range of issues I faced developing the project: 
+  - My mentor, [Sandeep Aggarwal](https://code-institute-room.slack.com/team/UHEGTP519), as well as a number of Code Institute Tutors and students were very supportive via slack and the Student Support Chat. 
+   
+  - The following Code Institute Alumni, Tutors and Students helped guide me and to tease out a range of issues I faced developing the project: 
      
-
-      - [Gaff](https://code-institute-room.slack.com/team/UU5GAMEJV)
+      - [Alex_alumnus](https://code-institute-room.slack.com/team/U01PDEMPJ87)
+      - [Gaff C-Lead, Mentor](https://code-institute-room.slack.com/team/UU5GAMEJV)
       - [Tony-Albanese](https://code-institute-room.slack.com/archives/D04L1BCQ2UC/p1674319883425119)
       - [Ed-ci](https://code-institute-room.slack.com/team/U02FJ8V7NA2)
       - [Jo_ci](https://code-institute-room.slack.com/team/U01MQ6TQUPQ)
