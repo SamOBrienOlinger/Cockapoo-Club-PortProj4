@@ -34,7 +34,7 @@ DEBUG = 'DEV' in os.environ
 # DEBUG = False
 # os.environ['DEVELOPMENT'] = 1
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', ]
+CSRF_TRUSTED_ORIGINS = ['https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu84.gitpod.io']
 
 ALLOWED_HOSTS = ['localhost', 'home-cockapoo-club-pp4.herokuapp.com', ]
 
@@ -181,11 +181,11 @@ USE_TZ = True
 # DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dzhbg6go0',
-    'API_KEY': '133846732432361',
-    'API_SECRET': '-lSKTqZAR6zW5Y5992HXkkl1i4c'
-}
+# CLOUDINARY_STORAGE = {
+#     'CLOUD_NAME': 'dzhbg6go0',
+#     'API_KEY': '133846732432361',
+#     'API_SECRET': '-lSKTqZAR6zW5Y5992HXkkl1i4c'
+# }
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
