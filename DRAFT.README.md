@@ -339,7 +339,7 @@ The live site can also be accessed from your repo in GitHub from the environment
         
         ![Furry Fun Foto Gallery]()
 
-     * [Booking a Dog Trainin Session](#booking-a-dog-training-session)
+     * [Booking a Dog Training Session](#booking-a-dog-training-session)
 
         ![Booking a Dog Training Session]()
      
@@ -349,6 +349,9 @@ The live site can also be accessed from your repo in GitHub from the environment
       
       * Login(#login)    
         ![Login]()
+
+      * Logout(#logout)    
+        ![Logout]()
 
 
    - **CSS**
