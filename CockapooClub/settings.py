@@ -31,9 +31,6 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 
 DEBUG = 'DEV' in os.environ
 
-# DEBUG = False
-# os.environ['DEVELOPMENT'] = 1
-
 CSRF_TRUSTED_ORIGINS = ['https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu83.gitpod.io', 'https://home-cockapoo-club-pp4.herokuapp.com/', 'https://8000-samobrienol-cockapooclu-25ocw6k586z.ws-eu84.gitpod.io']
 
 ALLOWED_HOSTS = ['localhost', 'home-cockapoo-club-pp4.herokuapp.com', ]
@@ -175,11 +172,7 @@ USE_TZ = True
 # STATIC_URL = '/static/'
 # STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-# # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-# MEDIA_URL = '/media/'
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 # CLOUDINARY_STORAGE = {
 #     'CLOUD_NAME': 'dzhbg6go0',
