@@ -3,4 +3,3 @@ from .models import index
 
 
 admin.site.register(index)
-

@@ -350,8 +350,11 @@ The live site can also be accessed from your repo in GitHub from the environment
 
 
    - **CSS**
-     
-        ![CSS Validator]()
+     - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_input) was used to validate all CSS code. All CSS passed with one warning regarding Imported style sheets. 
+
+        ![CSS Validation](media/README.md-images/README.md-css-validation.png)
+
+        ![CSS Warning](media/README.md-images/README.md-css-warning.png)
     
     - **Python**
 
