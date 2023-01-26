@@ -279,23 +279,19 @@ The live site can also be accessed from your repo in GitHub from the environment
 
 - Ideas for future features include: 
 
-	- A way for users who would like to join Cockapoo Club and become a new member of this unique community. This would involve a way for users to create a username and password, and to receive a verification email with a link that brings the new member to an area where they can set up their new persona profile.
+	- A way for authenticated members to set up their own personal profile.
+		
+	- Another potential authenticated members only feature would be the ability to upload their photographs of their pets.
 	
-	- Creating their own profile or account and becoming a Cockapoo Club member could give them access to special areas of the website and features for members only.
+	- An online shop or commercial section of the page could also be built for all users to purchase various Cockapoo Club branded merchandise, such as dog toys, clothes and what you would generally find in a giftshop.
 	
-	- Another potential member only feature would be the ability to upload their photographs of their pets.
+	- A live social media platform feed in the Furry Fun Foto Gallery page would build the community and strengthen relationships, with authenticated members only being able to comment on other members photographs and be able to share more information in real-time with each other.
 	
-	- An online shop or commercial section of the page could also be built for users to purchase various Cockapoo Club branded merchandise, such as dog toys, clothes and what you would generally find in a giftshop.
+	- A training video gallery for authenticated members to post their videos of progress they are making in training their pets would also add value to the overall UX.
 	
-	- A live social media platform feed in the Furry Fun Foto Gallery page would build the community and strengthen relationships, with members only being able to comment on other members photographs and be able to share more information in real-time with each other.
-	
-	- A training video gallery for members to post their videos of progress they are making in training their pets would also add value for users and members.
-	
-	- A future feature I would like to implement if given the opportunity is a way for members to book dates and times for dog-sitters, kennels and training sessions in their local community. These and other features mentioned above would require other languages such as JavaScript and Python.
+	- A future feature I would like to implement if given the opportunity is a way for members to book dates and times for dog-sitters in their local community.
 	
 	- This website works on screens sizes of minimum width 320px. To make sure it works for smaller screen-sizes, such as smaller mobile devices, future media queries will need to be added for screens of maximum width 320px.
-	
-	- At screen-sizes smaller than 401px, the purple ball with the call to action 'JOIN COCKAPOO CLUB' located within the hero-image section was purposely removed via media query. This attractive feature was removed because on these much smaller screen sizes it covers the face of the dog in the hero image which may confuse users and take away from their experience of being on the website. In future, I will alter the code so this call to action can be viewed on the smaller screen sizes.
   
 
 ## **[Testing](#testing)**
@@ -303,8 +299,6 @@ The live site can also be accessed from your repo in GitHub from the environment
  - **Validator Testing**
 
    - **HTML**
-
-     I began testing the HTML code early on in the project, to methodically ensure that all HTML code was being built on solid foundations across all pages. Initially, I had some basic mistakes about having more than one H1 heading and errors due to opening tags not having corresponding closing tags. With feedback from fellow students via Slack and by using the HTML Validator I have been able to fix these HTML issues.  
 
       * [Homepage](#homepage)
 
@@ -325,27 +319,24 @@ The live site can also be accessed from your repo in GitHub from the environment
 
      * [Join](#join)
         
-        ![Join Cockapoo Club page](assets/README.md-images/README.md-JCC-html-valid.png)
+        ![Join](assets/README.md-images/README.md-JCC-html-valid.png)
+      
+      * Login(#login)    
+        ![Login](assets/README.md-images/README.md-JCC-html-valid.png)
 
 
    - **CSS**
-    
-      Testing the CSS code was also carried out with each developmental stage of the project. Most often the errors that arose were with syntax for media queries and stray curly braces.  
-
+     
         ![CSS Validator](assets/README.md-images/README.md-CSS-Validator.jpg)
     
+    - **Python**
 
-   - **Lighthouse** 
+        ![]()
 
-    Initially, I intended all of the images on the website, especially the Furry Fun Foto Gallery page, to be my own photography with family, my own dog and with friend's pets. However, coordinating this proved to be more time consuming and difficult than I originally envisaged, especially with health implications of socialising due to COVID. Instead, I have used a mix of my own photographs and images from open-source websites covered in the [Images](#used-images) section. 
 
-    By including images of larger file sizes, specifically my own images, I received a lower Lighthouse score than I had hoped for. I followed the advice of my mentor and the Lighthouse app to convert all .jfif and .jpg images to .png format. This procedure did improve the score on both Mobile and Desktop somewhat. However, I would use smaller image sizes for future projects, and will continuing to improve current images used in this project. Certain lighthouse scores are lower than I hoped for, however this is mainly due to the large size of certain images that I found difficult to reduce or comrpess. The hero image is a good example of this. I tried converting larger images from .jpeg format to .png, and then to .webp. This was largely succesful. However, some images would not work as well. I continued to try to make larger images, such as the hero image, as small as possible. Unfortunately, the decrease in quality was too much. For example, below is the hero image saved as .avif.
-
-      ![avif-hero-image](assets/README.md-images/README.md-AVIF-hero-image.avif)
-    
-    Below are the Lighthouse scores.    
+   - **Lighthouse**  
      
-    - Mobile
+    - Mobile device
       
       * [Homepage](#homepage)
 
@@ -365,7 +356,14 @@ The live site can also be accessed from your repo in GitHub from the environment
 
       * [Join](#join)
           
-        ![Join Cockapoo Club page](assets/README.md-images/README.md-join-html-lighthouse.png)
+        ![Join]()
+
+      * Login(#login)    
+      
+        ![Login]()
+
+      * Booking(#booking)    
+        ![Booking]()
 
     
     - Desktop 
@@ -387,31 +385,25 @@ The live site can also be accessed from your repo in GitHub from the environment
         ![Furry Fun Foto Gallery](assets/README.md-images/README.md-fffg-html-Desktop-lighthouse-.png)
 
       * [Join](#join)
+          
+        ![Join]()
 
-        ![Join Cockapoo Club page](assets/README.md-images/README.md-join-html-Desktop-lighthouse-.png)
+      * Login(#login)    
+      
+        ![Login]()
+
+      * Booking(#booking)    
+        ![Booking]()
+
+      * Sign out(#sign-out)
+
+        ![Sign out]()
 
   - **Feature testing**
 
-    Testing all interactive features involved manually clicking on every link on each page.
-
-    - All social media links in footer bring the user to the corresponding social media platform for them to log in. 
-    - all external links bring the user to the appropriate websites
-    - the sign up to Cockapoo Club form can be prepared and submitted correctly: 
-
-      ![sign up form](assets/README.md-images/README.md-sign-up-form-valid.png)  
-
+    Testing all interactive features involved manually clicking on every link on each page and CRUD functionality.
 
 ## **[Unfixed Bugs](#unfixed-bugs)**
-
-  - There seems to be a difference between how the background image renders in the join-form.html page via **(A)** the Gitpod remote explorer [Here](https://8000-samobrienolinge-cockapoo-53eu3ighye6.ws-eu38.gitpod.io/join-form.html#jump-to-jcc) and **(B)** the same deployed webpage [Here](https://samobrienolinger.github.io/Cockapoo-Club/join-form.html#jump-to-jcc) in Google Chrome (please see images below). Microsoft Edge and Mozilla browsers render as normal/image A below.   
-
-      **(A)**
-
-      ![background image A](assets/README.md-images/Background-image-A)
-
-      **(B)**
-
-      ![background image B](assets/README.md-images/Background-image-B)
 
   - In making the project responsive, it was suggested by tutors and students via Slack that I use flexbox. However, I think because flexbox was not covered in the modules, I quickly found that in trying to implement flexbox the ultimate result was I over-complicated issues for ensuring responsiveness. I spent far too much time trying to learn about and apply flexbox to all areas of the site which was not really necessary. With support from my mentor and Code Institute tutors, I was eventually able to undo the areas of code that were causing the most problems I was experiencing. 
 
@@ -427,10 +419,16 @@ The live site can also be accessed from your repo in GitHub from the environment
 
     However, when using Google Chrome Dev Tools there does not seem to be any issue at any screen size. So I asked friends and family members to view the website on their different devices to double-check this bug. As well as providing constructive criticism that can be seen in the [Users experience](#users-experience) section above, nobody reported this as an issue. I tested this on multiple browsers, including Mozzila and Microsoft Edge, and still no issue came up. If this is not an issue specific to the Responsively App then it is possible that this bug may continue to occur.    
     
-    ## **[Technologies and Tools](#technologies-and-tools)**
+## **[Technologies and Tools](#technologies-and-tools)**
      
 - [Convertio](https://convertio.co/) was used to convert images from .jfif and .jpeg to .png for improving the lighthouse scores for each page.
 - [nssport.com](https://nsspot.herokuapp.com/imagetowebp/) was used to convert images from .png to .webp for improving the lighthouse scores for each page.
+
+- Psychopg 2
+- unicorn
+- dj-database-url
+- Django-allauth
+- Crispy Forms
 - Django
 - Heroku
 - Cloudinary
@@ -440,7 +438,7 @@ The live site can also be accessed from your repo in GitHub from the environment
 - Github
 - Gitbash
 - Google Chrome Dev Tools 
-- Font Awesome ("Font Awesome 5 Brands")  
+- Font Awesome 
 - Prefixed by https://autoprefixer.github.io
 - [Responsively App](https://responsively.app/)
 - Languages used: 
@@ -452,7 +450,7 @@ The live site can also be accessed from your repo in GitHub from the environment
 
 ## **[Credits](#credits)**
 
-As a starting point I began with the HTML and CSS structure used in Code Institute's Love Running Project. I did this mainly because I thought the hero image with zoom was a great way to engage a new user. I also wanted to have a feature that allowed users to 'join' a club, so the Love Running project provided a good blueprint for adapting to the concept of a Cockapoo Club community.  
+- As a starting point I began with the HTML and CSS structure used in Code Institute's Love Running Project. I did this mainly because I thought the hero image with zoom was a great way to engage a new user. I also wanted to have a feature that allowed users to 'join' a club, so the Love Running project provided a good blueprint for adapting to the concept of a Cockapoo Club community.  
 
 
 ### **[Code](#code)**
@@ -545,12 +543,12 @@ As a starting point I began with the HTML and CSS structure used in Code Institu
 
     - The photos used on the main pages are from various open-source sites. The background image for join-form.html is my own. The other images on the main pages were sourced from the following places:
 
-      - Hero image: [unsplash](https://unsplash.com/photos/KVeogBZzl4M) 
-      - new cockaparents: [unsplash](https://unsplash.com/photos/T2ld_5QnZBQ) 
-      - Keep your Poo Healthy: [pixabay](https://pixabay.com/photos/beach-dog-ball-cockapoo-puppy-2427290/) 
-      - Furry Fun: [pixabay](https://pixabay.com/photos/beach-dog-water-sea-reflection-2239428/)
+      - [unsplash](https://unsplash.com/photos/KVeogBZzl4M) 
+      - [unsplash](https://unsplash.com/photos/T2ld_5QnZBQ) 
+      - [pixabay](https://pixabay.com/photos/beach-dog-ball-cockapoo-puppy-2427290/) 
+      - [pixabay](https://pixabay.com/photos/beach-dog-water-sea-reflection-2239428/)
       
-     - Images for the [Furry Fun Foto Gallery](https://samobrienolinger.github.io/Cockapoo-Club/furry-fun-foto-gallery.html#jump-to-fffg) are a combination of my own and others found on the following sites:
+      - Images for the [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/g) are a combination of my own and others found on the following sites:
 
         - [pxfuel](https://www.pxfuel.com/en/search?q=Cockapoo)
         - [ukpets](https://www.ukpets.com/blog/how-much-is-a-cockapoo) 
@@ -570,11 +568,12 @@ As a starting point I began with the HTML and CSS structure used in Code Institu
       - [Alex_alumnus](https://code-institute-room.slack.com/team/U01PDEMPJ87)
       - [Gaff C-Lead, Mentor](https://code-institute-room.slack.com/team/UU5GAMEJV)
       - [Tony-Albanese](https://code-institute-room.slack.com/archives/D04L1BCQ2UC/p1674319883425119)
+      - [Andy_Guttridge-5p](https://code-institute-room.slack.com/team/U028ET3Q37A)
       - [Ed-ci](https://code-institute-room.slack.com/team/U02FJ8V7NA2)
       - [Jo_ci](https://code-institute-room.slack.com/team/U01MQ6TQUPQ)
       - [Rebecca_ci](https://code-institute-room.slack.com/team/U02NKD296N5)
-      - [alan_ci](https://code-institute-room.slack.com/team/U01FHTDF0RE)
-      - [roman-rakic](https://code-institute-room.slack.com/team/U0399DYN9AM)
+      - [Alan_ci](https://code-institute-room.slack.com/team/U01FHTDF0RE)
+      - [Roman-Rakic](https://code-institute-room.slack.com/team/U0399DYN9AM)
      
 
 
