@@ -15,7 +15,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-# from django.contrib.staticfiles import staticfiles_patterns
 
 
 urlpatterns = [
@@ -26,40 +25,4 @@ urlpatterns = [
     path('summernote/', include('django_summernote.urls')),
     path("accounts/", include("allauth.urls")),
     path('accounts/', include('django.contrib.auth.urls')),
-    # path("accounts/", include("accounts.urls")),
 ]
-
-
-# urlpatterns += staticfiles_patterns
-
-
-#   path(r'^admin/', admmin.site.urls),
-#   path(r'^home/$', views.homepage),
-#   path(r'^booking/$', views.booking)
-
-#   path('admin/', admin.site.urls),
-#   path("booking/", include("booking.urls")),
-#   path('hello/', say_hello, name='hello'),
-
-#     path(
-#     'admin/password_reset/',
-#    auth_views.PasswordResetView.as_view(),
-#    name='admin_password_reset',
-# ),
-
-#    path(
-#    'admin/password_reset/done/',
-#    auth_views.PasswordResetDoneView.as_view(),
-#    name='password_reset_done',
-# ),
-
-#     path(
-#     'reset/<uidb64>/<token>/',
-#     auth_views.PasswordResetConfirmView.as_view(),
-#     name='password_reset_confirm',
-# ),
-
-#     path('reset/done/',
-#     auth_views.PasswordResetCompleteView.as_view(),
-#     name='password_reset_complete',
-# ),

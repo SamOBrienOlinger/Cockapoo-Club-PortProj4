@@ -63,16 +63,6 @@ LOGOUT_REDIRECT_URL = '/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-# BOOKING_TITLE = "Book a Session"
-# BOOKING_DESC = "Book a session with a dog trainer"
-# BOOKING_BG = "img/booking_bg.jpg"
-
-# BOOKING_SUCCESS_REDIRECT_URL = "Success redirect url"
-# BOOKING_DISABLE_URL = "Redirect to this url if create booking is disable"
-
-# BOOKING_SUCCESS_REDIRECT_URL = '/'
-# BOOKING_DISABLE_URL = '/'
-
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -103,24 +93,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'CockapooClub.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
-
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
-#     }
-# }
-
 DATABASES = {
    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
-# DATABASES = {
-#    'default': dj_database_url.parse('postgres: //https://book-sessions.herokuapp.com'
-# }
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -140,18 +116,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST_USER = os.environ.get('EMAIL_ADDRESS')
-# EMAIL_HOST = 'cockapooclubireland@gmail.com'
-# ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
-# # ACCOUNT_EMAIL_VERIFICATION = 'none'
-
-# # ACCOUNT_SIGNUP_PASSWORD_ENTER_TWICE = False
-# # ACCOUNT_USERNAME_REQUIRED = False
-# ACCOUNT_AUTHENTICATION_METHOD = 'email'
-# ACCOUNT_EMAIL_REQUIRED = True
-# ACCOUNT_UNIQUE_EMAIL = True
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -165,20 +129,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.2/howto/static-files/
-
-# STATIC_URL = '/static/'
-# STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': 'dzhbg6go0',
-#     'API_KEY': '133846732432361',
-#     'API_SECRET': '-lSKTqZAR6zW5Y5992HXkkl1i4c'
-# }
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'

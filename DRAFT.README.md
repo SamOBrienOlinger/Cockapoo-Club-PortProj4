@@ -355,7 +355,16 @@ The live site can also be accessed from your repo in GitHub from the environment
     
     - **Python**
 
-        ![]()
+      -   [CI Python Linter](https://pep8ci.herokuapp.com/) was the validator used. All the Python code passed without errors, except for the following files `home/urls.py`, `settings.py`, `book_sessions/views.py`, `book_sessions/urls.py` which gave E501 'line too long' warnings.
+
+          ![home-urls](media/README.md-images/README.md-home-urls.png)
+
+          ![settings](media/README.md-images/README.md-CC_settings.png)
+
+          ![book_sessions-views](media/README.md-images/README.md-book_sessions-views.png)
+          
+          ![book_sessions-urls](media/README.md-images/README.md-book_sessions-urls.png)
+
 
     - **JavaScript**
 
