@@ -325,37 +325,41 @@ The live site can also be accessed from your repo in GitHub from the environment
 
       * [Homepage](#homepage)
 
-        ![homepage](assets/README.md-images/README.md-index-html-valid.png)
+        ![homepage]()
       
      * [New Cockaparents](#new-cockaparents)
         
-        ![new cockaparents](assets/README.md-images/README.md-NC-html-valid.png)
+        ![new cockaparents]()
 
      * [Keep Your Poo Healthy](#keep-your-poo-healthy)
         
-        ![Keep Your Poo Healthy](assets/README.md-images/README.md-KYPH-html-valid.png)
+        ![Keep Your Poo Healthy]()
 
      * [Furry Fun Foto Gallery](#furry-fun-foto-gallery)
         
-        ![Furry Fun Foto Gallery](assets/README.md-images/README.md-FFFG-html-valid.png)
+        ![Furry Fun Foto Gallery]()
 
-
+     * ![Booking a Dgg Training Session]()
+     
      * [Join](#join)
         
-        ![Join](assets/README.md-images/README.md-JCC-html-valid.png)
+        ![Join]()
       
       * Login(#login)    
-        ![Login](assets/README.md-images/README.md-JCC-html-valid.png)
+        ![Login]()
 
 
    - **CSS**
      
-        ![CSS Validator](assets/README.md-images/README.md-CSS-Validator.jpg)
+        ![CSS Validator]()
     
     - **Python**
 
         ![]()
 
+    - **JavaScript**
+
+      ![]()
 
    - **Lighthouse**  
      
@@ -407,6 +411,9 @@ The live site can also be accessed from your repo in GitHub from the environment
 
         ![Furry Fun Foto Gallery](assets/README.md-images/README.md-fffg-html-Desktop-lighthouse-.png)
 
+      * Booking(#booking)    
+        ![Booking]()
+        
       * [Join](#join)
           
         ![Join]()
@@ -415,8 +422,7 @@ The live site can also be accessed from your repo in GitHub from the environment
       
         ![Login]()
 
-      * Booking(#booking)    
-        ![Booking]()
+
 
       * Sign out(#sign-out)
 
@@ -424,7 +430,7 @@ The live site can also be accessed from your repo in GitHub from the environment
 
   - **Feature testing**
 
-    Testing all interactive features involved manually clicking on every link on each page to ensure CRUD functionality had been acheived.
+    Testing all interactive features involved manually clicking on every link on each page to ensure they brought the User to the correct url and confirm that CRUD functionality had been acheived.
 
 ## **[Unfixed Bugs](#unfixed-bugs)**
 
