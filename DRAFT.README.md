@@ -317,7 +317,7 @@ The live site can also be accessed from your repo in GitHub from the environment
    
   - **Manual Testing**
 
-    Manual testinf of every feature was conducted on an ongoing basis throughout development. All manual testing were found to pass, once bugs were fixed.
+    Manual testing of every feature was conducted on an ongoing basis throughout development. All manual testing passed, once bugs were fixed.
 
  - **Validator Testing**
 
@@ -339,7 +339,9 @@ The live site can also be accessed from your repo in GitHub from the environment
         
         ![Furry Fun Foto Gallery]()
 
-     * ![Booking a Dgg Training Session]()
+     * [Booking a Dog Trainin Session](#booking-a-dog-training-session)
+
+        ![Booking a Dog Training Session]()
      
      * [Join](#join)
         
