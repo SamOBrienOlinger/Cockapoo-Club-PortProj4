@@ -65,13 +65,13 @@ Cockapoo Club now offers an Admin and Users a Create, Read, Update and Delete fu
 
 ## **[Features](#features)**
 
-Themain front-end webpages are:
+The main front-end webpages are:
 
 * [Homepage](#homepage)
 * [New Cockaparents](#new-cockaparents)
 * [Keep Your Poo Healthy](#keep-your-poo-healthy)
 * [Furry Fun Foto Gallery](#furry-fun-foto-gallery)
-* [Registration](#registration) (sign in / sign up)
+* [Registration](#registration) ('Join', 'Login' and 'Logout')
 * [Booking a Dog Training Session](#booking-a-dog-training-session)
 
 
@@ -151,27 +151,46 @@ Themain front-end webpages are:
 
 ### **[Registration](#registration)**
 
-  **Sign up feature**
-  - An important feature of the website that provides value for users is the opportunity to become a member of Cockapoo Club. [The join or signup page](https://home-cockapoo-club-pp4.herokuapp.com/accounts/signup/) provides Users with a form to register a new account so they can view the exclusive content on the Furry Fun Foto Gallery page and to book a dog training session.    
+  **Join feature**
+  - An important new feature of the website that provides value for Users is the opportunity to become a member of Cockapoo Club. [The join or signup page](https://home-cockapoo-club-pp4.herokuapp.com/accounts/signup/) provides Users with a form to register a new account so they can view the exclusive content on the Furry Fun Foto Gallery page and to book a dog training session.    
 
   - This builds on the concept outlined in the above section regarding the clubhouse and training centre as well as the Furry Fun Foto Gallery.  A physical space where Cockapoo owners and their pets can meet in person. The opportunity to meet and benefit membership in-person makes this website and concept different to most other purely online communities that can easily be found on social media platforms yet do not involve members meeting face-to-face with their pets for mutual benefit and free peer-support.
 
    ![Join page image](media/README.md-images/README.md-join-page.png)
 
-**Sign in feature**
+**Login feature**
 
 - Once a User has registered an account they can also avail of the functionality that allows them to book a dog training session and view the Furry Fun Foto Gallery page. 
 
 ![Login page](media/README.md-images/README.md-login-page.png)
 
+**Logout feature**
+ - in order for the User to sign out of their member account they can find this option in the navbar, where they originally joined or logged in. 
 
+  ![navbar logout option](media/README.md-images/README.md-logout-navbar.png)
+
+  ![log out page](media/README.md-images/README.md-logout-page.png)
+
+  - The User is given two opportunites to change their mind, in case they are logging out accidently.
+
+  ![log out confirmation message](media/README.md-images/README.md-are-you-sure-about-logging-out.png)
+
+ 
 ### **[Booking a Dog Training Session](#booking-a-dog-training-session)**
 
   ![Booking](media/README.md-images/README.md-booking-image.png)
 
 By importing Django's booking model, the framework allows autehticated Users to use a drop down calendar feature for scheduling a dog training session on a one-to-one basis, or to train as part of a group of owners and dogs. 
 
-![booking page](media/README.md-images/README.md-booking-drop-down-calendar.png)
+ ![Booking page](media/README.md-images/README.md-booking-drop-down-calendar.png)
+
+ The User can update their booking by rescheduling the date and time or by cancelling the training session. 
+
+ ![Update booking](media/README.md-images/README.md-booking-options.png)
+
+The User is prompted with an alert so they can change their mind, in case they are cancelling a training session accidently.
+
+ ![cancellation confirmation message](media/README.md-images/README.md-are-you-sure-about-cancelling.png)
 
 
 ## **[Agile Development and User Stories](#agile-development-and-user-stories)**
@@ -296,6 +315,10 @@ The live site can also be accessed from your repo in GitHub from the environment
 
 ## **[Testing](#testing)**
    
+  - **Manual Testing**
+
+    Manual testinf of every feature was conducted on an ongoing basis throughout development. All manual testing were found to pass, once bugs were fixed.
+
  - **Validator Testing**
 
    - **HTML**
@@ -401,28 +424,19 @@ The live site can also be accessed from your repo in GitHub from the environment
 
   - **Feature testing**
 
-    Testing all interactive features involved manually clicking on every link on each page and CRUD functionality.
+    Testing all interactive features involved manually clicking on every link on each page to ensure CRUD functionality had been acheived.
 
 ## **[Unfixed Bugs](#unfixed-bugs)**
 
-  - In making the project responsive, it was suggested by tutors and students via Slack that I use flexbox. However, I think because flexbox was not covered in the modules, I quickly found that in trying to implement flexbox the ultimate result was I over-complicated issues for ensuring responsiveness. I spent far too much time trying to learn about and apply flexbox to all areas of the site which was not really necessary. With support from my mentor and Code Institute tutors, I was eventually able to undo the areas of code that were causing the most problems I was experiencing. 
+  <!-- - In making the project responsive, it was suggested by tutors and students via Slack that I use flexbox. However, I think because flexbox was not covered in the modules, I quickly found that in trying to implement flexbox the ultimate result was I over-complicated issues for ensuring responsiveness. I spent far too much time trying to learn about and apply flexbox to all areas of the site which was not really necessary. With support from my mentor and Code Institute tutors, I was eventually able to undo the areas of code that were causing the most problems I was experiencing. 
 
-  - Another issue faced in making the site more responsive was making sure to use dynamic units of measurement rather than fixed ones in the most appropriate places.  
-
-  - There were two occasions where I experienced conflicts between my GitHub repository and my local one. I was unaware that having more than one Gitpod workspace open would cause significant issues with diverging main branches. A significant amount of time was spent on these occasions with Code Institute tutors fixing the conflicts that came with having to merge or reconcile branches.  
-
-  - Significant bugs were also experienced when Github moved servers from eu34 to eu38, before I saved my progress, resulting in losing a significant number of hours of work over approximately a week. Code Institute tutors were very helpful with guiding me through the procedure for finding the last git push I had done and restoring that.  
-
-  - When I used [Responsively App](https://responsively.app/) a bug showed up regarding the rendering of images in the Furry Fun Foto Gallery:
-
-    ![Responsively-App](assets/README.md-images/README.md-Responsively-App-Bug.png)    
-
-    However, when using Google Chrome Dev Tools there does not seem to be any issue at any screen size. So I asked friends and family members to view the website on their different devices to double-check this bug. As well as providing constructive criticism that can be seen in the [Users experience](#users-experience) section above, nobody reported this as an issue. I tested this on multiple browsers, including Mozzila and Microsoft Edge, and still no issue came up. If this is not an issue specific to the Responsively App then it is possible that this bug may continue to occur.    
+  - Another issue faced in making the site more responsive was making sure to use dynamic units of measurement rather than fixed ones in the most appropriate places.   -->
+   
     
 ## **[Technologies and Tools](#technologies-and-tools)**
      
-- [Convertio](https://convertio.co/) was used to convert images from .jfif and .jpeg to .png for improving the lighthouse scores for each page.
-- [nssport.com](https://nsspot.herokuapp.com/imagetowebp/) was used to convert images from .png to .webp for improving the lighthouse scores for each page.
+- Convertio was used to convert images from .jfif and .jpeg to .png for improving the lighthouse scores for each page.
+- nssport.com was used to convert images from .png to .webp for improving the lighthouse scores for each page.
 
 - Psychopg 2
 - unicorn
@@ -439,8 +453,7 @@ The live site can also be accessed from your repo in GitHub from the environment
 - Gitbash
 - Google Chrome Dev Tools 
 - Font Awesome 
-- Prefixed by https://autoprefixer.github.io
-- [Responsively App](https://responsively.app/)
+- Responsively App
 - Languages used: 
      - HTML
      - CSS
