@@ -5,7 +5,6 @@ from django import forms
 
 # Create your models here.
 
-
 class index(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
