@@ -1,102 +1,129 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="All things Cockapoo in Dublin, Ireland">
-      <meta name="keywords" content="dog, dogs, local, cockapoo, cockapoos, small-dog, hypoallergenic-dog, club, community, phtographs-of-dogs, dog-training, ireland, dublin">
-            
-      <title>Cockapoo Club Dublin Ireland</title>
-      <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        
-      <!-- XDSoft DateTimePicker -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha256-DOS9W6NR+NFe1fUhEE0PGKY/fubbUCnOfTje2JMDw3Y=" crossorigin="anonymous"/>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha256-FEqEelWI3WouFOo2VWP/uJfs1y8KJ++FLh2Lbqc8SJk=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://res.cloudinary.com/dzhbg6go0/raw/upload/v1674320855/style.pp4_nxx3st.css">
-   </head>
-   <main>
-      <header>
-         <section>
-            <a id="top"></a>
-              <h1 id="logo">Cockapoo Club</h1>
-         </section>
-         <nav>
-            <ul class="menu">
-               <li>
-                  <a href="{% url 'index' %}" aria-label="Visit our Homepage">Home</a>
-               </li>
-               <li>
-                  <a href="{% url 'New-Cockaparents' %}" aria-label="Visit our New Cockaparents page">New Cockaparents</a>
-               </li>
-               <li>
-                  <a href="{% url 'Keep-your-Poo-Healthy' %}" aria-label="Visit our Keep Your Poo Healthy page">Keep your Poo Healthy</a>
-               </li>
-               <li>
-                  <a href="{% url 'Furry-Fun-Foto-Gallery' %}" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery</a>
-               </li>
-               {% if user.is_authenticated %}
-               <li>
-                   <a href="{% url 'account_logout' %}" aria-label="Please Logout">Logout</a>
-               </li>
-               {% else %}
-               <li>
-                  <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join</a>
-               </li>
-               <li>
-                  <a href="{% url 'account_login' %}" aria-label="Please Login">Login</a>
-               </li>
-               {% endif %}
-            </ul>
-         </nav>
-      </header>
-      <section id="hero-outer">
-         <div id="hero-image"></div>
-         <div id="cover-text">
-            <h2><a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">
-               <span id="join">Join Cockapoo Club</span>
-               </a>
-            </h2>
-         </div>
-      </section>
- 
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="All things Cockapoo in Dublin, Ireland">
+    <meta name="keywords" content="dog, dogs, local, cockapoo, cockapoos, small-dog, hypoallergenic-dog, club, community, phtographs-of-dogs, dog-training, ireland, dublin">
+    <title>Cockapoo Club Dublin Ireland
+    </title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- XDSoft DateTimePicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.min.css" integrity="sha256-DOS9W6NR+NFe1fUhEE0PGKY/fubbUCnOfTje2JMDw3Y=" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-datetimepicker/2.5.20/jquery.datetimepicker.full.min.js" integrity="sha256-FEqEelWI3WouFOo2VWP/uJfs1y8KJ++FLh2Lbqc8SJk=" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="https://res.cloudinary.com/dzhbg6go0/raw/upload/v1674320855/style.pp4_nxx3st.css">
+  </head>
+  <main>
+    <header>
       <section>
-
-        {% block content %}
-        <!-- Content Goes here -->
-        {% endblock content %}
-
+        <a id="top">
+        </a>
+        <h1 id="logo">Cockapoo Club
+        </h1>
       </section>
-    
-    </main>
-
-    <!-- Footer -->
-    <footer>
-       <div id="contact-us">
-          Contact us by <span class="furry-fun-fotos-join"><a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">becoming a member</a>
-          </span> 
-          -or- email: <span class="furry-fun-fotos-join"><a href="https://mail.google.com/" aria-label="email address">cockapooclubireland@gmail.com</a></span>
-       </div>
-       <ul class="social-networks">
+      <nav>
+        <ul class="menu">
           <li>
-             <a href="https://facebook.com" target="_blank" rel="noopener"
-                aria-label="Visit our Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="{% url 'index' %}" aria-label="Visit our Homepage">Home
+            </a>
           </li>
           <li>
-             <a href="https://twitter.com" target="_blank" rel="noopener"
-                aria-label="Visit our Twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="{% url 'New-Cockaparents' %}" aria-label="Visit our New Cockaparents page">New Cockaparents
+            </a>
           </li>
           <li>
-             <a href="https://youtube.com" target="_blank" rel="noopener"
-                aria-label="Visit our YouTube"><i class="fab fa-youtube-square"></i></a>
+            <a href="{% url 'Keep-your-Poo-Healthy' %}" aria-label="Visit our Keep Your Poo Healthy page">Keep your Poo Healthy
+            </a>
           </li>
           <li>
-             <a href="https://instagram.com" target="_blank" rel="noopener"
-                aria-label="Visit our Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="{% url 'Furry-Fun-Foto-Gallery' %}" aria-label="Visit our Furry Fun Foto gallery page">Furry Fun Foto Gallery
+            </a>
           </li>
-       </ul>
-    </footer>
-    <!-- font awesome script  -->
-    <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+          {% if user.is_authenticated %}
+          <li>
+            <a href="{% url 'account_logout' %}" aria-label="Please Logout">Logout
+            </a>
+          </li>
+          {% else %}
+          <li>
+            <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join
+            </a>
+          </li>
+          <li>
+            <a href="{% url 'account_login' %}" aria-label="Please Login">Login
+            </a>
+          </li>
+          {% endif %}
+        </ul>
+      </nav>
+    </header>
+    <section id="hero-outer">
+      <div id="hero-image">
+      </div>
+      <div id="cover-text">
+        <h2>
+          <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">
+            <span id="join">Join Cockapoo Club
+            </span>
+          </a>
+        </h2>
+      </div>
+    </section>
+    <section>
+      {% block content %}
+      <!-- Content Goes here -->
+      {% endblock content %}
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div id="contact-us">
+      Contact us by 
+      <span class="furry-fun-fotos-join">
+        <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">becoming a member
+        </a>
+      </span> 
+      -or- email: 
+      <span class="furry-fun-fotos-join">
+        <a href="https://mail.google.com/" aria-label="email address">cockapooclubireland@gmail.com
+        </a>
+      </span>
+    </div>
+    <ul class="social-networks">
+      <li>
+        <a href="https://facebook.com" target="_blank" rel="noopener"
+           aria-label="Visit our Facebook">
+          <i class="fab fa-facebook">
+          </i>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com" target="_blank" rel="noopener"
+           aria-label="Visit our Twitter">
+          <i class="fab fa-twitter-square">
+          </i>
+        </a>
+      </li>
+      <li>
+        <a href="https://youtube.com" target="_blank" rel="noopener"
+           aria-label="Visit our YouTube">
+          <i class="fab fa-youtube-square">
+          </i>
+        </a>
+      </li>
+      <li>
+        <a href="https://instagram.com" target="_blank" rel="noopener"
+           aria-label="Visit our Instagram">
+          <i class="fab fa-instagram">
+          </i>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <!-- font awesome script  -->
+  <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous">
+  </script>
 </html>
