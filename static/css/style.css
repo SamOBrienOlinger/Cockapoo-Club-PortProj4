@@ -498,7 +498,7 @@ section.form-section div {
 	width: auto
 }
 
-#contact-us {
+.contact-us {
 	font-size: 2.5vmin;
 	text-align: center;
 	margin-top: 2rem
@@ -587,7 +587,7 @@ section.form-section div {
 		margin: auto;
 		font-size: 2vmin
 	}
-	#contact-us {
+	.contact-us {
 		margin-top: 4rem
 	}
 	.join-button {
