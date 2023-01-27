@@ -376,7 +376,8 @@ The live site can also be accessed from your repo in GitHub from the environment
 
     - **JavaScript**
 
-      ![]()
+      [JS Hint](https://jshint.com/) was used to validate the JavaScript in this project.
+
 
    - **Lighthouse**  
      

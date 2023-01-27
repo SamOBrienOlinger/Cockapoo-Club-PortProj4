@@ -31,9 +31,9 @@
   <div>
     <div>{{booking.session_type}}</div>
     <div>{{booking.booking_date_time}}</div>
-    <button><a href="{% url 'update-booking' booking.id %}">Reschedule</a></button>
+    <button onclick="return confirm('Are you sure you want to reschedule your dog training session?')"><a href="{% url 'update-booking' booking.id %}">Reschedule</a></button>
     <button onclick="return confirm('Are you sure you want to cancel your dog training session?')"><a href="{% url 'delete-booking' booking.id %}">Cancel</a></button>
-</div>
+  </div>
 
 {% endfor %}
 

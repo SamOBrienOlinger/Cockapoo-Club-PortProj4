@@ -46,20 +46,9 @@
   </header>
   <body>
    <center>
-    {% block body %}
-
-    <!-- {% if messages %}
-    <div>
-      <strong>Messages:</strong>
-      <ul>
-        {% for message in messages %}
-        <li>{{message}}</li>
-        {% endfor %}
-      </ul>
-    </div>
-    {% endif %} -->
-
-    <div>
+    <!-- {% block body %} -->
+   {% endblock %}
+   <div>
       <strong>Your Options</strong>
       <ul>
         {% if user.is_authenticated %}
@@ -72,8 +61,8 @@
       </ul>
     </div>
     {% block content %}
-    {% endblock %}
-    {% endblock %}
+
+    <!-- {% endblock %} -->
     {% block extra_body %}
     {% endblock %}
    </center>
