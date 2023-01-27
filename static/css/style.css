@@ -249,7 +249,8 @@ div.dropdown-menu {
 	background-color: rgba(113, 18, 238, 0.1);
 	font-size: 1.5rem;
 	line-height: 2rem;
-	font-weight: 300
+	font-weight: 300;
+	text-align: center;
 }
 
 #gmap_canvas {
@@ -326,7 +327,8 @@ div#jump-to-nc {
 
 div.keep-your-poo-healthy-text {
 	font-size: 1.5rem;
-	line-height: 2rem
+	line-height: 2rem;
+	text-align: center;
 }
 
 .furry-fun-fotos-join {
@@ -391,7 +393,6 @@ img {
 
 .form-section {
 	clear: left;
-	/* background-image: url(static/benji-couch2.webp); */
 	background-image: url(https://res.cloudinary.com/dzhbg6go0/image/upload/v1670254218/CockapooClub/benji-couch2_cdjxgx.webp);
 	background-size: cover;
 	background-position: center;
@@ -546,6 +547,7 @@ section.form-section div {
 	}
 	div.keep-your-poo-healthy-text {
 		padding: 1rem;
+		text-align: center;
 	}
 	.main-sections {
 		width: auto;
@@ -635,7 +637,8 @@ section.form-section div {
 		background-color: rgba(113, 18, 238, 0.1);
 		font-size: 1rem;
 		line-height: 2rem;
-		font-weight: 300
+		font-weight: 300;
+		text-align: center;
 	}
 	div.new-cockaparents-text-second-section {
 		height: fit-content;
