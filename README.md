@@ -364,7 +364,7 @@ All HTML code was validated using [Nu Html Checker](https://validator.w3.org/nu/
    - **Lighthouse**  
        Lower scores were mainly as a result of imported JavaScript code regarding the category of Best Practice. Comprimising in the category of Performance also contributed to a less than optimal score. This comprimise was made to maintain aspects of the website such as the larger images that are so important for brand recognition and UX. The hero image is a good example of this. In future, this will be reviewed with the aim of improving both Best Practice and Performace without jeopardising UX.    
      
-     - Mobile device
+     - **Mobile device**
       
         * Homepage
 
@@ -386,47 +386,50 @@ All HTML code was validated using [Nu Html Checker](https://validator.w3.org/nu/
             
           ![Join](media/README.md-images/README.md-lighthouse-mobile-join.png)
 
-        * Login    
+        * Login  
+
+           ![Login](media/README.md-images/README.md-lighthouse-mobile-login.png)
         
-          ![Login](media/README.md-images/README.md-lighthouse-mobile-login.png)
-
         * Booking    
-          ![Booking](media/README.md-images/README.md-lighthouse-mobile-booking.png)
-
+          ![Booking](media/README.md-images/README.md-lighthouse-mobile-booking.png) 
+        
+        * Logout 
+          ![Logout](media/README.md-images/README.md-lighthouse-mobile-logout.png)  
+          
     
-  - Desktop 
+     - **Desktop** 
 
-      * Homepage
+       * Homepage
               
-        ![Homepage]()
+         ![Homepage](media/README.md-images/README.md-lighthouse-desktop-homepage.png)
           
-      * New Cockaparents
+       * New Cockaparents
             
-        ![new cockaparents]()
+         ![new cockaparents](media/README.md-images/README.md-lighthouse-desktop-NCP.png)
 
-      * Keep Your Poo Healthy
+       * Keep Your Poo Healthy
           
-        ![Keep Your Poo Healthy]()
+         ![Keep Your Poo Healthy](media/README.md-images/README.md-lighthouse-desktop-KYPH.png)
 
-      * Furry Fun Foto Gallery
+       * Furry Fun Foto Gallery
 
-        ![Furry Fun Foto Gallery]()
+         ![Furry Fun Foto Gallery](media/README.md-images/README.md-lighthouse-desktop-FFFG.png)
+            
+       * Join
+              
+         ![Join](media/README.md-images/README.md-lighthouse-desktop-join.png)
 
-      * Booking   
+       * Login   
+          
+         ![Login](media/README.md-images/README.md-lighthouse-desktop-login.png)
+
+       * Booking   
       
-        ![Booking]()
-            
-      * Join
-              
-        ![Join]()
-
-      * Login   
-          
-        ![Login]()
-
+         ![Booking](media/README.md-images/README.md-lighthouse-desktop-booking.png)
+        
        * Logout
 
-         ![Logout]()
+         ![Logout](media/README.md-images/README.md-lighthouse-desktop-logout.png)
 
   - **Feature testing**
 
