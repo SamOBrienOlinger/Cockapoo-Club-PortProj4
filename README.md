@@ -52,7 +52,7 @@ Cockapoo Club now offers Users a feature to Create, Read, Update and Delete a do
 
 The Django Admin panel allows Users with the relevant permissions to also Create, Read, Update and Delete data as is standard. 
 
-![Django Admin](static/README.md-django-admin-panel.png)
+![Django Admin](media/README.md-images/README.md-django-admin-panel.png)
 
 
 ## **[Contents](#contents)**
@@ -300,37 +300,39 @@ To duplicate deployment to Heroku, follow these steps:
 
  - **Validator Testing**
 
+All HTML code was validated using [Nu Html Checker](https://validator.w3.org/nu/), except for two warnings connected to code in the account/base.html and base/html templates.   
+
    - **HTML**
 
       * [Homepage](#homepage)
 
-        ![homepage](static/README.md-html-validation-homepage.png)
+        ![homepage](media/README.md-images/README.md-html-validation-homepage.png)
       
      * [New Cockaparents](#new-cockaparents)
         
-        ![new cockaparents](static/README.md-html-validation-NCP.png)
+        ![new cockaparents](media/README.md-images/README.md-html-validation-NCP.png)
 
      * [Keep Your Poo Healthy](#keep-your-poo-healthy)
         
-        ![Keep Your Poo Healthy](static/README.md-html-validation-KYPH.png)
+        ![Keep Your Poo Healthy](media/README.md-images/README.md-html-validation-KYPH.png)
 
      * [Furry Fun Foto Gallery](#furry-fun-foto-gallery)
         
-        ![Furry Fun Foto Gallery]()
+        ![Furry Fun Foto Gallery](media/README.md-images/README.md-html-validation-fffg.png)
 
      * [Booking a Dog Training Session](#booking-a-dog-training-session)
 
-        ![Booking a Dog Training Session]()
+        ![Booking a Dog Training Session](media/README.md-images/README.md-html-validation-booking.png)
      
      * [Join](#join)
         
-        ![Join](static/README.md-html-validation-join-CC.png)
+        ![Join](media/README.md-images/README.md-html-validation-join-CC.png)
       
       * Login(#login)    
-        ![Login]()
+        ![Login](media/README.md-images/README.md-html-validation-login.png)
 
       * Logout(#logout)    
-        ![Logout](static/README.md-html-validation-logout.png)
+        ![Logout](media/README.md-images/README.md-html-validation-logout.png)
 
 
    - **CSS**
