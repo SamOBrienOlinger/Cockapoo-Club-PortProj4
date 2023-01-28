@@ -1,23 +1,27 @@
 {% extends 'base.html' %} 
 {% block content %}
-
 {% load crispy_forms_tags %}
-    
-    
-    <h1>Your Training Session</h1>
-        <p> Thank you. Your booking details have been submitted </p>
-
-    <div>Session Type: {{ booking.session_type }}</div>
-    <div>Booking time: {{ booking.booking_date_time }}</div>
-
-    {% if booking.confirmed %}
-
-    <span>Booking confirmed</span>
-    {% else %}
-    
-    <span>Booking not confirmed yet</span>
-    {% endif %}
-    <button class="join-button" type="submit" value="submit"><a href="{% url 'all_bookings' %}">Reschedule</a></button>
-    <button onclick="return confirm('Are you sure you want to cancel your dog traing session?')" class="join-button" type="submit" value="submit"><a href="{% url 'index' %}">Cancel booking</a></button>
-    
+<h1>Your Training Session
+</h1>
+<p> Thank you. Your booking details have been submitted 
+</p>
+<div>Session Type: {{ booking.session_type }}
+</div>
+<div>Booking time: {{ booking.booking_date_time }}
+</div>
+{% if booking.confirmed %}
+<span>Booking confirmed
+</span>
+{% else %}
+<span>Booking not confirmed yet
+</span>
+{% endif %}
+<button class="join-button" type="submit" value="submit">
+  <a href="{% url 'all_bookings' %}">Reschedule
+  </a>
+</button>
+<button onclick="return confirm('Are you sure you want to cancel your dog traing session?')" class="join-button" type="submit" value="submit">
+  <a href="{% url 'index' %}">Cancel booking
+  </a>
+</button>
 {%endblock%}

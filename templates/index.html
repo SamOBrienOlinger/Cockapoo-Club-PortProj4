@@ -1,83 +1,115 @@
 {% extends "base.html" %}
-
 {% block content %}
-
-     <section>
-         <h2 class="new-page-intro">All Things Cockapoo in Dublin, Ireland</h2>
-         <div class="homepage-container">
-            <div class="homepage-anchors-row">
-               <a href="{% url 'New-Cockaparents' %}" aria-label="Visit our New Cockaparents page">
-               <span class="main-sections" id="new-cockaparents">
-               New Cockaparents
-               </span>
-               </a>
-            </div>
-            <div class="homepage-anchors-row"> 
-                  <a href="{% url 'Keep-your-Poo-Healthy' %}" aria-label="Visit our Keep Your Poo Healthy page">
-                  <span class="main-sections" id="keep-your-poo-healthy">
-               Keep Your Poo Healthy
-               </span>
-               </a>
-            </div>
-            <div class="homepage-anchors-column"> 
-               <a href="{% url 'Furry-Fun-Foto-Gallery' %}" aria-label="Visit our Furry Fun Foto gallery page">
-               <span class="main-sections" id="furry-fun">
-               Furry Fun Foto Gallery
-               </span>
-               </a>
-            </div>
-         </div>
-      </section>
-      <section>
-         <div class="clubhouse-map">
-            <h3>At Cockapoo Club we want to see you and your furry best friend thrive together</h3>
-            <p>
-               <span class="furry-fun-fotos-join"><a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join Cockapoo Club Now</a></span> for all the support, information and fun you will ever need
-            </p>
-         </div>
-      </section>
-      <section>
-         <div class="container-new-cockaparents">
-            <h3><a href="#jump-to-clubhouse-times" aria-label="See our clubhouse opening times">Come to our Clubhouse and Training Centre</a></h3>
-            <div class="new-cockaparents-text">
-               <div class="gmap_size">
-                  <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=saggart%20village%20heritage%20centre&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-                  <a href="https://123movies-to.org"></a>
-                  <a href="https://www.embedgooglemap.net" aria-label="Use Google Maps to find our Clubhouse" target="_blank"></a>
-               </div>
-            </div>
-            <div id="free-supports">
-               <i class="fa fa-paw" aria-hidden="true"></i>
-                  Free Dog Training Sessions for all <span class="furry-fun-fotos-join"><a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Cockapoo Club Members</a> <i class="fa fa-paw" aria-hidden="true"></i></span>
-               <ul class="main-sections" id="training-poo">
-                  <li><a href="{% url 'all_bookings' %}" class="join-button" aria-label="Book your training sessions now">CLICK HERE to book One to One or Group Training Sessions!</a></li> 
-               </ul>
-            </div>
-            <div class="new-cockaparents-text-second-section">
-               <div class="text-center">
-                  <h3><a id="jump-to-clubhouse-times">Clubhouse and Training Centre Opening hours</a></h3>
-                  <table>
-                     <tr>
-                        <th>Days</th>
-                        <th>Open</th>
-                        <th>Close</th>
-                     </tr>
-                     <tr>
-                        <td>Mon - Fri</td>
-                        <td>07:00</td>
-                        <td>19:00</td>
-                     </tr>
-                     <tr>
-                        <td>Weekend</td>
-                        <td>10:00</td>
-                        <td>22:00</td>
-                     </tr>
-                  </table>
-               </div>
-            </div>
-         </div>
-         <div>
-            <a href="#top" class="join-button">Back to top</a>
-         </div>
-      </section>
-      {%endblock%}
+<section>
+  <h2 class="new-page-intro">All Things Cockapoo in Dublin, Ireland
+  </h2>
+  <div class="homepage-container">
+    <div class="homepage-anchors-row">
+      <a href="{% url 'New-Cockaparents' %}" aria-label="Visit our New Cockaparents page">
+        <span class="main-sections" id="new-cockaparents">
+          New Cockaparents
+        </span>
+      </a>
+    </div>
+    <div class="homepage-anchors-row"> 
+      <a href="{% url 'Keep-your-Poo-Healthy' %}" aria-label="Visit our Keep Your Poo Healthy page">
+        <span class="main-sections" id="keep-your-poo-healthy">
+          Keep Your Poo Healthy
+        </span>
+      </a>
+    </div>
+    <div class="homepage-anchors-column"> 
+      <a href="{% url 'Furry-Fun-Foto-Gallery' %}" aria-label="Visit our Furry Fun Foto gallery page">
+        <span class="main-sections" id="furry-fun">
+          Furry Fun Foto Gallery
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="clubhouse-map">
+    <h3>At Cockapoo Club we want to see you and your furry best friend thrive together
+    </h3>
+    <p>
+      <span class="furry-fun-fotos-join">
+        <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Join Cockapoo Club Now
+        </a>
+      </span> for all the support, information and fun you will ever need
+    </p>
+  </div>
+</section>
+<section>
+  <div class="container-new-cockaparents">
+    <h3>
+      <a href="#jump-to-clubhouse-times" aria-label="See our clubhouse opening times">Come to our Clubhouse and Training Centre
+      </a>
+    </h3>
+    <div class="new-cockaparents-text">
+      <div class="gmap_size">
+        <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=saggart%20village%20heritage%20centre&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+        <a href="https://123movies-to.org">
+        </a>
+        <a href="https://www.embedgooglemap.net" aria-label="Use Google Maps to find our Clubhouse" target="_blank">
+        </a>
+      </div>
+    </div>
+    <div id="free-supports">
+      <i class="fa fa-paw" aria-hidden="true">
+      </i>
+      Free Dog Training Sessions for all 
+      <span class="furry-fun-fotos-join">
+        <a href="{% url 'account_signup' %}" aria-label="Visit our Join Cockapoo Club page">Cockapoo Club Members
+        </a> 
+        <i class="fa fa-paw" aria-hidden="true">
+        </i>
+      </span>
+      <ul class="main-sections" id="training-poo">
+        <li>
+          <a href="{% url 'all_bookings' %}" class="join-button" aria-label="Book your training sessions now">CLICK HERE to book One to One or Group Training Sessions!
+          </a>
+        </li> 
+      </ul>
+    </div>
+    <div class="new-cockaparents-text-second-section">
+      <div class="text-center">
+        <h3>
+          <a id="jump-to-clubhouse-times">Clubhouse and Training Centre Opening hours
+          </a>
+        </h3>
+        <table>
+          <tr>
+            <th>Days
+            </th>
+            <th>Open
+            </th>
+            <th>Close
+            </th>
+          </tr>
+          <tr>
+            <td>Mon - Fri
+            </td>
+            <td>07:00
+            </td>
+            <td>19:00
+            </td>
+          </tr>
+          <tr>
+            <td>Weekend
+            </td>
+            <td>10:00
+            </td>
+            <td>22:00
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div>
+    <a href="#top" class="join-button">Back to top
+    </a>
+  </div>
+</section>
+{%endblock%}

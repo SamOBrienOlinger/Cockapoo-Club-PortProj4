@@ -1,20 +1,14 @@
 {% extends 'base.html' %} 
 {% block content %}
-
 {% load crispy_forms_tags %}
-    
-    
-  <h1>Welcome to the Cockapoo Club booking session page</h1>
-
-    <p>
-      To book your training session complete the form
-    </p>
-
-  <form action = "" method="POST">
-   {% csrf_token %}
-      
-   {{ form|crispy }}
-        
+<h1>Welcome to the Cockapoo Club booking session page
+</h1>
+<p>
+  To book your training session complete the form
+</p>
+<form action = "" method="POST">
+  {% csrf_token %}
+  {{ form|crispy }}
         
         <script>
           $(function () {
@@ -24,17 +18,23 @@
           });
         </script>
 
-    <button class="join-button" type="submit" value="submit">Submit</button>
-  </form>
-
-  {% for booking in existing_bookings %}
-  <div>
-    <div>{{booking.session_type}}</div>
-    <div>{{booking.booking_date_time}}</div>
-    <button onclick="return confirm('Are you sure you want to reschedule your dog training session?')"><a href="{% url 'update-booking' booking.id %}">Reschedule</a></button>
-    <button onclick="return confirm('Are you sure you want to cancel your dog training session?')"><a href="{% url 'delete-booking' booking.id %}">Cancel</a></button>
-  </div>
-
+<button class="join-button" type="submit" value="submit">Submit
+</button>
+</form>
+{% for booking in existing_bookings %}
+<div>
+<div>{{booking.session_type}}
+</div>
+<div>{{booking.booking_date_time}}
+</div>
+<button onclick="return confirm('Are you sure you want to reschedule your dog training session?')">
+  <a href="{% url 'update-booking' booking.id %}">Reschedule
+  </a>
+</button>
+<button onclick="return confirm('Are you sure you want to cancel your dog training session?')">
+  <a href="{% url 'delete-booking' booking.id %}">Cancel
+  </a>
+</button>
+</div>
 {% endfor %}
-
 {%endblock%}
