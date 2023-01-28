@@ -342,7 +342,7 @@ All HTML code was validated using [Nu Html Checker](https://validator.w3.org/nu/
 
         ![CSS Warning](media/README.md-images/README.md-css-warning.png)
     
-    - **Python**
+  - **Python**
 
       -   [CI Python Linter](https://pep8ci.herokuapp.com/) was the validator used. All the Python code passed without errors, except for the following files `home/urls.py`, `settings.py`, `book_sessions/views.py`, `book_sessions/urls.py` which gave E501 'line too long' warnings.
 
@@ -362,72 +362,71 @@ All HTML code was validated using [Nu Html Checker](https://validator.w3.org/nu/
 
 
    - **Lighthouse**  
-       ANy lower scores were mainly as a result of comprimising performance in order to maintain aspects of the website such as the images that are so important for brand recognition and UX. The hero image is a good example of this. In future, this will be reviewed with the aim of improving performace without jeopardising UX.    
+       Lower scores were mainly as a result of imported JavaScript code regarding the category of Best Practice. Comprimising in the category of Performance also contributed to a less than optimal score. This comprimise was made to maintain aspects of the website such as the larger images that are so important for brand recognition and UX. The hero image is a good example of this. In future, this will be reviewed with the aim of improving both Best Practice and Performace without jeopardising UX.    
      
-    - Mobile device
+     - Mobile device
       
-      * [Homepage](#homepage)
+        * Homepage
 
-        ![Homepage](assets/README.md-images/README.md-index-html-lighthouse.png)
-      
-      * [New Cockaparents](#new-cockaparents)
-          
-        ![new cockaparents](assets/README.md-images/README.md-new-cockaparents-html-lighthouse.png)
+          ![Homepage](media/README.md-images/README.md-lighthouse-mobile-homepage.png)
+        
+        * New Cockaparents
+            
+          ![new cockaparents](media/README.md-images/README.md-lighthouse-mobile-NCP.png)
 
-      * [Keep Your Poo Healthy](#keep-your-poo-healthy)
-          
-        ![Keep Your Poo Healthy](assets/README.md-images/README.md-kyph-html-lighthouse.png)
+        * Keep Your Poo Healthy
+            
+          ![Keep Your Poo Healthy](media/README.md-images/README.md-lighthouse-mobile-KYPH.png)
 
-      * [Furry Fun Foto Gallery](#furry-fun-foto-gallery)
-          
-        ![Furry Fun Foto Gallery](assets/README.md-images/README.md-FFFG-html-lighthouse.png)
+        * Furry Fun Foto Gallery
+            
+          ![Furry Fun Foto Gallery](media/README.md-images/README.md-lighthouse-mobile-FFFG.png)
 
-      * [Join](#join)
-          
-        ![Join]()
+        * Join
+            
+          ![Join](media/README.md-images/README.md-lighthouse-mobile-join.png)
 
-      * Login(#login)    
-      
-        ![Login]()
+        * Login    
+        
+          ![Login](media/README.md-images/README.md-lighthouse-mobile-login.png)
 
-      * Booking(#booking)    
-        ![Booking]()
+        * Booking    
+          ![Booking](media/README.md-images/README.md-lighthouse-mobile-booking.png)
 
     
-    - Desktop 
+  - Desktop 
 
-      * [Homepage](#homepage)
+      * Homepage
+              
+        ![Homepage]()
           
-        ![Homepage](assets/README.md-images/README.md-index-html-Desktop-lighthouse-.png)
-      
-      * [New Cockaparents](#new-cockaparents)
+      * New Cockaparents
+            
+        ![new cockaparents]()
+
+      * Keep Your Poo Healthy
           
-        ![new cockaparents](assets/README.md-images/README.md-new-cockaparents-html-Desktop-lighthouse-.png)
+        ![Keep Your Poo Healthy]()
 
-      * [Keep Your Poo Healthy](#keep-your-poo-healthy)
+      * Furry Fun Foto Gallery
+
+        ![Furry Fun Foto Gallery]()
+
+      * Booking   
       
-        ![Keep Your Poo Healthy](assets/README.md-images/README.md-kyph-html-Desktop-lighthouse-.png)
-
-      * [Furry Fun Foto Gallery](#furry-fun-foto-gallery)
-
-        ![Furry Fun Foto Gallery](assets/README.md-images/README.md-fffg-html-Desktop-lighthouse-.png)
-
-      * Booking(#booking)    
         ![Booking]()
-        
-      * [Join](#join)
-          
+            
+      * Join
+              
         ![Join]()
 
-      * Login(#login)    
-      
+      * Login   
+          
         ![Login]()
 
+       * Logout
 
-
-      * Sign out(#sign-out)
-
-        ![Sign out]()
+         ![Logout]()
 
   - **Feature testing**
 
