@@ -292,6 +292,10 @@ ul {
 	text-align: center
 }
 
+.centered {
+	text-align: center;
+}
+
 div.text-center p {
 	padding-top: 1rem;
 	font-weight: 600

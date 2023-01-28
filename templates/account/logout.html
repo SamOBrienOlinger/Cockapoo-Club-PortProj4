@@ -6,10 +6,10 @@
 
 {% block content %}
 
-<center>
-<h1>{% trans "Sign Out" %}</h1>
 
-<p>{% trans 'Are you sure you want to sign out of Cockapoo Club?' %}</p>
+<h1 class="centered">{% trans "Sign Out" %}</h1>
+
+<p class="centered">{% trans 'Are you sure you want to sign out of Cockapoo Club?' %}</p>
 
 <form method="post" action="{% url 'account_logout' %}">
   {% csrf_token %}
@@ -18,7 +18,7 @@
   {% endif %}
   <button name="logout" class = "join-button" type="submit">{% trans 'Yes, I want to Sign Out' %}</button>
 </form>
-</center>
+
   <script type="text/javascript">
     (function() {
       var message = "{% trans 'Are you sure you want to sign out of Cockapoo Club?' %}";

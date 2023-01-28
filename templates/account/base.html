@@ -52,10 +52,10 @@
     </nav>
   </header>
   <body>
-    <center>
+    
       <div>
-        <strong>Your Options
-        </strong>
+        <h1 class="centered">Your Options
+        </h1>
         <ul>
           {% if user.is_authenticated %}
           <li class = "join-button">
@@ -78,7 +78,7 @@
           {% endif %}
         </ul>
       </div>
-    </center>
+    
     {% block content %}
     {% endblock %}
   </body>
