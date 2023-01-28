@@ -50,7 +50,7 @@ Cockapoo Club now offers Users a feature to Create, Read, Update and Delete a do
 - *Delete* - authenticated users can cancel any of their bookings.
     
 
-The Django Admin panel allows Users with the relevant permissions to also Create, Read, Update and Delete data as is standard. 
+The [Django Admin](https://home-cockapoo-club-pp4.herokuapp.com/admin/login/?next=/admin/) panel allows Users with the relevant permissions to also Create, Read, Update and Delete data as is standard. 
 
 ![Django Admin](media/README.md-images/README.md-django-admin-panel.png)
 
@@ -390,10 +390,12 @@ All HTML code was validated using [Nu Html Checker](https://validator.w3.org/nu/
 
            ![Login](media/README.md-images/README.md-lighthouse-mobile-login.png)
         
-        * Booking    
+        * Booking  
+
           ![Booking](media/README.md-images/README.md-lighthouse-mobile-booking.png) 
         
-        * Logout 
+        * Logout
+
           ![Logout](media/README.md-images/README.md-lighthouse-mobile-logout.png)  
           
     
@@ -597,7 +599,9 @@ As mentioned above, having to choose between prioritising UX over performance is
   
   - The [README template](https://github.com/Code-Institute-Solutions/readme-template) provided by Code Institute was very helpful as a model for developing this README file.  
 
-  - My mentor, [Sandeep Aggarwal](https://code-institute-room.slack.com/team/UHEGTP519), as well as a number of Code Institute Tutors and students were very supportive via slack and the Student Support Chat. 
+  - My mentor, [Sandeep Aggarwal](https://code-institute-room.slack.com/team/UHEGTP519), was a great support and I learned a lot from him throughout the development of this project. 
+  
+  - A number of Code Institute Tutors and students were very supportive via slack and the Student Support Chat. 
    
   - The following Code Institute Alumni, Tutors and Students helped guide me and to tease out a range of issues I faced developing the project: 
      
