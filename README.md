@@ -52,7 +52,7 @@ Cockapoo Club now offers Users a feature to Create, Read, Update and Delete a do
 
 The Django Admin panel allows Users with the relevant permissions to also Create, Read, Update and Delete data as is standard. 
 
-![Django Admin]()
+![Django Admin](static/README.md-django-admin-panel.png)
 
 
 ## **[Contents](#contents)**
