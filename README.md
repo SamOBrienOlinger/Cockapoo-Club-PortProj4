@@ -33,15 +33,15 @@ What makes this website stand out from other websites that provide useful inform
 
 * will enjoy sharing photographs of their pets online.  
 
-Perhaps most importantly, the new feature added with CRUD functionality allows users who need support with training their dog to book a free training session in a group setting or choosing the option of a more intesive one-to-one session [Click Here to visit this page](https://home-cockapoo-club-pp4.herokuapp.com/booking/).
+Perhaps most importantly, the new feature added with CRUD functionality allows users who need support with training their dog to book a free training session in a group setting or choosing the option of a more intesive one-to-one session [Click Here](https://home-cockapoo-club-pp4.herokuapp.com/booking/) to visit this page.
 
 ![booking a training session](media/README.md-images/README.md-booking-image.png)
 
 ### **CRUD functionality**
 
-Cockapoo Club now offers an Admin and Users a Create, Read, Update and Delete functionality:
+Cockapoo Club now offers Users a feature to Create, Read, Update and Delete a dog training session:
 
-- *Create* - new (un-authenticated) users can now register with or 'Join' Cockapoo Club to create a user account, and memebers (authenticated users) can view the [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/) and [book dog training sessions](https://home-cockapoo-club-pp4.herokuapp.com/booking/).
+- *Create* - new (un-authenticated) users can now register with or 'Join' Cockapoo Club to create a user account, and members (authenticated users) can view the [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/) and [book dog training sessions](https://home-cockapoo-club-pp4.herokuapp.com/booking/).
 
 - *Read* - authenticated users can view all of the dog training sessions they have booked.
 
@@ -49,6 +49,10 @@ Cockapoo Club now offers an Admin and Users a Create, Read, Update and Delete fu
 
 - *Delete* - authenticated users can cancel any of their bookings.
     
+
+The Django Admin panel allows Users with the relevant permissions to also Create, Read, Update and Delete data as is standard. 
+
+![Django Admin]()
 
 
 ## **[Contents](#contents)**
@@ -300,15 +304,15 @@ To duplicate deployment to Heroku, follow these steps:
 
       * [Homepage](#homepage)
 
-        ![homepage]()
+        ![homepage](static/README.md-html-validation-homepage.png)
       
      * [New Cockaparents](#new-cockaparents)
         
-        ![new cockaparents]()
+        ![new cockaparents](static/README.md-html-validation-NCP.png)
 
      * [Keep Your Poo Healthy](#keep-your-poo-healthy)
         
-        ![Keep Your Poo Healthy]()
+        ![Keep Your Poo Healthy](static/README.md-html-validation-KYPH.png)
 
      * [Furry Fun Foto Gallery](#furry-fun-foto-gallery)
         
@@ -320,13 +324,13 @@ To duplicate deployment to Heroku, follow these steps:
      
      * [Join](#join)
         
-        ![Join]()
+        ![Join](static/README.md-html-validation-join-CC.png)
       
       * Login(#login)    
         ![Login]()
 
       * Logout(#logout)    
-        ![Logout]()
+        ![Logout](static/README.md-html-validation-logout.png)
 
 
    - **CSS**
@@ -571,18 +575,23 @@ As mentioned above, having to choose between prioritising UX over performance is
       - [unsplash](https://unsplash.com) 
       - [pixabay](https://pixabay.com) 
       
-      - Images for the [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/g) are a combination of my own photos and other images found on the following sites:
+      - Images for the [Furry Fun Foto Gallery](https://home-cockapoo-club-pp4.herokuapp.com/furryFunFotoGallery/g) are a combination of my own photos and other images found on [pxfuel](https://www.pxfuel.com) and [ukpets](https://www.ukpets.com) 
 
-        - [pxfuel](https://www.pxfuel.com)
-        - [ukpets](https://www.ukpets.com) 
 
- - **Video**
 
     - The YouTube video embedded in the [Keep Your Poo Healthy](https://samobrienolinger.github.io/Cockapoo-Club/keep-your-poo-healthy.html#jump-to-kyph) page was taken from [Hills Pet](https://www.hillspet.com) and can be found on YouTube [here](https://youtu.be/Fe-sa9mHcxI) 
 
 ## **[Acknowledgements](#acknowledgements)**
 
-   - The [README template](https://github.com/Code-Institute-Solutions/readme-template) provided by Code Institute was very helpful as a model for developing this README file.  
+  - The following were used as references to help with writing the HTML, CSS, JavaScript and Python code:
+
+    - [W3Schools](https://www.w3schools.com/) 
+    - [Stack Overflow](https://stackoverflow.com/)
+    - Code Institute's [I Think Therefore I Blog](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) Walkthrough
+    - [Django Documentation](https://docs.djangoproject.com/en/4.1/)
+
+  
+  - The [README template](https://github.com/Code-Institute-Solutions/readme-template) provided by Code Institute was very helpful as a model for developing this README file.  
 
   - My mentor, [Sandeep Aggarwal](https://code-institute-room.slack.com/team/UHEGTP519), as well as a number of Code Institute Tutors and students were very supportive via slack and the Student Support Chat. 
    
