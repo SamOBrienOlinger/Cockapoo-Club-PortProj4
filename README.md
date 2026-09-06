@@ -22,7 +22,7 @@ A Django portfolio application for a fictional Cockapoo club, combining dog-care
 
 ## Getting started
 
-Requires Python, pip and a virtual environment. The repository records `python-3.11.8` in [runtime.txt](runtime.txt). Dependency pins in older projects may need a compatible Python environment; this README does not upgrade them.
+Requires Git, Python, pip and a virtual environment. The repository records `python-3.11.8` in [runtime.txt](runtime.txt). Dependency pins in older projects may need a compatible Python environment; this README does not upgrade them.
 
 ```bash
 git clone https://github.com/SamOBrienOlinger/Cockapoo-Club-PortProj4.git
