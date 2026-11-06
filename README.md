@@ -4,7 +4,7 @@ A Django portfolio application for a fictional Cockapoo club, combining dog-care
 
 **Python · Django**
 
-[Getting started](#getting-started) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
+[Getting started](#getting-started) · [Data model](#entity-relationship-diagram) · [Repository guide](#repository-guide) · [Checks](#checks-and-review) · [Credits](#credits-and-reuse)
 
 ## What you can explore
 
@@ -19,6 +19,29 @@ A Django portfolio application for a fictional Cockapoo club, combining dog-care
 3. Create a training-session booking and review its management controls.
 
 > **Project notes:** The committed dependency and runtime pins come from an older project environment. Check package compatibility before deployment; configuration of the database and media service is required.
+
+## Entity relationship diagram
+
+Each booking belongs to one Django user. A user can have any number of bookings. The group or one-to-one session type is stored as a field on the booking, along with its time and confirmation status. [Booking model](book_sessions/models.py) · [User relationship migration](book_sessions/migrations/0017_booking_user.py)
+
+```mermaid
+erDiagram
+    accTitle: Cockapoo Club user and booking schema
+    accDescr: A user can have zero or more bookings. Each booking belongs to one user and stores its session type, time and confirmation status.
+    User ||..o{ Booking : makes
+
+    User {
+        int id PK
+        string username UK
+    }
+    Booking {
+        bigint id PK
+        int user_id FK
+        string session_type "O or G"
+        datetime booking_date_time
+        boolean confirmed
+    }
+```
 
 ## Getting started
 
